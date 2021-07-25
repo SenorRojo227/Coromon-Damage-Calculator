@@ -1,0 +1,52 @@
+header {
+    text-align: center;
+  }
+  
+  .results:first-child {
+      float: left;
+      width: 50%;
+  }
+  
+  .results:nth-child(2) {
+      float: right;
+      width: 50%;
+  }
+  
+  .hiddenRadio {
+    display: none;
+  }
+  
+  .results div {
+    margin: 10px 20px;
+  
+  }
+  
+  .results > span {
+    margin: 10px 20px;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  
+  .results div span {
+    padding-left: 10px;
+  }
+  
+  .skillLabel {
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    background-color: #ddd;
+    padding: 5px 30px;
+  }
+  
+  .hiddenRadio:checked + .skillLabel {
+    background-color: #eee; 
+  }
+
+  fieldset {
+    display: inline-block;
+
+  }
+
+  input {
+    width: 50px;
+  }

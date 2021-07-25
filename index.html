@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Coromon Damage Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="src/coromon.ts" defer></script>
+    <script src="src/skills.ts" defer></script>
+    <script src="src/calc.ts" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Coromon Damage Calculator</h1>
+    </header>
+    <div id="wrap">
+      <div class="results">
+        <span id="resultHeaderL">Aroara's skills (Select one for more info)</span>
+        <div>
+          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL1" checked="checked">
+          <label id="skillLabelL1" class="skillLabel" for="skillRadioL1">Glacier</label>
+          <span id="resultDamageL1">0% - 0%</span>
+        </div>
+        <div>
+          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL2">
+          <label id="skillLabelL2" class="skillLabel" for="skillRadioL2">Splash</label>
+          <span id="resultDamageL2">0% - 0%</span>
+        </div>
+        <div>
+          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL3">
+          <label id="skillLabelL3" class="skillLabel" for="skillRadioL3">Beat Up</label>
+          <span id="resultDamageL3">0% - 0%</span>
+        </div>
+        <div>
+          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL4">
+          <label id="skillLabelL4" class="skillLabel" for="skillRadioL4">Scratch</label>
+          <span id="resultDamageL4">0% - 0%</span>
+        </div>
+      </div>
+      <div class="results">
+        <span id="resultHeaderR">Aroara's skills (Select one for more info)</span>
+        <div>
+          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR1" checked="checked">
+          <label id="skillLabelR1" class="skillLabel" for="skillRadioR1">Glacier</label>
+          <span id="resultDamageR1">0% - 0%</span>
+        </div>
+        <div>
+          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR2">
+          <label id="skillLabelR2" class="skillLabel" for="skillRadioR2">Splash</label>
+          <span id="resultDamageR2">0% - 0%</span>
+        </div>
+        <div>
+          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR3">
+          <label id="skillLabelR3" class="skillLabel" for="skillRadioR3">Beat Up</label>
+          <span id="resultDamageR3">0% - 0%</span>
+        </div>
+        <div>
+          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR4">
+          <label id="skillLabelR4" class="skillLabel" for="skillRadioR4">Scratch</label>
+          <span id="resultDamageR4">0% - 0%</span>
+        </div>
+      </div>
+      <div class="big-text">
+        <span id="mainResult">Insert Damage Here</span>
+      </div>
+      <div class="small-text">
+        <span id="damageValues">Possible Damage Amounts: (0)</span>
+			</div>
+    </div>
+    <div id="boxes">
+      <fieldset>
+        <legend>Coromon 1</legend>
+          <select name="dropdown" id="name1" class="crmSelector" onchange="resetSet(1)">
+            <optgroup label="Aroara">
+              <option value="Aroara (Wallbreaker)">Aroara (Wallbreaker)</option>
+              <option value="Aroara">Aroara</option>
+            </optgroup>
+            <optgroup label="Cubzero">
+              <option value="Cubzero">Cubzero</option>
+            </optgroup>
+          </select>
+          <label>Type:</label>
+          <input value="Ice" id="type1">
+          <label>Potential:</label>
+          <input value="21" id="pot1">
+          <label>Level:</label>
+          <input value="25" id="lvl1">
+
+          <table>
+            <tr>
+              <td></td>
+              <td>Base</td>
+              <td>Potential</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>HP</td>
+              <td><input id="hp1" value="50"></td>
+              <td><input id="potInputL1" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL1">55</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SP</td>
+              <td><input id="sp1" value="34"></td>
+              <td><input id="potInputL2" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL2">28</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Attack</td>
+              <td><input id="atk1" value="50"></td>
+              <td><input id="potInputL3" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL3">55</td>
+              <td><input value="0"></td>
+            </tr>
+            <tr>
+              <td>Defense</td>
+              <td><input id="def1" value="50"></td>
+              <td><input id="potInputL4" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL4">55</td>
+              <td><input value="0"></td>
+            </tr>
+            <tr>
+              <td>Sp. Atk.</td>
+              <td><input id="spAtk1" value="50"></td>
+              <td><input id="potInputL5" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL5">55</td>
+              <td><input value="0"></td>
+            </tr>
+            <tr>
+              <td>Sp. Def.</td>
+              <td><input id="spDef1" value="50"></td>
+              <td><input id="potInputL6" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL6">55</td>
+              <td><input value="0"></td>
+            </tr>
+            <tr>
+              <td>Speed</td>
+              <td><input id="spe1" value="50"></td>
+              <td><input id="potInputL7" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL7">55</td>
+              <td><input value="0"></td>
+            </tr>
+          </table>
+          
+          <label>Trait:</label>
+          <select name="dropdown" class="traitSelector">
+            <option>Clumsy Power</option>
+          </select>
+          <label>Item:</label>
+          <select name="dropdown" class="itemSelector">
+            <option>Canul Fruit</option>
+          </select>
+
+          <span class="health">
+            <label>Current HP</label>
+            <input value = "50">
+            <label>/50   (</label>
+            <input value = "50">
+            <label>%)</label>
+          </span>
+
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>Coromon 2</legend>
+
+          <select name="dropdown" class="crmSelector">
+            <option>Aroara</option>
+          </select>
+          <label>Type:</label>
+          <select name="dropdown" class="typeSelector">
+            <option>Ice</option>
+          </select>
+          <label>Potential:</label>
+          <select name="dropdown" class="lvlSelector">
+            <option>21</option>
+          </select>
+          <label>Level:</label>
+          <select name="dropdown" class="lvlSelector">
+            <option>25</option>
+          </select>
+
+          <table>
+            <tr>
+              <td></td>
+              <td>Base</td>
+              <td>Potential</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>HP</td>
+              <td><input value="50"></td>
+              <td><input id="potInputR1" value="0"></td>
+              <td>55</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Attack</td>
+              <td><input value="50"></td>
+              <td><input value="0"></td>
+              <td>55</td>
+              <td><input value="--"></td>
+            </tr>
+            <tr>
+              <td>Defense</td>
+              <td><input value="50"></td>
+              <td><input value="0"></td>
+              <td>55</td>
+              <td><input value="--"></td>
+            </tr>
+            <tr>
+              <td>Sp. Atk.</td>
+              <td><input value="50"></td>
+              <td><input value="0"></td>
+              <td>55</td>
+              <td><input value="--"></td>
+            </tr>
+            <tr>
+              <td>Sp. Def.</td>
+              <td><input value="50"></td>
+              <td><input value="0"></td>
+              <td>55</td>
+              <td><input value="--"></td>
+            </tr>
+            <tr>
+              <td>Speed</td>
+              <td><input value="50"></td>
+              <td><input value="0"></td>
+              <td>55</td>
+              <td><input value="--"></td>
+            </tr>
+          </table>
+          
+          <label>Trait:</label>
+          <select name="dropdown" class="traitSelector">
+            <option>Clumsy Power</option>
+          </select>
+          <label>Item:</label>
+          <select name="dropdown" class="itemSelector">
+            <option>Canul Fruit</option>
+          </select>
+
+          <span class="health">
+            <label>Current HP</label>
+            <input value = "50">
+            <label>/50   (</label>
+            <input value = "50">
+            <label>%)</label>
+          </span>
+
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+          <div class="skills">
+            <select name="dropdown">
+              <option>Glacier</option>
+            </select>
+            <input value="80">
+            <input value="Ice">
+            <input value="Special">
+            <button>Crit</button>
+          </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
