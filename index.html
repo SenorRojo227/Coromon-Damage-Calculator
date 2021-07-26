@@ -202,22 +202,21 @@
       </fieldset>
       <fieldset>
         <legend>Coromon 2</legend>
-
-          <select name="dropdown" class="crmSelector">
-            <option>Aroara</option>
+          <select name="dropdown" id="name2" class="crmSelector" onchange="resetSet(2)">
+            <optgroup label="Aroara">
+              <option value="Aroara (Wallbreaker)">Aroara (Wallbreaker)</option>
+              <option value="Aroara">Aroara</option>
+            </optgroup>
+            <optgroup label="Cubzero">
+              <option value="Cubzero">Cubzero</option>
+            </optgroup>
           </select>
           <label>Type:</label>
-          <select name="dropdown" class="typeSelector">
-            <option>Ice</option>
-          </select>
+          <input value="Ice" id="type2">
           <label>Potential:</label>
-          <select name="dropdown" class="lvlSelector">
-            <option>21</option>
-          </select>
+          <input value="21" id="pot2">
           <label>Level:</label>
-          <select name="dropdown" class="lvlSelector">
-            <option>25</option>
-          </select>
+          <input value="25" id="lvl2">
 
           <table>
             <tr>
@@ -229,45 +228,52 @@
             </tr>
             <tr>
               <td>HP</td>
-              <td><input value="50"></td>
-              <td><input id="potInputR1" value="0"></td>
-              <td>55</td>
+              <td><input id="hp2" value="50"></td>
+              <td><input id="potInputR1" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR1">55</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SP</td>
+              <td><input id="sp2" value="34"></td>
+              <td><input id="potInputR2" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR2">28</td>
               <td></td>
             </tr>
             <tr>
               <td>Attack</td>
-              <td><input value="50"></td>
+              <td><input id="atk2" value="50"></td>
+              <td><input id="potInputR3" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR3">55</td>
               <td><input value="0"></td>
-              <td>55</td>
-              <td><input value="--"></td>
             </tr>
             <tr>
               <td>Defense</td>
-              <td><input value="50"></td>
+              <td><input id="def2" value="50"></td>
+              <td><input id="potInputR4" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR4">55</td>
               <td><input value="0"></td>
-              <td>55</td>
-              <td><input value="--"></td>
             </tr>
             <tr>
               <td>Sp. Atk.</td>
-              <td><input value="50"></td>
+              <td><input id="spAtk2" value="50"></td>
+              <td><input id="potInputR5" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR5">55</td>
               <td><input value="0"></td>
-              <td>55</td>
-              <td><input value="--"></td>
             </tr>
             <tr>
               <td>Sp. Def.</td>
-              <td><input value="50"></td>
+              <td><input id="spDef2" value="50"></td>
+              <td><input id="potInputR6" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR6">55</td>
               <td><input value="0"></td>
-              <td>55</td>
-              <td><input value="--"></td>
             </tr>
             <tr>
               <td>Speed</td>
-              <td><input value="50"></td>
+              <td><input id="spe2" value="50"></td>
+              <td><input id="potInputR7" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR7">55</td>
               <td><input value="0"></td>
-              <td>55</td>
-              <td><input value="--"></td>
             </tr>
           </table>
           

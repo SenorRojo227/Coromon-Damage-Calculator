@@ -34,7 +34,7 @@ function updateSet(id) {
         side = "R";
     }
 
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 7; i++) {
         chosenMons[id - 1].sets[0].potential[i - 1] = parseInt(document.getElementById("potInput" + side + i).value);
         baseStat = chosenMons[id - 1].stats[i - 1];
         level = chosenMons[id - 1].sets[0].level;
