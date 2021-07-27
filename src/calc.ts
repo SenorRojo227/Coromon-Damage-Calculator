@@ -3,6 +3,7 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     //Calculation Variables
     let A = 1;
     let D = 1;
+    let defHP = 1;
     let stab = 1;
     let effectiveness = 1;
     let trait1 = 1;
@@ -35,6 +36,8 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     } else {
         return [0, 0]
     }
+
+    defHP = Math.round((1 + atkMon.stats[2] / 100) * (atkMon.sets[0].level - 1) + 6) + atkMon.sets[0].potential[2];
     
     if (atkMon.type == selectedSkill.type) {
       stab = 1.25;
@@ -42,7 +45,7 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
       stab = 1;
     }
     
-    effectiveness = getEffectiveness(atkMon.type, defMon.type);
+    effectiveness = getEffectiveness(selectedSkill.type, defMon.type);
     
     if (atkMon.sets[0].ability == "Clumsy Power") {
       trait1 = 1.25;
@@ -118,15 +121,41 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
         var multipliers = stab * effectiveness * weatherBonus;
         var lowDamage = defMon.sets[0].level * multipliers;
         var highDamage = lowDamage;
+        var highPerc = lowPerc;
     } else {
         var multipliers = stab * trait1 * trait2 * weatherBonus * crit * feelers * effectiveness * boosts1 / boosts2;
         var lowDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.power * A / D) / 50) + 2) * multipliers * 0.85 );
         var highDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.power * A / D) / 50) + 2) * multipliers );
     }
+    var lowPerc = Math.round((lowDamage / defHP) * 100);
+    var highPerc = Math.round((highDamage / defHP) * 100);
 
-    console.log(lowDamage + " - " + highDamage);
-    return [lowDamage, highDamage];
+    return [lowDamage, highDamage, lowPerc, highPerc];
 
+}
+
+function getStatement(atkMon, defMon, selectedSkill) {
+    let statement = "";
+    if (selectedSkill.atkType == "Physical") {
+        statement += atkMon.sets[0].potential[3] + " Atk ";
+    } else if (selectedSkill.atkType == "Special") {
+        statement += atkMon.sets[0].potential[5] + " SpA ";
+    }
+
+    statement += atkMon.name + " " + selectedSkill.name + " vs. ";
+
+    if (selectedSkill.atkType == "Physical") {
+        statement += defMon.sets[0].potential[4] + " Def ";
+    } else if (selectedSkill.atkType == "Special") {
+        statement += defMon.sets[0].potential[6] + " SpD ";
+    }
+
+    statement += defMon.name + ": " + getDamage(atkMon, defMon, selectedSkill)[0] + "-"
+        + getDamage(atkMon, defMon, selectedSkill)[1] + " ";
+    statement += "(" + getDamage(atkMon, defMon, selectedSkill)[2] + "% - "
+        + getDamage(atkMon, defMon, selectedSkill)[3] + "%)";
+
+    return statement;
 }
 
 function getEffectiveness(type1, type2) {
@@ -158,7 +187,7 @@ function getEffectiveness(type1, type2) {
       //Weaknesses
       case "Electric->Water":
       case "Ghost->Ghost":
-      case "Sand-Electric":
+      case "Sand->Electric":
       case "Fire->Ice":
       case "Ice->Water":
       case "Water->Sand":

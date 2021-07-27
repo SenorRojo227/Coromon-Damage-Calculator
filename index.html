@@ -18,22 +18,22 @@
       <div class="results">
         <span id="resultHeaderL">Aroara's skills (Select one for more info)</span>
         <div>
-          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL1" checked="checked">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL1" checked="checked">
           <label id="skillLabelL1" class="skillLabel" for="skillRadioL1">Glacier</label>
           <span id="resultDamageL1">0% - 0%</span>
         </div>
         <div>
-          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL2">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL2">
           <label id="skillLabelL2" class="skillLabel" for="skillRadioL2">Splash</label>
           <span id="resultDamageL2">0% - 0%</span>
         </div>
         <div>
-          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL3">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL3">
           <label id="skillLabelL3" class="skillLabel" for="skillRadioL3">Beat Up</label>
           <span id="resultDamageL3">0% - 0%</span>
         </div>
         <div>
-          <input type="radio" name="skillResultL" class="hiddenRadio" id="skillRadioL4">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL4">
           <label id="skillLabelL4" class="skillLabel" for="skillRadioL4">Scratch</label>
           <span id="resultDamageL4">0% - 0%</span>
         </div>
@@ -41,45 +41,34 @@
       <div class="results">
         <span id="resultHeaderR">Aroara's skills (Select one for more info)</span>
         <div>
-          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR1" checked="checked">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR1">
           <label id="skillLabelR1" class="skillLabel" for="skillRadioR1">Glacier</label>
           <span id="resultDamageR1">0% - 0%</span>
         </div>
         <div>
-          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR2">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR2">
           <label id="skillLabelR2" class="skillLabel" for="skillRadioR2">Splash</label>
           <span id="resultDamageR2">0% - 0%</span>
         </div>
         <div>
-          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR3">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR3">
           <label id="skillLabelR3" class="skillLabel" for="skillRadioR3">Beat Up</label>
           <span id="resultDamageR3">0% - 0%</span>
         </div>
         <div>
-          <input type="radio" name="skillResultR" class="hiddenRadio" id="skillRadioR4">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR4">
           <label id="skillLabelR4" class="skillLabel" for="skillRadioR4">Scratch</label>
           <span id="resultDamageR4">0% - 0%</span>
         </div>
       </div>
       <div class="big-text">
-        <span id="mainResult">Insert Damage Here</span>
+        <strong id="mainResult">0 SpA Aroara Glacier vs. 0 SpD Aroara: 10-11 (14% - 15%)</strong>
       </div>
-      <div class="small-text">
-        <span id="damageValues">Possible Damage Amounts: (0)</span>
-			</div>
     </div>
     <div id="boxes">
       <fieldset>
         <legend>Coromon 1</legend>
-          <select name="dropdown" id="name1" class="crmSelector" onchange="resetSet(1)">
-            <optgroup label="Aroara">
-              <option value="Aroara (Wallbreaker)">Aroara (Wallbreaker)</option>
-              <option value="Aroara">Aroara</option>
-            </optgroup>
-            <optgroup label="Cubzero">
-              <option value="Cubzero">Cubzero</option>
-            </optgroup>
-          </select>
+          <select name="dropdown" id="name1" class="crmSelector" onchange="resetSet(1)"></select>
           <label>Type:</label>
           <input value="Ice" id="type1">
           <label>Potential:</label>
@@ -202,15 +191,7 @@
       </fieldset>
       <fieldset>
         <legend>Coromon 2</legend>
-          <select name="dropdown" id="name2" class="crmSelector" onchange="resetSet(2)">
-            <optgroup label="Aroara">
-              <option value="Aroara (Wallbreaker)">Aroara (Wallbreaker)</option>
-              <option value="Aroara">Aroara</option>
-            </optgroup>
-            <optgroup label="Cubzero">
-              <option value="Cubzero">Cubzero</option>
-            </optgroup>
-          </select>
+          <select name="dropdown" id="name2" class="crmSelector" onchange="resetSet(2)"></select>
           <label>Type:</label>
           <input value="Ice" id="type2">
           <label>Potential:</label>
