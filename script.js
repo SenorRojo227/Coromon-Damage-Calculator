@@ -1,11 +1,12 @@
 let coromon = getCoromon();
 let skills = getSkills();
 
-let chosenMons = [coromon[1], coromon[1]];;
+let chosenMons = [coromon[0], coromon[0]];
 
 window.onload = function() {
     initCoromon();
     initSkills();
+    calculate();
 }
 
 function initCoromon() {

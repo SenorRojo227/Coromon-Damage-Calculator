@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width">
     <title>Coromon Damage Calculator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="src/coromon.ts" defer></script>
-    <script type="text/javascript" src="src/skills.ts" defer></script>
-    <script type="text/javascript" src="src/calc.ts" defer></script>
-    <script type="text/javascript" src="script.js" defer></script>
+    <script src="src/coromon.js" defer></script>
+    <script src="src/skills.js" defer></script>
+    <script src="src/calc.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -16,7 +16,7 @@
     </header>
     <div id="wrap">
       <div class="results">
-        <span id="resultHeaderL">Aroara's skills (Select one for more info)</span>
+        <span id="resultHeaderL">Cubzero's skills (Select one for more info)</span>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL1" checked="checked" onchange="calculate()">
           <label id="skillLabelL1" class="skillLabel" for="skillRadioL1">Glacier</label>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="results">
-        <span id="resultHeaderR">Aroara's skills (Select one for more info)</span>
+        <span id="resultHeaderR">Cubzero's skills (Select one for more info)</span>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR1" onchange="calculate()">
           <label id="skillLabelR1" class="skillLabel" for="skillRadioR1">Glacier</label>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="big-text">
-        <strong id="mainResult">0 SpA Aroara Glacier vs. 0 SpD Aroara: 10-11 (14% - 15%)</strong>
+        <strong id="mainResult"></strong>
       </div>
     </div>
     <div id="boxes">

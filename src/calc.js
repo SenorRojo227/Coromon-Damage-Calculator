@@ -34,7 +34,7 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
         A = Math.round((atkMon.stats[4] / 100) * (atkMon.sets[0].level - 1) + 6) + atkMon.sets[0].potential[4];
         D = Math.round((defMon.stats[5] / 100) * (defMon.sets[0].level - 1) + 6) + defMon.sets[0].potential[5];
     } else {
-        return [0, 0]
+        return [0, 0, 0, 0]
     }
 
     defHP = Math.round((1 + atkMon.stats[2] / 100) * (atkMon.sets[0].level - 1) + 6) + atkMon.sets[0].potential[2];

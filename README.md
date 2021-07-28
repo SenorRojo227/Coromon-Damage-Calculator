@@ -12,9 +12,6 @@ This project was created using:
 + HTML
 + CSS
 + Javascript
-+ TypeScript
 
 ## Setup
-1. Download all of the files
-1. Place the files into a folder
-3. Run **index.html**
++ Visit https://senorrojo227.github.io/Coromon-Damage-Calculator/
