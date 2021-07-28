@@ -100,13 +100,20 @@ function calculate() {
     let side = "L";     //Left vs Right Side
     for (let i = 1; i <= 4; i++) {
         let index = findSkill(document.getElementById("skillLabel" + side + i).innerHTML);
-        let damage = getDamage(chosenMons[0], chosenMons[1], skills[index]);
+        let damage;
+
+        if (side == "L") {
+            damage = getDamage(chosenMons[0], chosenMons[1], skills[index]);
+        } else {
+            damage = getDamage(chosenMons[1], chosenMons[0], skills[index]);
+        }
+
         document.getElementById("resultDamage" + side + i).innerHTML = damage[2] + "% - " + damage[3] + "%";
 
         
-    if (document.getElementById("skillRadio" + side + i).checked) {
-        document.getElementById("mainResult").innerHTML = getStatement(chosenMons[0], chosenMons[1], skills[index]);
-    }
+        if (document.getElementById("skillRadio" + side + i).checked) {
+            document.getElementById("mainResult").innerHTML = getStatement(chosenMons[0], chosenMons[1], skills[index]);
+        }
 
         if (i == 4 && side == "L") {
             side = "R";
