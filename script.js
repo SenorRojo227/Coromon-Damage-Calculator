@@ -1,7 +1,7 @@
 let coromon = getCoromon();
 let skills = getSkills();
 
-let chosenMons = [coromon[0], coromon[0]];
+let chosenMons = [coromon[1], coromon[1]];
 
 window.onload = function() {
     initCoromon();
@@ -57,12 +57,18 @@ function resetSet(id) {
     }
 
     if (coromon[index].sets.length > 0) {
-        for (let i = 1; i <= coromon[index].sets[0].skills.length; i++) {
+        for (let i = 1; i <= 4; i++) {
             document.getElementById("skillLabel" + side + i).innerHTML = coromon[index].sets[0].skills[i - 1];
+        }
+        for (let i = 1; i <= 7; i++) {
+            document.getElementById("potInput" + side + i).value = coromon[index].sets[0].potential[i - 1];
         }
     } else {
         for (let i = 1; i <= 4; i++) {
             document.getElementById("skillLabel" + side + i).innerHTML = "(No Skill)";
+        }
+        for (let i = 1; i <= 7; i++) {
+            document.getElementById("potInput" + side + id).value = 0;
         }
     }
 
@@ -113,7 +119,11 @@ function calculate() {
 
         
         if (document.getElementById("skillRadio" + side + i).checked) {
-            document.getElementById("mainResult").innerHTML = getStatement(chosenMons[0], chosenMons[1], skills[index]);
+            if (side == "L") {
+                document.getElementById("mainResult").innerHTML = getStatement(chosenMons[0], chosenMons[1], skills[index]);
+            } else {
+                document.getElementById("mainResult").innerHTML = getStatement(chosenMons[1], chosenMons[0], skills[index]);
+            }
         }
 
         if (i == 4 && side == "L") {

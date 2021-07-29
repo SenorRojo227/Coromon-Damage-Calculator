@@ -137,17 +137,17 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
 function getStatement(atkMon, defMon, selectedSkill) {
     let statement = "";
     if (selectedSkill.atkType == "Physical") {
-        statement += atkMon.sets[0].potential[3] + " Atk ";
+        statement += atkMon.sets[0].potential[2] + " Atk ";
     } else if (selectedSkill.atkType == "Special") {
-        statement += atkMon.sets[0].potential[5] + " SpA ";
+        statement += atkMon.sets[0].potential[4] + " SpA ";
     }
 
     statement += atkMon.name + " " + selectedSkill.name + " vs. ";
 
     if (selectedSkill.atkType == "Physical") {
-        statement += defMon.sets[0].potential[4] + " Def ";
+        statement += defMon.sets[0].potential[3] + " Def ";
     } else if (selectedSkill.atkType == "Special") {
-        statement += defMon.sets[0].potential[6] + " SpD ";
+        statement += defMon.sets[0].potential[5] + " SpD ";
     }
 
     statement += defMon.name + ": " + getDamage(atkMon, defMon, selectedSkill)[0] + "-"

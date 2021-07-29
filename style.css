@@ -52,11 +52,18 @@ header {
 
 strong {
   font-size: larger;
+  padding-left: 20px;
 }
 
 fieldset {
   display: inline-block;
+  margin-top: 10px;
+}
 
+.crmSelector {
+  display: block;
+  padding: 3px 10px;
+  margin: 5px 5px 10px 5px;
 }
 
 input {
