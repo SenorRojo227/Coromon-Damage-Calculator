@@ -4,7 +4,7 @@ function getSkills() {
             name: "(No Skill)",
             type: "Normal",
             power: 0,
-            atkType: "N/A",
+            atkType: "Status",
         },
         {
             name: "Agility Training",

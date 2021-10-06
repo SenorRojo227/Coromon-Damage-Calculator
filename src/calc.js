@@ -15,7 +15,7 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     let weatherBonus = 1;
 
     //Check Inputs
-    if (false) {        //Fix
+    if (selectedSkill.crit) {        //Fix
       crit = 1.5;
     } else {
       crit = 1;

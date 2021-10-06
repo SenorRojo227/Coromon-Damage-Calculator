@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Coromon Damage Calculator</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="src/coromon.js" defer></script>
     <script src="src/skills.js" defer></script>
     <script src="src/other.js" defer></script>
@@ -97,49 +97,49 @@
               <td>HP</td>
               <td><input id="hp1" value="90" onchange="updateSet(1)"></td>
               <td><input id="potInputL1" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL1">52</td>
+              <td id="finalStatL1"></td>
               <td></td>
             </tr>
             <tr>
               <td>SP</td>
               <td><input id="sp1" value="34" onchange="updateSet(1)"></td>
               <td><input id="potInputL2" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL2">28</td>
+              <td id="finalStatL2"></td>
               <td></td>
             </tr>
             <tr>
               <td>Attack</td>
               <td><input id="atk1" value="130" onchange="updateSet(1)"></td>
               <td><input id="potInputL3" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL3">37</td>
+              <td id="finalStatL3"></td>
               <td><input type="number" id="statBoostL1" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Defense</td>
               <td><input id="def1" value="110" onchange="updateSet(1)"></td>
               <td><input id="potInputL4" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL4">32</td>
+              <td id="finalStatL4"></td>
               <td><input type="number" id="statBoostL2" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Atk.</td>
               <td><input id="spAtk1" value="100" onchange="updateSet(1)"></td>
               <td><input id="potInputL5" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL5">30</td>
+              <td id="finalStatL5"></td>
               <td><input type="number" id="statBoostL3" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Def.</td>
               <td><input id="spDef1" value="120" onchange="updateSet(1)"></td>
               <td><input id="potInputL6" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL6">35</td>
+              <td id="finalStatL6"></td>
               <td><input type="number" id="statBoostL4" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Speed</td>
               <td><input id="spe1" value="90" onchange="updateSet(1)"></td>
               <td><input id="potInputL7" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL7">28</td>
+              <td id="finalStatL7"></td>
               <td><input type="number" id="statBoostL5" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
           </table>
@@ -178,7 +178,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <button>Crit</button>
+            <input type="checkbox" id="critL1" onchange="updateSet(1)"></input>
+            <label for="critL1" id="critLabelL1" class="critLabel">Crit</label>
           </div>
           <div class="skills">
             <select id="skillInputL2" onchange="updateSet(1)">
@@ -205,7 +206,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <button>Crit</button>
+            <input type="checkbox" id="critL2" onchange="updateSet(1)"></input>
+            <label for="critL2" id="critLabelL2" class="critLabel">Crit</label>
           </div>
           <div class="skills">
             <select id="skillInputL3" onchange="updateSet(1)">
@@ -232,7 +234,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <button>Crit</button>
+            <input type="checkbox" id="critL3" onchange="updateSet(1)"></input>
+            <label for="critL3" id="critLabelL3" class="critLabel">Crit</label>
           </div>
           <div class="skills">
             <select id="skillInputL4" onchange="updateSet(1)">
@@ -259,7 +262,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <button>Crit</button>
+            <input type="checkbox" id="critL4" onchange="updateSet(1)"></input>
+            <label for="critL4" id="critLabelL4" class="critLabel">Crit</label>
           </div>
       </fieldset>
       <fieldset>
@@ -291,49 +295,49 @@
               <td>HP</td>
               <td><input id="hp2" value="90" onchange="updateSet(2)"></td>
               <td><input id="potInputR1" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR1">52</td>
+              <td id="finalStatR1"></td>
               <td></td>
             </tr>
             <tr>
               <td>SP</td>
               <td><input id="sp2" value="34" onchange="updateSet(2)"></td>
               <td><input id="potInputR2" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR2">28</td>
+              <td id="finalStatR2"></td>
               <td></td>
             </tr>
             <tr>
               <td>Attack</td>
               <td><input id="atk2" value="130" onchange="updateSet(2)"></td>
               <td><input id="potInputR3" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR3">37</td>
+              <td id="finalStatR3"></td>
               <td><input type="number" id="statBoostR1" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Defense</td>
               <td><input id="def2" value="110" onchange="updateSet(2)"></td>
               <td><input id="potInputR4" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR4">32</td>
+              <td id="finalStatR4"></td>
               <td><input type="number" id="statBoostR2" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Atk.</td>
               <td><input id="spAtk2" value="100" onchange="updateSet(2)"></td>
               <td><input id="potInputR5" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR5">30</td>
+              <td id="finalStatR5"></td>
               <td><input type="number" id="statBoostR3" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Def.</td>
               <td><input id="spDef2" value="120" onchange="updateSet(2)"></td>
               <td><input id="potInputR6" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR6">35</td>
+              <td id="finalStatR6"></td>
               <td><input type="number" id="statBoostR4" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Speed</td>
               <td><input id="spe2" value="90" onchange="updateSet(2)"></td>
               <td><input id="potInputR7" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR7">28</td>
+              <td id="finalStatR7"></td>
               <td><input type="number" id="statBoostR5" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
           </table>
@@ -372,7 +376,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <button>Crit</button>
+            <input type="checkbox" id="critR1" onchange="updateSet(2)"></input>
+            <label for="critR1" id="critLabelR1" class="critLabel">Crit</label>
           </div>
           <div class="skills">
             <select id="skillInputR2" onchange="updateSet(2)">
@@ -399,7 +404,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <button>Crit</button>
+            <input type="checkbox" id="critR2" onchange="updateSet(2)"></input>
+            <label for="critR2" id="critLabelR2" class="critLabel">Crit</label>
           </div>
           <div class="skills">
             <select id="skillInputR3" onchange="updateSet(2)">
@@ -426,7 +432,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <button>Crit</button>
+            <input type="checkbox" id="critR3" onchange="updateSet(2)"></input>
+            <label for="critR3" id="critLabelR3" class="critLabel">Crit</label>
           </div>
           <div class="skills">
             <select id="skillInputR4" onchange="updateSet(2)">
@@ -453,8 +460,8 @@
               <option>Special</option>
               <option>Status</option>
             </select>
-            <input type="checkbox" id="critR4" class="checkbox"></input>
-            <label for="critR4">Crit</label>
+            <input type="checkbox" id="critR4" onchange="updateSet(2)"></input>
+            <label for="critR4" id="critLabelR4" class="critLabel">Crit</label>
           </div>
       </fieldset>
     </div>

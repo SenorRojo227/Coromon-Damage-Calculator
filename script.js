@@ -4,7 +4,8 @@ let traits = getTraits();
 let items = getItems();
 
 let chosenMons = [coromon[0], coromon[0]];
-let chosenSkills = [skills[0], skills[0], skills[0], skills[0]];
+let chosenSkills = [[skills[0].crit = false, skills[0].crit = false, skills[0].crit = false, skills[0].crit = false],
+                    [skills[0].crit = false, skills[0].crit = false, skills[0].crit = false, skills[0].crit = false]];
 
 window.onload = function() {
     initCoromon();
@@ -14,7 +15,6 @@ window.onload = function() {
 
     resetSet(1);
     resetSet(2);
-    calculate();
 }
 
 function initCoromon() {
@@ -74,32 +74,31 @@ function initItems() {
 
 function resetSet(id) {
 
+    //Reset Lists
+    coromon = getCoromon();
+    skills = getSkills();
+
     //Coromon Search
     let selectedCoromon = document.querySelector("#name" + id + " option:checked").parentElement.label;
     let crmIndex = findCoromon(selectedCoromon);
     chosenMons[id - 1] = coromon[crmIndex];
 
-    //Add Blank Set (Delete if-statement for V1.0.0)
-    if (chosenMons[id - 1].sets.length == 0) {
-        chosenMons[id - 1].sets.push(
-            {
-                setTitle: "Blank Set",
-                level: 25,
-                potential: [0, 0, 0, 0, 0, 0, 0],
-                trait: "(none)",
-                item: "(none)",
-                skills: ["(No Skill)", "(No Skill)", "(No Skill)", "(No Skill)"]
-            }
-        );
-    }
+    chosenMons[id - 1].sets.push(
+        {
+            setTitle: "Blank Set",
+            level: 25,
+            potential: [0, 0, 0, 0, 0, 0, 0],
+            trait: "(none)",
+            item: "(none)",
+            skills: ["(No Skill)", "(No Skill)", "(No Skill)", "(No Skill)"]
+        }
+    );
 
     //Skill Search
-    let selectedSkills = [];
     let skillIndex = [];
     for (let i = 0; i < 4; i++) {
-        selectedSkills[i] = chosenMons[id - 1].sets[0].skills[i];
-        skillIndex[i] = findSkill(selectedSkills[i]);
-        chosenSkills[i] = skills[skillIndex[i]];
+        skillIndex[i] = findSkill(chosenMons[id - 1].sets[0].skills[i]);
+        chosenSkills[id - 1][i] = skills[skillIndex[i]];
     }
 
     //Reset Name
@@ -152,11 +151,16 @@ function resetSet(id) {
 
     //Reset Skill Info
     for (let i = 1; i <= 4; i++) {
-        document.getElementById("skillLabel" + side + i).innerHTML = chosenSkills[i - 1].name;
-        document.getElementById("skillInput" + side + i).value = chosenSkills[i - 1].name;
-        document.getElementById("skillDmg" + side + i).value = chosenSkills[i - 1].power;
-        document.getElementById("skillType" + side + i).value = chosenSkills[i - 1].type;
-        document.getElementById("skillDmgType" + side + i).value = chosenSkills[i - 1].atkType;
+        document.getElementById("skillLabel" + side + i).innerHTML = chosenSkills[id - 1][i - 1].name;
+        document.getElementById("skillInput" + side + i).value = chosenSkills[id - 1][i - 1].name;
+        document.getElementById("skillDmg" + side + i).value = chosenSkills[id - 1][i - 1].power;
+        document.getElementById("skillType" + side + i).value = chosenSkills[id - 1][i - 1].type;
+        document.getElementById("skillDmgType" + side + i).value = chosenSkills[id - 1][i - 1].atkType;
+    }
+
+    //Reset Crit
+    for (let i = 1; i <= 4; i++) {
+        document.getElementById("crit" + side + i).checked = false;
     }
 
     updateSet(id);
@@ -173,7 +177,7 @@ function updateSet(id) {
     }
 
     //Update Type
-    chosenMons[id - 1].sets[0].type = document.getElementById("type" + id).value;
+    chosenMons[id - 1].type = document.getElementById("type" + id).value;
 
     //Update Level
     chosenMons[id - 1].sets[0].level = document.getElementById("lvl" + id).value;
@@ -208,10 +212,10 @@ function updateSet(id) {
     for (let i = 1; i <= 4; i++) {
         chosenMons[id - 1].sets[0].skills[i - 1] = document.getElementById("skillInput" + side + i).value;
         document.getElementById("skillLabel" + side + i).innerHTML = chosenMons[id - 1].sets[0].skills[i - 1];
-        chosenSkills[i - 1] = skills[findSkill(chosenMons[id - 1].sets[0].skills[i - 1])];
-        document.getElementById("skillDmg" + side + i).innerHTML = chosenSkills[i - 1].power;
-        document.getElementById("skillType" + side + i).innerHTML = chosenSkills[i - 1].type;
-        document.getElementById("skillDmgType" + side + i).innerHTML = chosenSkills[i - 1].atkType;
+        chosenSkills[id - 1][i - 1] = skills[findSkill(chosenMons[id - 1].sets[0].skills[i - 1])];
+        chosenSkills[id - 1][i - 1].power = document.getElementById("skillDmg" + side + i).value;
+        chosenSkills[id - 1][i - 1].type = document.getElementById("skillType" + side + i).value;
+        chosenSkills[id - 1][i - 1].atkType = document.getElementById("skillDmgType" + side + i).value;
     }
 
     //Update Trait
@@ -220,19 +224,29 @@ function updateSet(id) {
     //Update Item
     chosenMons[id - 1].sets[0].item = document.getElementById("item" + id).value;
 
+    //Update Crit
+    for (let i = 1; i <= 4; i++) {
+        if (document.getElementById("crit" + side + i).checked) {
+            chosenSkills[id - 1][i - 1].crit = true;
+            document.getElementById("critLabel" + side + i).classList.add("checked");
+        } else {
+            chosenSkills[id - 1][i - 1].crit = false;
+            document.getElementById("critLabel" + side + i).classList.remove("checked");
+        }
+    }
+
     calculate();
 }
 
 function calculate() {
     let side = "L";     //Left vs Right Side
     for (let i = 1; i <= 4; i++) {
-        let crmIndex = findSkill(document.getElementById("skillLabel" + side + i).innerHTML);
         let damage;
 
         if (side == "L") {
-            damage = getDamage(chosenMons[0], chosenMons[1], skills[crmIndex]);
+            damage = getDamage(chosenMons[0], chosenMons[1], chosenSkills[0][i - 1]);
         } else {
-            damage = getDamage(chosenMons[1], chosenMons[0], skills[crmIndex]);
+            damage = getDamage(chosenMons[1], chosenMons[0], chosenSkills[1][i - 1]);
         }
 
         document.getElementById("resultDamage" + side + i).innerHTML = damage[2] + "% - " + damage[3] + "%";
@@ -240,9 +254,9 @@ function calculate() {
         
         if (document.getElementById("skillRadio" + side + i).checked) {
             if (side == "L") {
-                document.getElementById("mainResult").innerHTML = getStatement(chosenMons[0], chosenMons[1], skills[crmIndex]);
+                document.getElementById("mainResult").innerHTML = getStatement(chosenMons[0], chosenMons[1], chosenSkills[0][i - 1]);
             } else {
-                document.getElementById("mainResult").innerHTML = getStatement(chosenMons[1], chosenMons[0], skills[crmIndex]);
+                document.getElementById("mainResult").innerHTML = getStatement(chosenMons[1], chosenMons[0], chosenSkills[1][i - 1]);
             }
         }
 
