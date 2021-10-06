@@ -7,57 +7,59 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="src/coromon.js" defer></script>
     <script src="src/skills.js" defer></script>
+    <script src="src/other.js" defer></script>
     <script src="src/calc.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Coromon Damage Calculator</h1>
+      <p><a href="https://trello.com/b/0jCzFCWd/damage-calculator">Open Beta</a></p>
     </header>
     <div id="wrap">
       <div class="results">
-        <span id="resultHeaderL">Cubzero's skills (Select one for more info)</span>
+        <span id="resultHeader1">Cubzero's skills (Select one for more info)</span>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL1" checked="checked" onchange="calculate()">
-          <label id="skillLabelL1" class="skillLabel" for="skillRadioL1">Glacier</label>
+          <label id="skillLabelL1" class="skillLabel" for="skillRadioL1">(No Skill)</label>
           <span id="resultDamageL1">0% - 0%</span>
         </div>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL2" onchange="calculate()">
-          <label id="skillLabelL2" class="skillLabel" for="skillRadioL2">Splash</label>
+          <label id="skillLabelL2" class="skillLabel" for="skillRadioL2">(No Skill)</label>
           <span id="resultDamageL2">0% - 0%</span>
         </div>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL3" onchange="calculate()">
-          <label id="skillLabelL3" class="skillLabel" for="skillRadioL3">Beat Up</label>
+          <label id="skillLabelL3" class="skillLabel" for="skillRadioL3">(No Skill)</label>
           <span id="resultDamageL3">0% - 0%</span>
         </div>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL4" onchange="calculate()">
-          <label id="skillLabelL4" class="skillLabel" for="skillRadioL4">Scratch</label>
+          <label id="skillLabelL4" class="skillLabel" for="skillRadioL4">(No Skill)</label>
           <span id="resultDamageL4">0% - 0%</span>
         </div>
       </div>
       <div class="results">
-        <span id="resultHeaderR">Cubzero's skills (Select one for more info)</span>
+        <span id="resultHeader2">Cubzero's skills (Select one for more info)</span>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR1" onchange="calculate()">
-          <label id="skillLabelR1" class="skillLabel" for="skillRadioR1">Glacier</label>
+          <label id="skillLabelR1" class="skillLabel" for="skillRadioR1">(No Skill)</label>
           <span id="resultDamageR1">0% - 0%</span>
         </div>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR2" onchange="calculate()">
-          <label id="skillLabelR2" class="skillLabel" for="skillRadioR2">Splash</label>
+          <label id="skillLabelR2" class="skillLabel" for="skillRadioR2">(No Skill)</label>
           <span id="resultDamageR2">0% - 0%</span>
         </div>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR3" onchange="calculate()">
-          <label id="skillLabelR3" class="skillLabel" for="skillRadioR3">Beat Up</label>
+          <label id="skillLabelR3" class="skillLabel" for="skillRadioR3">(No Skill)</label>
           <span id="resultDamageR3">0% - 0%</span>
         </div>
         <div>
           <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioR4" onchange="calculate()">
-          <label id="skillLabelR4" class="skillLabel" for="skillRadioR4">Scratch</label>
+          <label id="skillLabelR4" class="skillLabel" for="skillRadioR4">(No Skill)</label>
           <span id="resultDamageR4">0% - 0%</span>
         </div>
       </div>
@@ -68,13 +70,20 @@
     <div id="boxes">
       <fieldset>
         <legend>Coromon 1</legend>
-          <select name="dropdown" id="name1" class="crmSelector" onchange="resetSet(1)"></select>
+          <select id="name1" class="crmSelector" onchange="resetSet(1)">
+          </select>
           <label>Type:</label>
-          <input value="Ice" id="type1">
-          <label>Potential:</label>
-          <input value="21" id="pot1">
+          <select value="Ice" id="type1" onchange="updateSet(1)">
+            <option>Normal</option>
+            <option>Ice</option>
+            <option>Water</option>
+            <option>Fire</option>
+            <option>Electric</option>
+            <option>Sand</option>
+            <option>Ghost</option>
+          </select>
           <label>Level:</label>
-          <input value="25" id="lvl1">
+          <input value="25" id="lvl1" onchange="updateSet(1)">
 
           <table>
             <tr>
@@ -86,118 +95,189 @@
             </tr>
             <tr>
               <td>HP</td>
-              <td><input id="hp1" value="120"></td>
-              <td><input id="potInputL1" value="60" onchange="updateSet(1)"></td>
-              <td id="finalStatL1">65</td>
+              <td><input id="hp1" value="90" onchange="updateSet(1)"></td>
+              <td><input id="potInputL1" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL1">52</td>
               <td></td>
             </tr>
             <tr>
               <td>SP</td>
-              <td><input id="sp1" value="34"></td>
+              <td><input id="sp1" value="34" onchange="updateSet(1)"></td>
               <td><input id="potInputL2" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL2">28</td>
               <td></td>
             </tr>
             <tr>
               <td>Attack</td>
-              <td><input id="atk1" value="170"></td>
+              <td><input id="atk1" value="130" onchange="updateSet(1)"></td>
               <td><input id="potInputL3" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL3">47</td>
-              <td><input value="0"></td>
+              <td id="finalStatL3">37</td>
+              <td><input type="number" id="statBoostL1" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Defense</td>
-              <td><input id="def1" value="140"></td>
+              <td><input id="def1" value="110" onchange="updateSet(1)"></td>
               <td><input id="potInputL4" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL4">40</td>
-              <td><input value="0"></td>
+              <td id="finalStatL4">32</td>
+              <td><input type="number" id="statBoostL2" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Atk.</td>
-              <td><input id="spAtk1" value="130"></td>
-              <td><input id="potInputL5" value="60" onchange="updateSet(1)"></td>
-              <td id="finalStatL5">97</td>
-              <td><input value="0"></td>
+              <td><input id="spAtk1" value="100" onchange="updateSet(1)"></td>
+              <td><input id="potInputL5" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL5">30</td>
+              <td><input type="number" id="statBoostL3" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Def.</td>
-              <td><input id="spDef1" value="150"></td>
+              <td><input id="spDef1" value="120" onchange="updateSet(1)"></td>
               <td><input id="potInputL6" value="0" onchange="updateSet(1)"></td>
-              <td id="finalStatL6">42</td>
-              <td><input value="0"></td>
+              <td id="finalStatL6">35</td>
+              <td><input type="number" id="statBoostL4" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Speed</td>
-              <td><input id="spe1" value="120"></td>
-              <td><input id="potInputL7" value="60" onchange="updateSet(1)"></td>
-              <td id="finalStatL7">95</td>
-              <td><input value="0"></td>
+              <td><input id="spe1" value="90" onchange="updateSet(1)"></td>
+              <td><input id="potInputL7" value="0" onchange="updateSet(1)"></td>
+              <td id="finalStatL7">28</td>
+              <td><input type="number" id="statBoostL5" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
           </table>
           
           <label>Trait:</label>
-          <select name="dropdown" class="traitSelector">
-            <option>Clumsy Power</option>
+          <select class="traitSelector" id="trait1" onchange="updateSet(1)">
+            <option>(none)</option>
           </select>
           <label>Item:</label>
-          <select name="dropdown" class="itemSelector">
-            <option>Canul Fruit</option>
+          <select class="itemSelector" id="item1" onchange="updateSet(1)">
+            <option>(none)</option>
           </select>
 
-          <span class="health">
-            <label>Current HP</label>
-            <input value = "50">
-            <label>/50   (</label>
-            <input value = "50">
-            <label>%)</label>
-          </span>
-
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputL1" onchange="updateSet(1)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
+            <input value="0" id = "skillDmgL1" onchange="updateSet(1)">
+            <select value="Normal" id = "skillTypeL1" onchange="updateSet(1)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeL1" onchange="updateSet(1)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
             <button>Crit</button>
           </div>
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputL2" onchange="updateSet(1)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
+            <input value="0" id = "skillDmgL2" onchange="updateSet(1)">
+            <select value="Normal" id = "skillTypeL2" onchange="updateSet(1)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeL2" onchange="updateSet(1)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
             <button>Crit</button>
           </div>
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputL3" onchange="updateSet(1)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
+            <input value="0" id = "skillDmgL3" onchange="updateSet(1)">
+            <select value="Normal" id = "skillTypeL3" onchange="updateSet(1)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeL3" onchange="updateSet(1)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
             <button>Crit</button>
           </div>
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputL4" onchange="updateSet(1)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
+            <input value="0" id = "skillDmgL4" onchange="updateSet(1)">
+            <select value="Normal" id = "skillTypeL4" onchange="updateSet(1)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeL4" onchange="updateSet(1)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
             <button>Crit</button>
           </div>
       </fieldset>
       <fieldset>
         <legend>Coromon 2</legend>
-          <select name="dropdown" id="name2" class="crmSelector" onchange="resetSet(2)"></select>
+          <select id="name2" class="crmSelector" onchange="resetSet(2)">
+          </select>
           <label>Type:</label>
-          <input value="Ice" id="type2">
-          <label>Potential:</label>
-          <input value="21" id="pot2">
+          <select value="Ice" id="type2" onchange="updateSet(2)">
+            <option>Normal</option>
+            <option>Ice</option>
+            <option>Water</option>
+            <option>Fire</option>
+            <option>Electric</option>
+            <option>Sand</option>
+            <option>Ghost</option>
+          </select>
           <label>Level:</label>
-          <input value="25" id="lvl2">
+          <input value="25" id="lvl2" onchange="updateSet(2)">
 
           <table>
             <tr>
@@ -209,107 +289,172 @@
             </tr>
             <tr>
               <td>HP</td>
-              <td><input id="hp2" value="120"></td>
-              <td><input id="potInputR1" value="6" onchange="updateSet(2)"></td>
-              <td id="finalStatR1">65</td>
+              <td><input id="hp2" value="90" onchange="updateSet(2)"></td>
+              <td><input id="potInputR1" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR1">52</td>
               <td></td>
             </tr>
             <tr>
               <td>SP</td>
-              <td><input id="sp2" value="34"></td>
+              <td><input id="sp2" value="34" onchange="updateSet(2)"></td>
               <td><input id="potInputR2" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR2">28</td>
               <td></td>
             </tr>
             <tr>
               <td>Attack</td>
-              <td><input id="atk2" value="170"></td>
+              <td><input id="atk2" value="130" onchange="updateSet(2)"></td>
               <td><input id="potInputR3" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR3">47</td>
-              <td><input value="0"></td>
+              <td id="finalStatR3">37</td>
+              <td><input type="number" id="statBoostR1" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Defense</td>
-              <td><input id="def2" value="140"></td>
+              <td><input id="def2" value="110" onchange="updateSet(2)"></td>
               <td><input id="potInputR4" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR4">40</td>
-              <td><input value="0"></td>
+              <td id="finalStatR4">32</td>
+              <td><input type="number" id="statBoostR2" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Atk.</td>
-              <td><input id="spAtk2" value="130"></td>
-              <td><input id="potInputR5" value="60" onchange="updateSet(2)"></td>
-              <td id="finalStatR5">97</td>
-              <td><input value="0"></td>
+              <td><input id="spAtk2" value="100" onchange="updateSet(2)"></td>
+              <td><input id="potInputR5" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR5">30</td>
+              <td><input type="number" id="statBoostR3" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Def.</td>
-              <td><input id="spDef2" value="150"></td>
+              <td><input id="spDef2" value="120" onchange="updateSet(2)"></td>
               <td><input id="potInputR6" value="0" onchange="updateSet(2)"></td>
-              <td id="finalStatR6">42</td>
-              <td><input value="0"></td>
+              <td id="finalStatR6">35</td>
+              <td><input type="number" id="statBoostR4" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Speed</td>
-              <td><input id="spe2" value="120"></td>
-              <td><input id="potInputR7" value="60" onchange="updateSet(2)"></td>
-              <td id="finalStatR7">95</td>
-              <td><input value="0"></td>
+              <td><input id="spe2" value="90" onchange="updateSet(2)"></td>
+              <td><input id="potInputR7" value="0" onchange="updateSet(2)"></td>
+              <td id="finalStatR7">28</td>
+              <td><input type="number" id="statBoostR5" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
           </table>
           
           <label>Trait:</label>
-          <select name="dropdown" class="traitSelector">
-            <option>Clumsy Power</option>
+          <select class="traitSelector" id="trait2" onchange="updateSet(2)">
+            <option>(none)</option>
           </select>
           <label>Item:</label>
-          <select name="dropdown" class="itemSelector">
-            <option>Canul Fruit</option>
+          <select class="itemSelector" id="item2" onchange="updateSet(2)">
+            <option>(none)</option>
           </select>
 
-          <span class="health">
-            <label>Current HP</label>
-            <input value = "50">
-            <label>/50   (</label>
-            <input value = "50">
-            <label>%)</label>
-          </span>
-
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputR1" onchange="updateSet(2)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
+            <input value="0" id = "skillDmgR1" onchange="updateSet(2)">
+            <select value="Normal" id = "skillTypeR1" onchange="updateSet(2)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeR1" onchange="updateSet(2)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
             <button>Crit</button>
           </div>
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputR2" onchange="updateSet(2)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
+            <input value="0" id = "skillDmgR2" onchange="updateSet(2)">
+            <select value="Normal" id = "skillTypeR2" onchange="updateSet(2)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeR2" onchange="updateSet(2)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
             <button>Crit</button>
           </div>
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputR3" onchange="updateSet(2)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
+            <input value="0" id = "skillDmgR3" onchange="updateSet(2)">
+            <select value="Normal" id = "skillTypeR3" onchange="updateSet(2)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeR3" onchange="updateSet(2)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
             <button>Crit</button>
           </div>
           <div class="skills">
-            <select name="dropdown">
-              <option>Glacier</option>
+            <select id="skillInputR4" onchange="updateSet(2)">
+              <option>(No Skill)</option>
             </select>
-            <input value="80">
-            <input value="Ice">
-            <input value="Special">
-            <button>Crit</button>
+            <input value="0" id = "skillDmgR4" onchange="updateSet(2)">
+            <select value="Normal" id = "skillTypeR4" onchange="updateSet(2)">
+              <option>Normal</option>
+              <option>Ice</option>
+              <option>Water</option>
+              <option>Fire</option>
+              <option>Electric</option>
+              <option>Sand</option>
+              <option>Ghost</option>
+              <option>Cut</option>
+              <option>Foul</option>
+              <option>Heavy</option>
+              <option>Poison</option>
+              <option>Air</option>
+              <option>Magic</option>
+            </select>
+            <select value="Physical" id = "skillDmgTypeR4" onchange="updateSet(2)">
+              <option>Physical</option>
+              <option>Special</option>
+              <option>Status</option>
+            </select>
+            <input type="checkbox" id="critR4" class="checkbox"></input>
+            <label for="critR4">Crit</label>
           </div>
       </fieldset>
     </div>

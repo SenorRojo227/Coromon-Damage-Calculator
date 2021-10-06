@@ -28,17 +28,17 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     }
 
     if (selectedSkill.atkType == "Physical") {
-        A = Math.round((atkMon.stats[2] / 100) * (atkMon.sets[0].level - 1) + 6) + atkMon.sets[0].potential[2];
-        D = Math.round((defMon.stats[3] / 100) * (defMon.sets[0].level - 1) + 6) + defMon.sets[0].potential[3];
+        A = Math.floor(atkMon.stats[2] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[2];
+        D = Math.floor(defMon.stats[3] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[3];
     } else if (selectedSkill.atkType == "Special") {
-        A = Math.round((atkMon.stats[4] / 100) * (atkMon.sets[0].level - 1) + 6) + atkMon.sets[0].potential[4];
-        D = Math.round((defMon.stats[5] / 100) * (defMon.sets[0].level - 1) + 6) + defMon.sets[0].potential[5];
+        A = Math.floor(atkMon.stats[4] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[4];
+        D = Math.floor(defMon.stats[5] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[5];
     } else {
         return [0, 0, 0, 0]
     }
 
-    defHP = Math.round((1 + atkMon.stats[2] / 100) * (atkMon.sets[0].level - 1) + 6) + atkMon.sets[0].potential[2];
-    
+    defHP = Math.floor(defMon.stats[0] * defMon.sets[0].level / 99) + 10 + parseInt(defMon.sets[0].level) + parseInt(defMon.sets[0].potential[0]);
+
     if (atkMon.type == selectedSkill.type) {
       stab = 1.25;
     } else {
@@ -47,12 +47,16 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     
     effectiveness = getEffectiveness(selectedSkill.type, defMon.type);
     
-    if (atkMon.sets[0].ability == "Clumsy Power") {
+    if (atkMon.sets[0].trait == "Clumsy Power") {
       trait1 = 1.25;
-    } else if (atkMon.sets[0].ability == "Amplified" && effectiveness == 2) {
+    } else if (atkMon.sets[0].trait == "Amplified" && effectiveness == 2) {
       trait1 = 1.25;
     } else {
       trait1 = 1;
+    }
+
+    if (defMon.sets[0].trait == "Fully Rested") {
+      trait2 = 0.6;
     }
 
     if (-1 > 0) {                   //Fix

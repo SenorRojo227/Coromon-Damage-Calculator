@@ -2,14 +2,22 @@ header {
   text-align: center;
 }
 
+header h1 {
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 0;
+}
+
 .results:first-child {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .results:nth-child(2) {
-    float: right;
-    width: 50%;
+  float: right;
+  width: 50%;
 }
 
 .hiddenRadio {
@@ -17,7 +25,7 @@ header {
 }
 
 .results div {
-  margin: 0 20px;
+  margin: 0 40px;
 
 }
 
@@ -52,18 +60,25 @@ header {
 
 strong {
   font-size: larger;
-  padding-left: 20px;
+  padding-left: 60px;
+}
+
+#boxes {
+  text-align: center;
 }
 
 fieldset {
   display: inline-block;
-  margin-top: 10px;
+  text-align: left;
+  margin: 10px auto;
+  width: 45%;
 }
 
 .crmSelector {
   display: block;
+  width: 95%;
+  margin: 5px auto 10px;
   padding: 3px 10px;
-  margin: 5px 5px 10px 5px;
 }
 
 input {

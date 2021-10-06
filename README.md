@@ -3,7 +3,7 @@ A Full Stack project designed to calculate damage dealt for a game known as Coro
 
 ## Goal
 The goal of this project is to:
-+ Create an website suitable for a professional portfolio
++ Create a website suitable for a professional portfolio
 + Provide an easy and effective calculator for players to use
 + Practice my Full Stack Engineering skills
 

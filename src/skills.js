@@ -1,6 +1,12 @@
 function getSkills() {
     return [
         {
+            name: "(No Skill)",
+            type: "Normal",
+            power: 0,
+            atkType: "N/A",
+        },
+        {
             name: "Agility Training",
             type: "Normal",
             power: 0,
@@ -431,6 +437,6 @@ function getSkills() {
             type: "Air",
             power: 85,
             atkType: "Special",
-        },
+        }
     ];
 }
