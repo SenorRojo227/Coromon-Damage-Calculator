@@ -3,7 +3,7 @@ let skills = getSkills();
 let traits = getTraits();
 let items = getItems();
 
-let chosenMons = [coromon[0], coromon[0]];
+let chosenMons = [coromon[0].statBoost = [0, 0, 0, 0, 0], coromon[0].statBoost = [0, 0, 0, 0, 0]];
 let chosenSkills = [[skills[0].crit = false, skills[0].crit = false, skills[0].crit = false, skills[0].crit = false],
                     [skills[0].crit = false, skills[0].crit = false, skills[0].crit = false, skills[0].crit = false]];
 
@@ -82,6 +82,7 @@ function resetSet(id) {
     let selectedCoromon = document.querySelector("#name" + id + " option:checked").parentElement.label;
     let crmIndex = findCoromon(selectedCoromon);
     chosenMons[id - 1] = coromon[crmIndex];
+    chosenMons[id - 1].statBoost = [0, 0, 0, 0, 0];
 
     chosenMons[id - 1].sets.push(
         {
@@ -149,6 +150,11 @@ function resetSet(id) {
         document.getElementById("potInput" + side + i).value = chosenMons[id - 1].sets[0].potential[i - 1];
     }
 
+    //Reset Stat boost
+    for (let i = 1; i <= 5; i++) {
+        document.getElementById("statBoost" + side + i).value = chosenMons[id - 1].statBoost[i - 1];
+    }
+
     //Reset Skill Info
     for (let i = 1; i <= 4; i++) {
         document.getElementById("skillLabel" + side + i).innerHTML = chosenSkills[id - 1][i - 1].name;
@@ -190,12 +196,44 @@ function updateSet(id) {
     chosenMons[id - 1].stats[4] = document.getElementById("spAtk" + id).value;
     chosenMons[id - 1].stats[5] = document.getElementById("spDef" + id).value;
     chosenMons[id - 1].stats[6] = document.getElementById("spe" + id).value;
+    for (let i = 1; i <= 5; i++) {
+        chosenMons[id - 1].statBoost[i - 1] = parseInt(document.getElementById("statBoost" + side + i).value);
+    }
 
     for (let i = 1; i <= 7; i++) {
         chosenMons[id - 1].sets[0].potential[i - 1] = parseInt(document.getElementById("potInput" + side + i).value);
         baseStat = chosenMons[id - 1].stats[i - 1];
         level = chosenMons[id - 1].sets[0].level;
         potential = chosenMons[id - 1].sets[0].potential[i - 1];
+        if (i >= 3) {
+            boost = chosenMons[id - 1].statBoost[i - 3];
+            if (boost > 0) {
+                boost = 1 + boost * 0.5;
+            } else if (boost < 0) {
+                switch(boost) {
+                case -1:
+                    boost = 0.66;
+                    break;
+                case -2:
+                    boost = 0.5;
+                    break;
+                case -3:
+                    boost = 0.4;
+                    break;
+                case -4:
+                    boost = 0.33;
+                    break;
+                case -5:
+                    boost = 0.28;
+                    break;
+                case -6:
+                    boost = 0.25;
+                    break;
+                }
+            } else {
+                boost = 1;
+            }
+        }
 
         if (i == 1) {
             document.getElementById("finalStat" + side + i).innerHTML = Math.floor(baseStat * level / 99) + 10
@@ -203,8 +241,8 @@ function updateSet(id) {
         } else if (i == 2) {
             document.getElementById("finalStat" + side + i).innerHTML = Math.floor(0.3354 * level + 19.64);
         } else {
-            document.getElementById("finalStat" + side + i).innerHTML = Math.floor(baseStat * level / 99) + 5
-                + potential;
+            document.getElementById("finalStat" + side + i).innerHTML = Math.floor((Math.floor(baseStat * level / 99) + 5
+                + potential) * boost);
         }
     }
 

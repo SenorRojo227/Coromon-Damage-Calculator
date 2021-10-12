@@ -10,12 +10,12 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     let trait2 = 1;
     let crit = 1;
     let feelers = 1;
-    let boosts1 = 1;
-    let boosts2 = 1;
+    let boost1 = 0;
+    let boost2 = 0;
     let weatherBonus = 1;
 
     //Check Inputs
-    if (selectedSkill.crit) {        //Fix
+    if (selectedSkill.crit) {
       crit = 1.5;
     } else {
       crit = 1;
@@ -30,9 +30,13 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     if (selectedSkill.atkType == "Physical") {
         A = Math.floor(atkMon.stats[2] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[2];
         D = Math.floor(defMon.stats[3] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[3];
+        boost1 = atkMon.statBoost[0];
+        boost2 = defMon.statBoost[1];
     } else if (selectedSkill.atkType == "Special") {
         A = Math.floor(atkMon.stats[4] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[4];
         D = Math.floor(defMon.stats[5] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[5];
+        boost1 = atkMon.statBoost[2];
+        boost2 = defMon.statBoost[3];
     } else {
         return [0, 0, 0, 0]
     }
@@ -59,54 +63,58 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
       trait2 = 0.6;
     }
 
-    if (-1 > 0) {                   //Fix
-      boosts1 = 1 + boosts1 * 0.5;
-    } else if (1 < 0) {             //Fix
-      switch(boosts1) {
+    if (boost1 > 0) {
+      boost1 = 1 + boost1 * 0.5;
+    } else if (boost1 < 0) {
+      switch(boost1) {
         case -1:
-          boosts1 = 0.66;
+          boost1 = 0.66;
           break;
         case -2:
-          boosts1 = 0.5;
+          boost1 = 0.5;
           break;
         case -3:
-          boosts1 = 0.4;
+          boost1 = 0.4;
           break;
         case -4:
-          boosts1 = 0.33;
+          boost1 = 0.33;
           break;
         case -5:
-          boosts1 = 0.28;
+          boost1 = 0.28;
           break;
         case -6:
-          boosts1 = 0.25;
+          boost1 = 0.25;
           break;
       }
+    } else {
+      boost1 = 1;
     }
 
-    if (-1 > 0) {                   //Fix
-      boosts2 = 1 + boosts2 * 0.5;
-    } else if (1 < 0) {             //Fix
-      switch(boosts2) {
+    if (boost2 > 0) {
+      boost2 = 1 + boost2 * 0.5;
+    } else if (boost2 < 0) {
+      switch(boost2) {
         case -1:
-          boosts2 = 0.66;
+          boost2 = 0.66;
           break;
         case -2:
-          boosts2 = 0.5;
+          boost2 = 0.5;
           break;
         case -3:
-          boosts2 = 0.4;
+          boost2 = 0.4;
           break;
         case -4:
-          boosts2 = 0.33;
+          boost2 = 0.33;
           break;
         case -5:
-          boosts2 = 0.28;
+          boost2 = 0.28;
           break;
         case -6:
-          boosts2 = 0.25;
+          boost2 = 0.25;
           break;
       }
+    } else {
+      boost2 = 1;
     }
 
     //Check Weather
@@ -122,12 +130,11 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
 
     //Damage Calculation
     if (selectedSkill.name == "Splash") {
-        var multipliers = stab * effectiveness * weatherBonus;
-        var lowDamage = defMon.sets[0].level * multipliers;
+        var multipliers = stab * effectiveness * crit * weatherBonus;
+        var lowDamage = Math.floor(defMon.sets[0].level * multipliers);
         var highDamage = lowDamage;
-        var highPerc = lowPerc;
     } else {
-        var multipliers = stab * trait1 * trait2 * weatherBonus * crit * feelers * effectiveness * boosts1 / boosts2;
+        var multipliers = stab * trait1 * trait2 * weatherBonus * crit * feelers * effectiveness * boost1 / boost2;
         var lowDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.power * A / D) / 50) + 2) * multipliers * 0.85 );
         var highDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.power * A / D) / 50) + 2) * multipliers );
     }

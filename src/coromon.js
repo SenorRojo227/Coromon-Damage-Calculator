@@ -143,7 +143,7 @@ function getCoromon() {
                 {
                     setTitle: "Bulky Sweeper",
                     level: 25,
-                    potential: [60, 0, 0, 60, 0, 60, 0],
+                    potential: [60, 0, 0, 6, 0, 60, 0],
                     trait: "Molter",
                     item: "Canul Fruit",
                     skills: ["Poison Chomp", "Drain", "Epiphany", "Constrict"]
