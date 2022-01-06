@@ -144,7 +144,7 @@ function getCoromon() {
                     setTitle: "Bulky Sweeper",
                     level: 25,
                     potential: [60, 0, 0, 6, 0, 60, 0],
-                    trait: "Molter",
+                    trait: "(No Trait)",
                     item: "Canul Fruit",
                     skills: ["Poison Chomp", "Drain", "Epiphany", "Constrict"]
                 }
@@ -192,7 +192,7 @@ function getCoromon() {
                     setTitle: "Special Tank",
                     level: 25,
                     potential: [60, 0, 6, 0, 0, 60, 0],
-                    trait: "Vaccinated",
+                    trait: "(No Trait)",
                     item: "Canul Fruit",
                     skills: ["Double Slash", "Scratch", "Concentrate", "Toughen Up"]
                 }
@@ -249,9 +249,9 @@ function getCoromon() {
                     setTitle: "Wallbreaker",
                     level: 25,
                     potential: [6, 0, 60, 0, 0, 0, 60],
-                    trait: "Lucky",
+                    trait: "(No Trait)",
                     item: "Canul Fruit",
-                    skills: ["Boulder Blast", "Double Slash", "Tail Spin", "Constrict"]
+                    skills: ["Boulder Barrage", "Double Slash", "Tail Spin", "Constrict"]
                 }
             ]
         },

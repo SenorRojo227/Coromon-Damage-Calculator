@@ -14,7 +14,7 @@
   <body>
     <header>
       <h1>Coromon Damage Calculator</h1>
-      <p><a href="https://trello.com/b/0jCzFCWd/damage-calculator">Open Beta</a> by SrRojo</p>
+      <p><a href="https://trello.com/b/0jCzFCWd/damage-calculator">V0.9.0</a> by SrRojo</p>
     </header>
     <div id="wrap">
       <div class="results">
@@ -95,50 +95,50 @@
             </tr>
             <tr>
               <td>HP</td>
-              <td><input id="hp1" value="90" onchange="updateSet(1)"></td>
-              <td><input id="potInputL1" value="0" onchange="updateSet(1)"></td>
+              <td><input type="number" id="hp1" value="90" onchange="updateSet(1)"></td>
+              <td><input type="number" id="potInputL1" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL1"></td>
               <td></td>
             </tr>
             <tr>
               <td>SP</td>
-              <td><input id="sp1" value="34" onchange="updateSet(1)"></td>
-              <td><input id="potInputL2" value="0" onchange="updateSet(1)"></td>
+              <td><input type="number" id="sp1" value="34" onchange="updateSet(1)"></td>
+              <td><input type="number" id="potInputL2" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL2"></td>
               <td></td>
             </tr>
             <tr>
               <td>Attack</td>
-              <td><input id="atk1" value="130" onchange="updateSet(1)"></td>
-              <td><input id="potInputL3" value="0" onchange="updateSet(1)"></td>
+              <td><input type="number" id="atk1" value="130" onchange="updateSet(1)"></td>
+              <td><input type="number" id="potInputL3" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL3"></td>
               <td><input type="number" id="statBoostL1" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Defense</td>
-              <td><input id="def1" value="110" onchange="updateSet(1)"></td>
-              <td><input id="potInputL4" value="0" onchange="updateSet(1)"></td>
+              <td><input type="number" id="def1" value="110" onchange="updateSet(1)"></td>
+              <td><input type="number" id="potInputL4" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL4"></td>
               <td><input type="number" id="statBoostL2" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Atk.</td>
-              <td><input id="spAtk1" value="100" onchange="updateSet(1)"></td>
-              <td><input id="potInputL5" value="0" onchange="updateSet(1)"></td>
+              <td><input type="number" id="spAtk1" value="100" onchange="updateSet(1)"></td>
+              <td><input type="number" id="potInputL5" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL5"></td>
               <td><input type="number" id="statBoostL3" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Def.</td>
-              <td><input id="spDef1" value="120" onchange="updateSet(1)"></td>
-              <td><input id="potInputL6" value="0" onchange="updateSet(1)"></td>
+              <td><input type="number" id="spDef1" value="120" onchange="updateSet(1)"></td>
+              <td><input type="number" id="potInputL6" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL6"></td>
               <td><input type="number" id="statBoostL4" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Speed</td>
-              <td><input id="spe1" value="90" onchange="updateSet(1)"></td>
-              <td><input id="potInputL7" value="0" onchange="updateSet(1)"></td>
+              <td><input type="number" id="spe1" value="90" onchange="updateSet(1)"></td>
+              <td><input type="number" id="potInputL7" value="0" onchange="updateSet(1)"></td>
               <td id="finalStatL7"></td>
               <td><input type="number" id="statBoostL5" value="0" onchange="updateSet(1)" min="-6" max="6"></td>
             </tr>
@@ -157,7 +157,7 @@
             <select id="skillInputL1" onchange="updateSet(1)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgL1" onchange="updateSet(1)">
+            <input type="number" value="0" id = "skillDmgL1" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL1" onchange="updateSet(1)">
               <option>Normal</option>
               <option>Ice</option>
@@ -185,7 +185,7 @@
             <select id="skillInputL2" onchange="updateSet(1)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgL2" onchange="updateSet(1)">
+            <input type="number" value="0" id = "skillDmgL2" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL2" onchange="updateSet(1)">
               <option>Normal</option>
               <option>Ice</option>
@@ -213,7 +213,7 @@
             <select id="skillInputL3" onchange="updateSet(1)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgL3" onchange="updateSet(1)">
+            <input type="number" value="0" id = "skillDmgL3" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL3" onchange="updateSet(1)">
               <option>Normal</option>
               <option>Ice</option>
@@ -241,7 +241,7 @@
             <select id="skillInputL4" onchange="updateSet(1)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgL4" onchange="updateSet(1)">
+            <input type="number" value="0" id = "skillDmgL4" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL4" onchange="updateSet(1)">
               <option>Normal</option>
               <option>Ice</option>
@@ -293,50 +293,50 @@
             </tr>
             <tr>
               <td>HP</td>
-              <td><input id="hp2" value="90" onchange="updateSet(2)"></td>
-              <td><input id="potInputR1" value="0" onchange="updateSet(2)"></td>
+              <td><input type="number" id="hp2" value="90" onchange="updateSet(2)"></td>
+              <td><input type="number" id="potInputR1" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR1"></td>
               <td></td>
             </tr>
             <tr>
               <td>SP</td>
-              <td><input id="sp2" value="34" onchange="updateSet(2)"></td>
-              <td><input id="potInputR2" value="0" onchange="updateSet(2)"></td>
+              <td><input type="number" id="sp2" value="34" onchange="updateSet(2)"></td>
+              <td><input type="number" id="potInputR2" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR2"></td>
               <td></td>
             </tr>
             <tr>
               <td>Attack</td>
-              <td><input id="atk2" value="130" onchange="updateSet(2)"></td>
-              <td><input id="potInputR3" value="0" onchange="updateSet(2)"></td>
+              <td><input type="number" id="atk2" value="130" onchange="updateSet(2)"></td>
+              <td><input type="number" id="potInputR3" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR3"></td>
               <td><input type="number" id="statBoostR1" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Defense</td>
-              <td><input id="def2" value="110" onchange="updateSet(2)"></td>
-              <td><input id="potInputR4" value="0" onchange="updateSet(2)"></td>
+              <td><input type="number" id="def2" value="110" onchange="updateSet(2)"></td>
+              <td><input type="number" id="potInputR4" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR4"></td>
               <td><input type="number" id="statBoostR2" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Atk.</td>
-              <td><input id="spAtk2" value="100" onchange="updateSet(2)"></td>
-              <td><input id="potInputR5" value="0" onchange="updateSet(2)"></td>
+              <td><input type="number" id="spAtk2" value="100" onchange="updateSet(2)"></td>
+              <td><input type="number" id="potInputR5" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR5"></td>
               <td><input type="number" id="statBoostR3" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Sp. Def.</td>
-              <td><input id="spDef2" value="120" onchange="updateSet(2)"></td>
-              <td><input id="potInputR6" value="0" onchange="updateSet(2)"></td>
+              <td><input type="number" id="spDef2" value="120" onchange="updateSet(2)"></td>
+              <td><input type="number" id="potInputR6" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR6"></td>
               <td><input type="number" id="statBoostR4" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
             <tr>
               <td>Speed</td>
-              <td><input id="spe2" value="90" onchange="updateSet(2)"></td>
-              <td><input id="potInputR7" value="0" onchange="updateSet(2)"></td>
+              <td><input type="number" id="spe2" value="90" onchange="updateSet(2)"></td>
+              <td><input type="number" id="potInputR7" value="0" onchange="updateSet(2)"></td>
               <td id="finalStatR7"></td>
               <td><input type="number" id="statBoostR5" value="0" onchange="updateSet(2)" min="-6" max="6"></td>
             </tr>
@@ -355,7 +355,7 @@
             <select id="skillInputR1" onchange="updateSet(2)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgR1" onchange="updateSet(2)">
+            <input type="number" value="0" id = "skillDmgR1" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR1" onchange="updateSet(2)">
               <option>Normal</option>
               <option>Ice</option>
@@ -383,7 +383,7 @@
             <select id="skillInputR2" onchange="updateSet(2)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgR2" onchange="updateSet(2)">
+            <input type="number" value="0" id = "skillDmgR2" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR2" onchange="updateSet(2)">
               <option>Normal</option>
               <option>Ice</option>
@@ -411,7 +411,7 @@
             <select id="skillInputR3" onchange="updateSet(2)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgR3" onchange="updateSet(2)">
+            <input type="number" value="0" id = "skillDmgR3" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR3" onchange="updateSet(2)">
               <option>Normal</option>
               <option>Ice</option>
@@ -439,7 +439,7 @@
             <select id="skillInputR4" onchange="updateSet(2)">
               <option>(No Skill)</option>
             </select>
-            <input value="0" id = "skillDmgR4" onchange="updateSet(2)">
+            <input type="number" value="0" id = "skillDmgR4" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR4" onchange="updateSet(2)">
               <option>Normal</option>
               <option>Ice</option>
