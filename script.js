@@ -139,11 +139,11 @@ function resetSet(id) {
         side = "R";
     }
 
-    /* Blank Set Bug
-    let setIndex = Array.prototype.crmIndexOf.call(document.querySelector("#name" + id + " option:checked").parentElement,
-    document.querySelector("#name" + id + " option:checked"));
-    console.log(setIndex);
-    */
+    //Blank Set Bug
+    //let setIndex = Array.prototype.crmIndexOf.call(document.querySelector("#name" + id + " option:checked").parentElement,
+    //document.querySelector("#name" + id + " option:checked"));
+    //console.log(setIndex);
+    
    
     //Reset Potential
     for (let i = 1; i <= 7; i++) {
@@ -239,7 +239,8 @@ function updateSet(id) {
             document.getElementById("finalStat" + side + i).innerHTML = Math.floor(baseStat * level / 99) + 10
                 + parseInt(level) + parseInt(potential);
         } else if (i == 2) {
-            document.getElementById("finalStat" + side + i).innerHTML = Math.floor(0.3354 * level + 19.64);
+            document.getElementById("finalStat" + side + i).innerHTML = Math.floor(baseStat * level / 99) + 20
+                + potential;
         } else {
             document.getElementById("finalStat" + side + i).innerHTML = Math.floor((Math.floor(baseStat * level / 99) + 5
                 + potential) * boost);

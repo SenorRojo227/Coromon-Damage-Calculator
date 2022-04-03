@@ -1,0 +1,820 @@
+{
+    "Demo":
+    {
+
+    },
+
+    "S1":
+    {
+        "(No Skill)": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Acid Bite": {
+            "Type": "Poison",
+            "Category": "Physical",
+            "Power": 60,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": true,
+            "Description": "Bite with acid teeth, lowering the target's defense."
+        },
+        "Acid Rain": {
+            "Type": "Poison",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": "Acid rains from the sky lowering the opposing team's defense by 2 stages."
+        },
+        "Agility Training": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": "Focus the body to increase the user's speed."
+        },
+        "All In": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": "The user goes all in, raising its attack by 2 stages, and lowering its defense by 2 stages."
+        },
+        "Artificial Night": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": "Summon the twilight, increasing the effectiveness of ghost Coromon."
+        },
+        "Ball of Darkness": {
+            "Type": "Ghost",
+            "Category": "Special",
+            "Power": 85,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": "Launch a ball of pure shadow at the target. Has a 50% chance to increase the user's special attack by 1 stage."
+        },
+        "Ball of Light": {
+            "Type": "Ghost",
+            "Category": "Special",
+            "Power": 90,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": "Launch a ball of pure light at the target. Lowers the target's special defense."
+        },
+        "Beat Up": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 20,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": true,
+            "Description": "The user gets revenge for its squad, hitting once, plus one extra hit for each fainted squad member."
+        },
+        "Berserk": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 30,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": true,
+            "Description": "The user goes berserk for 4 rounds, increasing damage dealt after each successful attack. Damage returns to normal when the user calms down."
+        },
+        "Blaze Feathers": {
+            "Type": "Fire",
+            "Category": "Physical",
+            "Power": 100,
+            "Accuracy": 100,
+            "Cost": 7,
+            "Contact": true,
+            "Description": "Creates a ring of flaming feathers to spiral into the target, dealing damage and draining its [hp] for 25% of the damage done."
+        },
+        "Blazing Coals": {
+            "Type": "Fire",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": "The user lays a field of burning hot coals, creating a Fire entry hazard that inflicts burn on opposing Coromon being sent into battle."
+        },
+        "Toxic Skull": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 20,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": "The user throws a skull covered in toxic molds at the target, dealing some damage and causing poison."
+        },
+        "Blizzard": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 95,
+            "Accuracy": 90,
+            "Cost": 8,
+            "Contact": false,
+            "Description": "Summon a powerful blizzard which damages the opposing team. Has a 10% chance to freeze them."
+        },
+        "Body Blast": {
+            "Type": "Heavy",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Bolt Bomb": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Boulder Barrage": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Bubble Blower": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Bubble Burst": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Bubble Wrap": {
+            "Type": "Water",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Burrow": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Caltrops": {
+            "Type": "Cut",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Cat Scratch": {
+            "Type": "Cut",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Chomp": {
+            "Type": "Foul",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Cinder": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Claw": {
+            "Type": "Cut",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Clearing Wind": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Cloudburst": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Coin Snatch": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Concentrate": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Confusion": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Constrict": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Constricting Flames": {
+            "Type": "Fire",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Corrupt": {
+            "Type": "Dark Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Corrupted Storm": {
+            "Type": "Dark Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Crackle Horn": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Crunch": {
+            "Type": "Foul",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Crushing Waterfall": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Crystal Barrage": {
+            "Type": "Water",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Crystal Beam": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Crystal Shot": {
+            "Type": "Water",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Crystal Surprise": {
+            "Type": "Water",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Cute Pose": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Death Grip": {
+            "Type": "Foul",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Deep Cut": {
+            "Type": "Cut",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Desert Hurricane": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Desert Winds": {
+            "Type": "Sand",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Dirty Snow": {
+            "Type": "Ice",
+            "Category": "Physical",
+            "Power": 30,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Disable Heal": {
+            "Type": "Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Disable": {
+            "Type": "Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Disable Trait": {
+            "Type": "Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Disruption": {
+            "Type": "Dark Magic",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Distort": {
+            "Type": "Dark Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Distract": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Double Slash": {
+            "Type": "Cut",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Double Sting": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Drain": {
+            "Type": "Magic",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Dust Storm": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Electric Pound": {
+            "Type": "Electric",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "Electrify": {
+            "Type": "Electric",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "EMP": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Empathy": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Energy Drain": {
+            "Type": "Magic",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Enveloping Darkness": {
+            "Type": "Dark Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Epiphany": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Face Slap": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": true,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "": {
+            "Type": "",
+            "Category": "",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        }
+    }
+}

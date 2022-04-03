@@ -1,0 +1,21 @@
+{
+    "Cubzero": {},
+    "Aroara": {
+        "setTitle": "Demo Wallbreaker",
+        "level": 25,
+        "potential": [60, 0, 0, 0, 60, 0, 6],
+        "trait": "Clumsy Power",
+        "item": "Canul Fruit",
+        "skills": ["Glacier", "Splash", "Beat Up", "Scratch"]
+    },
+    "Bearealis": {
+
+    },
+    "Toruga": {},
+    "Embaval": {
+
+    },
+    "Volcadon": {
+
+    }
+}

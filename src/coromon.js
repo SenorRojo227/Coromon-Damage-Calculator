@@ -12,7 +12,7 @@ function getCoromon() {
             stats: [120, 34, 170, 140, 130, 150, 120],
             sets: [
                 {
-                    setTitle: "Wallbreaker",
+                    setTitle: "Demo Wallbreaker",
                     level: 25,
                     potential: [6, 0, 0, 0, 60, 0, 60],
                     trait: "Clumsy Power",

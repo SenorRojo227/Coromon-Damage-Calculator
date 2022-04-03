@@ -1,0 +1,3242 @@
+{
+    "Demo":
+    {
+        "Cubzero": {
+            "id": 1,
+            "Type": "Ice",
+            "BST": {
+                "HP": 90,
+                "Atk": 130,
+                "Def": 110,
+                "Sp.A": 100,
+                "Sp.D": 120,
+                "Spd": 90,
+                "SP": 34
+            },
+            "Traits": [
+                "Sharp Claws",
+                "Clumsy Power"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Frost Chomp",
+                "Static Fur",
+                "Beat Up",
+                "Slpash",
+                "Glacier"
+            ]
+        },
+        "Aroara": {
+            "id": 2,
+            "Type": "Ice",
+            "BST": {
+                "HP": 120,
+                "Atk": 170,
+                "Def": 140,
+                "Sp.A": 130,
+                "Sp.D": 150,
+                "Spd": 120,
+                "SP": 34
+            },
+            "Traits": [
+                "Sharp Claws",
+                "Clumsy Power"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Frost Chomp",
+                "Static Fur",
+                "Beat Up",
+                "Slpash",
+                "Glacier"
+            ]
+        },
+        "Toruga": {
+            "id": 4,
+            "Type": "Fire",
+            "BST": {
+                "HP": 80,
+                "Atk": 100,
+                "Def": 90,
+                "Sp.A": 120,
+                "Sp.D": 100,
+                "Spd": 130,
+                "SP": 34
+            },
+            "Traits": [
+                "Vegetarian",
+                "Thick Skin"
+            ],
+            "Skills": [
+                "Slam",
+                "Cute Pose",
+                "Cinder",
+                "Toughen Up",
+                "Boulder Barrage",
+                "Smokescreen"
+            ]
+        },
+        "Embaval": {
+            "id": 5,
+            "Type": "Fire",
+            "BST": {
+                "HP": 120,
+                "Atk": 120,
+                "Def": 120,
+                "Sp.A": 160,
+                "Sp.D": 130,
+                "Spd": 160,
+                "SP": 34
+            },
+            "Traits": [
+                "Vegetarian",
+                "Thick Skin"
+            ],
+            "Skills": [
+                "Slam",
+                "Cute Pose",
+                "Cinder",
+                "Toughen Up",
+                "Boulder Barrage",
+                "Smokescreen"
+            ]
+        },
+        "Nibblegar": {
+            "id": 7,
+            "Type": "Water",
+            "BST": {
+                "HP": 90,
+                "Atk": 90,
+                "Def": 130,
+                "Sp.A": 100,
+                "Sp.D": 130,
+                "Spd": 90,
+                "SP": 34
+            },
+            "Traits": [
+                "Supersensory",
+                "Fully Rested"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Bubble Burst",
+                "Streamline",
+                "Feint Spurts",
+                "Splash"
+            ]
+        },
+        "Sheartooth": {
+            "id": 8,
+            "Type": "Water",
+            "BST": {
+                "HP": 118,
+                "Atk": 126,
+                "Def": 160,
+                "Sp.A": 130,
+                "Sp.D": 160,
+                "Spd": 116,
+                "SP": 34
+            },
+            "Traits": [
+                "Supersensory",
+                "Fully Rested"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Bubble Burst",
+                "Streamline",
+                "Feint Spurts",
+                "Splash"
+            ]
+        },
+        "Swurmy": {
+            "id": 10,
+            "Type": "Normal",
+            "BST": {
+                "HP": 80,
+                "Atk": 70,
+                "Def": 60,
+                "Sp.A": 40,
+                "Sp.D": 40,
+                "Spd": 100,
+                "SP": 34
+            },
+            "Traits": [
+                "Strategist",
+                "Slippery",
+                "Inner Fire",
+                "Antidote"
+            ],
+            "Skills": [
+                "Slam",
+                "Rage",
+                "Venomous Bees",
+                "Double Sting",
+                "Precision Eye",
+                "Feelers"
+            ]
+        },
+        "Beezel": {
+            "id": 11,
+            "Type": "Normal",
+            "BST": {
+                "HP": 100,
+                "Atk": 160,
+                "Def": 70,
+                "Sp.A": 60,
+                "Sp.D": 100,
+                "Spd": 140,
+                "SP": 34
+            },
+            "Traits": [
+                "Strategist",
+                "Slippery",
+                "Inner Fire",
+                "Antidote"
+            ],
+            "Skills": [
+                "Slam",
+                "Rage",
+                "Venomous Bees",
+                "Double Sting",
+                "Precision Eye",
+                "Feelers"
+            ]
+        },
+        "Silquill": {
+            "id": 13,
+            "Type": "Normal",
+            "BST": {
+                "HP": 80,
+                "Atk": 90,
+                "Def": 80,
+                "Sp.A": 70,
+                "Sp.D": 70,
+                "Spd": 110,
+                "SP": 34
+            },
+            "Traits": [
+                "Escapist",
+                "Robber"
+            ],
+            "Skills": [
+                "Claw",
+                "Pocket Sand",
+                "Fast Strike",
+                "Coin Snatch",
+                "Wind Blast",
+                "Agility Training",
+                "Distract"
+            ]
+        },
+        "Gildwing": {
+            "id": 14,
+            "Type": "Normal",
+            "BST": {
+                "HP": 115,
+                "Atk": 115,
+                "Def": 105,
+                "Sp.A": 95,
+                "Sp.D": 95,
+                "Spd": 140,
+                "SP": 34
+            },
+            "Traits": [
+                "Escapist",
+                "Robber"
+            ],
+            "Skills": [
+                "Claw",
+                "Pocket Sand",
+                "Fast Strike",
+                "Coin Snatch",
+                "Wind Blast",
+                "Agility Training",
+                "Distract"
+            ]
+        },
+        "Slitherpin": {
+            "id": 16,
+            "Type": "Normal",
+            "BST": {
+                "HP": 80,
+                "Atk": 130,
+                "Def": 100,
+                "Sp.A": 90,
+                "Sp.D": 120,
+                "Spd": 120,
+                "SP": 34
+            },
+            "Traits": [
+                "Good Aim",
+                "Molter"
+            ],
+            "Skills": [
+                "Poison Sting",
+                "Drain",
+                "Toughen Up",
+                "Constrict",
+                "Poison Chomp",
+                "Epiphany"
+            ]
+        },
+        "Houndos": {
+            "id": 18,
+            "Type": "Electric",
+            "BST": {
+                "HP": 90,
+                "Atk": 120,
+                "Def": 60,
+                "Sp.A": 160,
+                "Sp.D": 100,
+                "Spd": 130,
+                "SP": 34
+            },
+            "Traits": [
+                "Menacing",
+                "Coward",
+                "Brave"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Fast Strike",
+                "Volt Lick",
+                "Lightning Strike",
+                "Power Talons"
+            ]
+        },
+        "Armado": {
+            "id": 20,
+            "Type": "Normal",
+            "BST": {
+                "HP": 80,
+                "Atk": 160,
+                "Def": 200,
+                "Sp.A": 60,
+                "Sp.D": 60,
+                "Spd": 60,
+                "SP": 34
+            },
+            "Traits": [
+                "Hoarder",
+                "Thick Skin",
+                "Vaccinated"
+            ],
+            "Skills": [
+                "Scratch",
+                "Concentrate",
+                "Toughen Up",
+                "Double Slash",
+                "Distract"
+            ]
+        },
+        "Armadil": {
+            "id": 21,
+            "Type": "Normal",
+            "BST": {
+                "HP": 110,
+                "Atk": 190,
+                "Def": 230,
+                "Sp.A": 90,
+                "Sp.D": 90,
+                "Spd": 80,
+                "SP": 34
+            },
+            "Traits": [
+                "Hoarder",
+                "Thick Skin",
+                "Vaccinated"
+            ],
+            "Skills": [
+                "Scratch",
+                "Concentrate",
+                "Toughen Up",
+                "Double Slash",
+                "Distract"
+            ]
+        },
+        "Moffel": {
+            "id": 33,
+            "Type": "Sand",
+            "BST": {
+                "HP": 100,
+                "Atk": 150,
+                "Def": 70,
+                "Sp.A": 140,
+                "Sp.D": 60,
+                "Spd": 80,
+                "SP": 34
+            },
+            "Traits": [
+                "Escapist",
+                "Lucky"
+            ],
+            "Skills": [
+                "Scratch",
+                "Coin Snatch",
+                "Sandball",
+                "Tail Spin",
+                "Constrict",
+                "Boulder Barrage",
+                "Double Slash"
+            ]
+        },
+        "Digmow": {
+            "id": 34,
+            "Type": "Sand",
+            "BST": {
+                "HP": 124,
+                "Atk": 172,
+                "Def": 94,
+                "Sp.A": 164,
+                "Sp.D": 84,
+                "Spd": 106,
+                "SP": 34
+            },
+            "Traits": [
+                "Escapist",
+                "Lucky"
+            ],
+            "Skills": [
+                "Scratch",
+                "Coin Snatch",
+                "Sandball",
+                "Tail Spin",
+                "Constrict",
+                "Boulder Barrage",
+                "Double Slash"
+            ]
+        },
+        "Buzzlet": {
+            "id": 36,
+            "Type": "Electric",
+            "BST": {
+                "HP": 110,
+                "Atk": 80,
+                "Def": 80,
+                "Sp.A": 130,
+                "Sp.D": 90,
+                "Spd": 70,
+                "SP": 34
+            },
+            "Traits": [
+                "Good Aim",
+                "Static Body"
+            ],
+            "Skills": [
+                "Slam",
+                "Toughen Up",
+                "Lightning Strike",
+                "Taser",
+                "Electrify",
+                "Body Blast"
+            ]
+        },
+        "Bazzer": {
+            "id": 37,
+            "Type": "Electric",
+            "BST": {
+                "HP": 140,
+                "Atk": 110,
+                "Def": 110,
+                "Sp.A": 160,
+                "Sp.D": 120,
+                "Spd": 90,
+                "SP": 34
+            },
+            "Traits": [
+                "Good Aim",
+                "Static Body"
+            ],
+            "Skills": [
+                "Slam",
+                "Toughen Up",
+                "Lightning Strike",
+                "Taser",
+                "Electrify",
+                "Body Blast"
+            ]
+        },
+        "Lunarpup": {
+            "id": 39,
+            "Type": "Ghost",
+            "BST": {
+                "HP": 60,
+                "Atk": 70,
+                "Def": 60,
+                "Sp.A": 200,
+                "Sp.D": 70,
+                "Spd": 160,
+                "SP": 34
+            },
+            "Traits": [
+                "Gravity Pull",
+                "Menacing",
+                "Dark Atmosphere"
+            ],
+            "Skills": [
+                "Fade Attack",
+                "Mighty Roar",
+                "Hypno Wave",
+                "Shadewalker",
+                "Howl",
+                "Voodoo"
+            ]
+        },
+        "Lunarwulf": {
+            "id": 40,
+            "Type": "Ghost",
+            "BST": {
+                "HP": 90,
+                "Atk": 100,
+                "Def": 90,
+                "Sp.A": 230,
+                "Sp.D": 110,
+                "Spd": 190,
+                "SP": 34
+            },
+            "Traits": [
+                "Gravity Pull",
+                "Menacing",
+                "Dark Atmosphere"
+            ],
+            "Skills": [
+                "Fade Attack",
+                "Mighty Roar",
+                "Hypno Wave",
+                "Shadewalker",
+                "Howl",
+                "Voodoo"
+            ]
+        },
+        "Lumon": {
+            "id": 70,
+            "Type": "Electric",
+            "BST": {
+                "HP": 70,
+                "Atk": 70,
+                "Def": 80,
+                "Sp.A": 80,
+                "Sp.D": 110,
+                "Spd": 100,
+                "SP": 34
+            },
+            "Traits": [
+                "Amplified",
+                "Conductor",
+                "Bright Light"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Swarm Diversion",
+                "Quad Volt",
+                "Electrify",
+                "Energy Drain",
+                "Taser"
+            ]
+        },
+        "Lampyre": {
+            "id": 71,
+            "Type": "Electric",
+            "BST": {
+                "HP": 110,
+                "Atk": 90,
+                "Def": 100,
+                "Sp.A": 100,
+                "Sp.D": 130,
+                "Spd": 160,
+                "SP": 34
+            },
+            "Traits": [
+                "Amplified",
+                "Conductor",
+                "Bright Light"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Swarm Diversion",
+                "Quad Volt",
+                "Electrify",
+                "Energy Drain",
+                "Taser"
+            ]
+        },
+        "Patterbit": {
+            "id": 73,
+            "Type": "Normal",
+            "BST": {
+                "HP": 130,
+                "Atk": 120,
+                "Def": 140,
+                "Sp.A": 170,
+                "Sp.D": 150,
+                "Spd": 80,
+                "SP": 34
+            },
+            "Traits": [
+                "Overclocker",
+                "Conductor",
+                "Robber"
+            ],
+            "Skills": [
+                "Slam",
+                "Feelers",
+                "Propellor Punch",
+                "Factory Reset",
+                "Face Slap"
+            ]
+        },
+        "Pitterbyte": {
+            "id": 74,
+            "Type": "Normal",
+            "BST": {
+                "HP": 170,
+                "Atk": 160,
+                "Def": 180,
+                "Sp.A": 210,
+                "Sp.D": 190,
+                "Spd": 120,
+                "SP": 34
+            },
+            "Traits": [
+                "Overclocker",
+                "Conductor",
+                "Robber"
+            ],
+            "Skills": [
+                "Slam",
+                "Feelers",
+                "Propellor Punch",
+                "Factory Reset",
+                "Face Slap"
+            ]
+        },
+        "Gauslime": {
+            "id": 91,
+            "Type": "Electric",
+            "BST": {
+                "HP": 50,
+                "Atk": 140,
+                "Def": 140,
+                "Sp.A": 120,
+                "Sp.D": 110,
+                "Spd": 90,
+                "SP": 34
+            },
+            "Traits": [
+                "Stick Layer",
+                "Stinky",
+                "Gravity Pull",
+                "Magnetic"
+            ],
+            "Skills": [
+                "Power Slap",
+                "Toughen Up",
+                "Disable",
+                "Electric Pound",
+                "Last Stand",
+                "Taser"
+            ]
+        },
+        "Mino": {
+            "id": 106,
+            "Type": "Fire",
+            "BST": {
+                "HP": 70,
+                "Atk": 120,
+                "Def": 60,
+                "Sp.A": 100,
+                "Sp.D": 100,
+                "Spd": 140,
+                "SP": 34
+            },
+            "Traits": [
+                "Comeback",
+                "Motivated"
+            ],
+            "Skills": [
+                "Tail Spin",
+                "Cute Pose",
+                "Rage",
+                "Peircing Horns",
+                "Agility Training",
+                "Ignite",
+                "Body Blast"
+            ]
+        },
+        "Frova": {
+            "id": 109,
+            "Type": "Ice",
+            "BST": {
+                "HP": 60,
+                "Atk": 50,
+                "Def": 50,
+                "Sp.A": 90,
+                "Sp.D": 70,
+                "Spd": 80,
+                "SP": 34
+            },
+            "Traits": [
+                "Caffeinated",
+                "Clean Retreat"
+            ],
+            "Skills": [
+                "Scratch",
+                "Hypno Wave",
+                "Drain",
+                "Frost Web",
+                "Toughen Up",
+                "Clearing Wind",
+                "Ice Wall",
+                "Wind Blast"
+            ]
+        },
+        "Froshell": {
+            "id": 110,
+            "Type": "Ice",
+            "BST": {
+                "HP": 80,
+                "Atk": 70,
+                "Def": 90,
+                "Sp.A": 130,
+                "Sp.D": 120,
+                "Spd": 100,
+                "SP": 34
+            },
+            "Traits": [
+                "Caffeinated",
+                "Clean Retreat"
+            ],
+            "Skills": [
+                "Scratch",
+                "Hypno Wave",
+                "Drain",
+                "Frost Web",
+                "Toughen Up",
+                "Clearing Wind",
+                "Ice Wall",
+                "Wind Blast"
+            ]
+        }
+    },
+
+    "S1":
+    {
+        "Cubzero": {
+            "id": 1,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 90,
+                "Atk": 131,
+                "Def": 109,
+                "Sp.A": 98,
+                "Sp.D": 119,
+                "Spe": 88,
+                "SP": 34
+            },
+            "Traits": [
+                "Stoic",
+                "Sharp Claws",
+                "Clumsy Power",
+                "Nimble"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Frost Chomp",
+                "Static Fur",
+                "Beat Up",
+                "Splash",
+                "Snowball",
+                "Revenge",
+                "Glacier",
+                "Inner Peace",
+                "Frigid Barrier",
+                "Avalanche",
+                "Beserk",
+                "Deep Cut",
+                "Disable Skill",
+                "Drain",
+                "Epiphany",
+                "Feint Spurts",
+                "Icy Flurry",
+                "Monsoon",
+                "Phantom Spike",
+                "Poison Chomp",
+                "Precision Eye",
+                "Quicksand",
+                "Scream",
+                "Smackdown",
+                "Snowfall",
+                "Super Drain",
+                "Slush"
+            ]
+        },
+        "Aroara": {
+            "id": 2,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 121,
+                "Atk": 172,
+                "Def": 140,
+                "Sp.A": 129,
+                "Sp.D": 148,
+                "Spe": 119,
+                "SP": 34
+            },
+            "Traits": [
+                "Stoic",
+                "Sharp Claws",
+                "Clumsy Power",
+                "Nimble"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Frost Chomp",
+                "Static Fur",
+                "Beat Up",
+                "Splash",
+                "Snowball",
+                "Revenge",
+                "Glacier",
+                "Inner Peace",
+                "Frigid Barrier",
+                "Avalanche",
+                "Beserk",
+                "Deep Cut",
+                "Dirty Snow",
+                "Disable Skill",
+                "Drain",
+                "Epiphany",
+                "Feint Spurts",
+                "Icy Flurry",
+                "Monsoon",
+                "Phantom Spike",
+                "Poison Chomp",
+                "Precision Eye",
+                "Precision Punch",
+                "Quicksand",
+                "Scream",
+                "Smackdown",
+                "Snowfall",
+                "Splatter",
+                "Stone Fist",
+                "Super Drain",
+                "Slush"
+            ]
+        },
+        "Bearealis": {
+            "id": 3,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 162,
+                "Atk": 203,
+                "Def": 181,
+                "Sp.A": 170,
+                "Sp.D": 179,
+                "Spe": 158,
+                "SP": 34
+            },
+            "Traits": [
+                "Stoic",
+                "Sharp Claws",
+                "Clumsy Power",
+                "Nimble"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Frost Chomp",
+                "Static Fur",
+                "Beat Up",
+                "Splash",
+                "Snowball",
+                "Revenge",
+                "Glacier",
+                "Inner Peace",
+                "Frigid Barrier",
+                "Avalanche",
+                "Beserk",
+                "Deep Cut",
+                "Dirty Snow",
+                "Disable Skill",
+                "Drain",
+                "Epiphany",
+                "Feint Spurts",
+                "Icy Flurry",
+                "Monsoon",
+                "Phantom Spike",
+                "Poison Chomp",
+                "Precision Eye",
+                "Precision Punch",
+                "Quicksand",
+                "Scream",
+                "Smackdown",
+                "Snowfall",
+                "Splatter",
+                "Stone Fist",
+                "Super Drain",
+                "Slush"
+            ]
+        },
+        "Toruga": {
+            "id": 4,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 80,
+                "Atk": 99,
+                "Def": 90,
+                "Sp.A": 121,
+                "Sp.D": 102,
+                "Spe": 132,
+                "SP": 34
+            },
+            "Traits": [
+                "Vegetarian",
+                "Thick Skin",
+                "Steam Layer",
+                "Gourmand"
+            ],
+            "Skills": [
+                "Slam",
+                "Cute Pose",
+                "Cinder",
+                "Ignite",
+                "Flaming Tackle",
+                "Boulder Barrage",
+                "Smokescreen",
+                "Seismic Wave",
+                "Fire Up",
+                "Firestorm",
+                "Body Blast",
+                "Heatwave"
+            ]
+        },
+        "Embaval": {
+            "id": 5,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 121,
+                "Atk": 122,
+                "Def": 119,
+                "Sp.A": 162,
+                "Sp.D": 128,
+                "Spe": 161,
+                "SP": 34
+            },
+            "Traits": [
+                "Vegetarian",
+                "Thick Skin",
+                "Steam Layer",
+                "Gourmand"
+            ],
+            "Skills": [
+                "Slam",
+                "Cute Pose",
+                "Cinder",
+                "Ignite",
+                "Flaming Tackle",
+                "Boulder Barrage",
+                "Smokescreen",
+                "Seismic Wave",
+                "Fire Up",
+                "Firestorm",
+                "Body Blast",
+                "Heatwave"
+            ]
+        },
+        "Volcadon": {
+            "id": 6,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 159,
+                "Atk": 180,
+                "Def": 145,
+                "Sp.A": 236,
+                "Sp.D": 161,
+                "Spe": 199,
+                "SP": 34
+            },
+            "Traits": [
+                "Vegetarian",
+                "Thick Skin",
+                "Steam Layer",
+                "Gourmand"
+            ],
+            "Skills": [
+                "Slam",
+                "Cute Pose",
+                "Cinder",
+                "Ignite",
+                "Flaming Tackle",
+                "Boulder Barrage",
+                "Smokescreen",
+                "Seismic Wave",
+                "Fire Up",
+                "Firestorm",
+                "Body Blast",
+                "Heatwave"
+            ]
+        },
+        "Nibblegar": {
+            "id": 7,
+            "Type": "Water",
+            "Stats": {
+                "HP": 89,
+                "Atk": 89,
+                "Def": 131,
+                "Sp.A": 98,
+                "Sp.D": 132,
+                "Spe": 91,
+                "SP": 34
+            },
+            "Traits": [
+                "Vigilant",
+                "Supersensory",
+                "Fully Rested",
+                "Wet Coat"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Bubble Burst",
+                "Streamline",
+                "Feint Spurts",
+                "Splash",
+                "Power Nap",
+                "Crunch",
+                "Monsoon",
+                "Bubble Blower",
+                "Headcrash",
+                "Crushing Waterfall"
+            ]
+        },
+        "Sheartooth": {
+            "id": 8,
+            "Type": "Water",
+            "Stats": {
+                "HP": 118,
+                "Atk": 126,
+                "Def": 162,
+                "Sp.A": 130,
+                "Sp.D": 160,
+                "Spe": 116,
+                "SP": 34
+            },
+            "Traits": [
+                "Vigilant",
+                "Supersensory",
+                "Fully Rested",
+                "Wet Coat"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Bubble Burst",
+                "Streamline",
+                "Feint Spurts",
+                "Splash",
+                "Power Nap",
+                "Crunch",
+                "Monsoon",
+                "Bubble Blower",
+                "Headcrash",
+                "Crushing Waterfall"
+            ]
+        },
+        "Megalobite": {
+            "id": 9,
+            "Type": "Water",
+            "Stats": {
+                "HP": 158,
+                "Atk": 166,
+                "Def": 204,
+                "Sp.A": 168,
+                "Sp.D": 214,
+                "Spe": 156,
+                "SP": 34
+            },
+            "Traits": [
+                "Vigilant",
+                "Supersensory",
+                "Fully Rested",
+                "Wet Coat"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Bubble Burst",
+                "Streamline",
+                "Feint Spurts",
+                "Splash",
+                "Power Nap",
+                "Crunch",
+                "Monsoon",
+                "Bubble Blower",
+                "Headcrash",
+                "Crushing Waterfall"
+            ]
+        },
+        "Swurmy": {
+            "id": 10,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 81,
+                "Atk": 67,
+                "Def": 58,
+                "Sp.A": 36,
+                "Sp.D": 36,
+                "Spe": 98,
+                "SP": 34
+            },
+            "Traits": [
+                "Strategist",
+                "Slippery",
+                "Inner Fire",
+                "Antidote"
+            ],
+            "Skills": [
+                "Slam",
+                "Rage",
+                "Venomous Bees",
+                "Double Sting",
+                "Precision Eye",
+                "Feelers"
+            ]
+        },
+        "Beezel": {
+            "id": 11,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 102,
+                "Atk": 161,
+                "Def": 71,
+                "Sp.A": 62,
+                "Sp.D": 98,
+                "Spe": 141,
+                "SP": 34
+            },
+            "Traits": [
+                "Strategist",
+                "Slippery",
+                "Inner Fire",
+                "Antidote"
+            ],
+            "Skills": [
+                "Slam",
+                "Rage",
+                "Venomous Bees",
+                "Double Sting",
+                "Precision Eye",
+                "Feelers"
+            ]
+        },
+        "Humbee": {
+            "id": 12,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 143,
+                "Atk": 247,
+                "Def": 91,
+                "Sp.A": 89,
+                "Sp.D": 174,
+                "Spe": 185,
+                "SP": 34
+            },
+            "Traits": [
+                "Strategist",
+                "Slippery",
+                "Inner Fire",
+                "Antidote"
+            ],
+            "Skills": [
+                "Slam",
+                "Rage",
+                "Venomous Bees",
+                "Double Sting",
+                "Precision Eye",
+                "Feelers"
+            ]
+        },
+        "Silquill": {
+            "id": 13,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 78,
+                "Atk": 91,
+                "Def": 79,
+                "Sp.A": 56,
+                "Sp.D": 71,
+                "Spe": 110,
+                "SP": 34
+            },
+            "Traits": [
+                "Pep Talk",
+                "Escapist",
+                "Robber",
+                "Weatherproof"
+            ],
+            "Skills": [
+                "Claw",
+                "Pocket Sand",
+                "Fast Strike",
+                "Coin Snatch",
+                "Wind Blast",
+                "Agility Training",
+                "Distract"
+            ]
+        },
+        "Gildwing": {
+            "id": 14,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 124,
+                "Atk": 128,
+                "Def": 112,
+                "Sp.A": 79,
+                "Sp.D": 98,
+                "Spe": 152,
+                "SP": 34
+            },
+            "Traits": [
+                "Pep Talk",
+                "Escapist",
+                "Robber",
+                "Weatherproof"
+            ],
+            "Skills": [
+                "Claw",
+                "Pocket Sand",
+                "Fast Strike",
+                "Coin Snatch",
+                "Wind Blast",
+                "Agility Training",
+                "Distract"
+            ]
+        },
+        "Golbeak": {
+            "id": 15,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 172,
+                "Atk": 162,
+                "Def": 148,
+                "Sp.A": 161,
+                "Sp.D": 142,
+                "Spe": 208,
+                "SP": 34
+            },
+            "Traits": [
+                "Pep Talk",
+                "Escapist",
+                "Robber",
+                "Weatherproof"
+            ],
+            "Skills": [
+                "Claw",
+                "Pocket Sand",
+                "Fast Strike",
+                "Coin Snatch",
+                "Wind Blast",
+                "Agility Training",
+                "Distract"
+            ]
+        },
+        "Slitherpin": {
+            "id": 16,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 81,
+                "Atk": 132,
+                "Def": 88,
+                "Sp.A": 90,
+                "Sp.D": 124,
+                "Spe": 124,
+                "SP": 34
+            },
+            "Traits": [
+                "Reconstitution",
+                "Good Aim",
+                "Molter",
+                "Spiked Body"
+            ],
+            "Skills": [
+                "Poison Sting",
+                "Drain",
+                "Toughen Up",
+                "Constrict",
+                "Poison Chomp",
+                "Epiphany"
+            ]
+        },
+        "Serpike": {
+            "id": 17,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 142,
+                "Atk": 213,
+                "Def": 153,
+                "Sp.A": 139,
+                "Sp.D": 188,
+                "Spe": 188,
+                "SP": 34
+            },
+            "Traits": [
+                "Reconstitution",
+                "Good Aim",
+                "Molter",
+                "Spiked Body"
+            ],
+            "Skills": [
+                "Poison Sting",
+                "Drain",
+                "Toughen Up",
+                "Constrict",
+                "Poison Chomp",
+                "Epiphany"
+            ]
+        },
+        "Houndos": {
+            "id": 18,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 92,
+                "Atk": 119,
+                "Def": 59,
+                "Sp.A": 161,
+                "Sp.D": 97,
+                "Spe": 132,
+                "SP": 34
+            },
+            "Traits": [
+                "Menacing",
+                "Coward",
+                "Brave"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Fast Strike",
+                "Volt Lick",
+                "Lightning Strike",
+                "Power Talons"
+            ]
+        },
+        "Hountrion": {
+            "id": 19,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 167,
+                "Atk": 218,
+                "Def": 107,
+                "Sp.A": 230,
+                "Sp.D": 148,
+                "Spe": 197,
+                "SP": 34
+            },
+            "Traits": [
+                "Menacing",
+                "Coward",
+                "Brave"
+            ],
+            "Skills": [
+                "Chomp",
+                "Mighty Roar",
+                "Fast Strike",
+                "Volt Lick",
+                "Lightning Strike",
+                "Power Talons"
+            ]
+        },
+        "Armado": {
+            "id": 20,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 68,
+                "Atk": 161,
+                "Def": 203,
+                "Sp.A": 59,
+                "Sp.D": 51,
+                "Spe": 59,
+                "SP": 34
+            },
+            "Traits": [
+                "Hoarder",
+                "Thick Skin",
+                "Vaccinated"
+            ],
+            "Skills": [
+                "Scratch",
+                "Concentrate",
+                "Toughen Up",
+                "Double Slash",
+                "Distract"
+            ]
+        },
+        "Armadil": {
+            "id": 21,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 126,
+                "Atk": 197,
+                "Def": 234,
+                "Sp.A": 88,
+                "Sp.D": 67,
+                "Spe": 82,
+                "SP": 34
+            },
+            "Traits": [
+                "Hoarder",
+                "Thick Skin",
+                "Vaccinated"
+            ],
+            "Skills": [
+                "Scratch",
+                "Concentrate",
+                "Toughen Up",
+                "Double Slash",
+                "Distract"
+            ]
+        },
+        "Armadon": {
+            "id": 22,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 168,
+                "Atk": 246,
+                "Def": 266,
+                "Sp.A": 112,
+                "Sp.D": 129,
+                "Spe": 88,
+                "SP": 34
+            },
+            "Traits": [
+                "Hoarder",
+                "Thick Skin",
+                "Vaccinated"
+            ],
+            "Skills": [
+                "Scratch",
+                "Concentrate",
+                "Toughen Up",
+                "Double Slash",
+                "Distract"
+            ]
+        },
+        "Sanscale": {
+            "id": 23,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 121,
+                "Atk": 143,
+                "Def": 121,
+                "Sp.A": 108,
+                "Sp.D": 102,
+                "Spe": 127,
+                "SP": 34
+            },
+            "Traits": [
+                "Thick Skin",
+                "Menacing",
+                "Dirt Coat"
+            ],
+            "Skills": [
+                "Chomp",
+                "Toughen Up",
+                "Pocket Sand",
+                "Mud Ball",
+                "Sandspout",
+                "Revenge Jaws",
+                "Desert Winds",
+                "Seismic Wave",
+                "Crunch",
+                "Ignore Pain",
+                "Meteor Shower",
+                "Inner Peace"
+            ]
+        },
+        "Caradune": {
+            "id": 24,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 162,
+                "Atk": 206,
+                "Def": 162,
+                "Sp.A": 183,
+                "Sp.D": 138,
+                "Spe": 162,
+                "SP": 34
+            },
+            "Traits": [
+                "Thick Skin",
+                "Menacing",
+                "Dirt Coat"
+            ],
+            "Skills": [
+                "Chomp",
+                "Toughen Up",
+                "Pocket Sand",
+                "Mud Ball",
+                "Sandspout",
+                "Revenge Jaws",
+                "Desert Winds",
+                "Seismic Wave",
+                "Crunch",
+                "Ignore Pain",
+                "Meteor Shower",
+                "Inner Peace"
+            ]
+        },
+        "Bittybolt": {
+            "id": 25,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 80,
+                "Atk": 68,
+                "Def": 144,
+                "Sp.A": 102,
+                "Sp.D": 105,
+                "Spe": 132,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Toravolt": {
+            "id": 26,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 134,
+                "Atk": 141,
+                "Def": 172,
+                "Sp.A": 226,
+                "Sp.D": 168,
+                "Spe": 174,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Bloby": {
+            "id": 27,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 129,
+                "Atk": 129,
+                "Def": 81,
+                "Sp.A": 92,
+                "Sp.D": 84,
+                "Spe": 88,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Molteye": {
+            "id": 28,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 177,
+                "Atk": 188,
+                "Def": 108,
+                "Sp.A": 139,
+                "Sp.D": 110,
+                "Spe": 112,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Ashclops": {
+            "id": 29,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 216,
+                "Atk": 232,
+                "Def": 122,
+                "Sp.A": 194,
+                "Sp.D": 124,
+                "Spe": 132,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Fiddly": {
+            "id": 30,
+            "Type": "Water",
+            "Stats": {
+                "HP": 62,
+                "Atk": 191,
+                "Def": 159,
+                "Sp.A": 52,
+                "Sp.D": 48,
+                "Spe": 102,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Ucaclaw": {
+            "id": 31,
+            "Type": "Water",
+            "Stats": {
+                "HP": 143,
+                "Atk": 278,
+                "Def": 245,
+                "Sp.A": 128,
+                "Sp.D": 104,
+                "Spe": 148,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Moffel": {
+            "id": 32,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 99,
+                "Atk": 151,
+                "Def": 68,
+                "Sp.A": 142,
+                "Sp.D": 61,
+                "Spe": 80,
+                "SP": 34
+            },
+            "Traits": [
+                "Escapist",
+                "Lucky"
+            ],
+            "Skills": [
+                "Scratch",
+                "Coin Snatch",
+                "Sandball",
+                "Tail Spin",
+                "Constrict",
+                "Boulder Barrage",
+                "Double Slash"
+            ]
+        },
+        "Digmow": {
+            "id": 33,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 128,
+                "Atk": 172,
+                "Def": 94,
+                "Sp.A": 164,
+                "Sp.D": 84,
+                "Spe": 106,
+                "SP": 34
+            },
+            "Traits": [
+                "Escapist",
+                "Lucky"
+            ],
+            "Skills": [
+                "Scratch",
+                "Coin Snatch",
+                "Sandball",
+                "Tail Spin",
+                "Constrict",
+                "Boulder Barrage",
+                "Double Slash"
+            ]
+        },
+        "Dugterra": {
+            "id": 34,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 158,
+                "Atk": 230,
+                "Def": 111,
+                "Sp.A": 221,
+                "Sp.D": 118,
+                "Spe": 142,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Buzzlet": {
+            "id": 35,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 108,
+                "Atk": 78,
+                "Def": 79,
+                "Sp.A": 132,
+                "Sp.D": 91,
+                "Spe": 67,
+                "SP": 34
+            },
+            "Traits": [
+                "Good Aim",
+                "Static Body"
+            ],
+            "Skills": [
+                "Slam",
+                "Toughen Up",
+                "Lightning Strike",
+                "Taser",
+                "Electrify",
+                "Body Blast"
+            ]
+        },
+        "Bazzer": {
+            "id": 36,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 142,
+                "Atk": 110,
+                "Def": 108,
+                "Sp.A": 161,
+                "Sp.D": 122,
+                "Spe": 90,
+                "SP": 34
+            },
+            "Traits": [
+                "Good Aim",
+                "Static Body"
+            ],
+            "Skills": [
+                "Slam",
+                "Toughen Up",
+                "Lightning Strike",
+                "Taser",
+                "Electrify",
+                "Body Blast"
+            ]
+        },
+        "Rhynobuzz": {
+            "id": 37,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 181,
+                "Atk": 172,
+                "Def": 170,
+                "Sp.A": 216,
+                "Sp.D": 178,
+                "Spe": 102,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Lunarpup": {
+            "id": 38,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 58,
+                "Atk": 72,
+                "Def": 60,
+                "Sp.A": 181,
+                "Sp.D": 72,
+                "Spe": 160,
+                "SP": 34
+            },
+            "Traits": [
+                "Gravity Pull",
+                "Menacing",
+                "Dark Atmosphere"
+            ],
+            "Skills": [
+                "Fade Attack",
+                "Mighty Roar",
+                "Hypno Wave",
+                "Shadewalker",
+                "Howl",
+                "Voodoo"
+            ]
+        },
+        "Lunarwulf": {
+            "id": 39,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 89,
+                "Atk": 134,
+                "Def": 92,
+                "Sp.A": 213,
+                "Sp.D": 107,
+                "Spe": 191,
+                "SP": 34
+            },
+            "Traits": [
+                "Gravity Pull",
+                "Menacing",
+                "Dark Atmosphere"
+            ],
+            "Skills": [
+                "Fade Attack",
+                "Mighty Roar",
+                "Hypno Wave",
+                "Shadewalker",
+                "Howl",
+                "Voodoo"
+            ]
+        },
+        "Eclyptor": {
+            "id": 40,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 120,
+                "Atk": 183,
+                "Def": 121,
+                "Sp.A": 224,
+                "Sp.D": 152,
+                "Spe": 223,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Kryo": {
+            "id": 41,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 141,
+                "Atk": 79,
+                "Def": 96,
+                "Sp.A": 108,
+                "Sp.D": 98,
+                "Spe": 46,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Krypeek": {
+            "id": 42,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 180,
+                "Atk": 121,
+                "Def": 137,
+                "Sp.A": 149,
+                "Sp.D": 141,
+                "Spe": 84,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Krybeest": {
+            "id": 43,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 219,
+                "Atk": 162,
+                "Def": 169,
+                "Sp.A": 186,
+                "Sp.D": 181,
+                "Spe": 118,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Bren": {
+            "id": 44,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 91,
+                "Atk": 118,
+                "Def": 78,
+                "Sp.A": 132,
+                "Sp.D": 98,
+                "Spe": 93,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Pyrochick": {
+            "id": 45,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 91,
+                "Atk": 118,
+                "Def": 78,
+                "Sp.A": 132,
+                "Sp.D": 98,
+                "Spe": 93,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Infinix": {
+            "id": 46,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 152,
+                "Atk": 225,
+                "Def": 129,
+                "Sp.A": 217,
+                "Sp.D": 132,
+                "Spe": 154,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Acie": {
+            "id": 47,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 54,
+                "Atk": 71,
+                "Def": 138,
+                "Sp.A": 195,
+                "Sp.D": 118,
+                "Spe": 89,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Deecie": {
+            "id": 48,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 105,
+                "Atk": 120,
+                "Def": 188,
+                "Sp.A": 256,
+                "Sp.D": 195,
+                "Spe": 144,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Kyreptil": {
+            "id": 49,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 158,
+                "Atk": 171,
+                "Def": 192,
+                "Sp.A": 56,
+                "Sp.D": 72,
+                "Spe": 58,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Kyraptor": {
+            "id": 50,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 197,
+                "Atk": 267,
+                "Def": 266,
+                "Sp.A": 98,
+                "Sp.D": 111,
+                "Spe": 78,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Gella": {
+            "id": 51,
+            "Type": "Water",
+            "Stats": {
+                "HP": 71,
+                "Atk": 83,
+                "Def": 98,
+                "Sp.A": 136,
+                "Sp.D": 80,
+                "Spe": 120,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Gellish": {
+            "id": 52,
+            "Type": "Water",
+            "Stats": {
+                "HP": 122,
+                "Atk": 138,
+                "Def": 114,
+                "Sp.A": 176,
+                "Sp.D": 128,
+                "Spe": 148,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Gelaquad": {
+            "id": 53,
+            "Type": "Water",
+            "Stats": {
+                "HP": 174,
+                "Atk": 226,
+                "Def": 159,
+                "Sp.A": 182,
+                "Sp.D": 131,
+                "Spe": 164,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Skarbone": {
+            "id": 54,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 143,
+                "Atk": 158,
+                "Def": 94,
+                "Sp.A": 63,
+                "Sp.D": 65,
+                "Spe": 68,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Skuldra": {
+            "id": 55,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 152,
+                "Atk": 202,
+                "Def": 141,
+                "Sp.A": 107,
+                "Sp.D": 121,
+                "Spe": 90,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Skelatops": {
+            "id": 56,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 161,
+                "Atk": 260,
+                "Def": 166,
+                "Sp.A": 151,
+                "Sp.D": 178,
+                "Spe": 114,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Droople": {
+            "id": 57,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 110,
+                "Atk": 88,
+                "Def": 92,
+                "Sp.A": 78,
+                "Sp.D": 76,
+                "Spe": 84,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Mudma": {
+            "id": 58,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 158,
+                "Atk": 124,
+                "Def": 144,
+                "Sp.A": 109,
+                "Sp.D": 121,
+                "Spe": 112,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Arcta": {
+            "id": 59,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 90,
+                "Atk": 109,
+                "Def": 117,
+                "Sp.A": 145,
+                "Sp.D": 126,
+                "Spe": 98,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Arcturos": {
+            "id": 60,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 141,
+                "Atk": 161,
+                "Def": 171,
+                "Sp.A": 201,
+                "Sp.D": 212,
+                "Spe": 147,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Seraphace": {
+            "id": 61,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 138,
+                "Atk": 92,
+                "Def": 97,
+                "Sp.A": 122,
+                "Sp.D": 129,
+                "Spe": 70,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Grimmask": {
+            "id": 62,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 191,
+                "Atk": 143,
+                "Def": 152,
+                "Sp.A": 211,
+                "Sp.D": 182,
+                "Spe": 121,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Squidma": {
+            "id": 63,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 76,
+                "Atk": 78,
+                "Def": 67,
+                "Sp.A": 101,
+                "Sp.D": 198,
+                "Spe": 142,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Magmilus": {
+            "id": 64,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 159,
+                "Atk": 139,
+                "Def": 130,
+                "Sp.A": 161,
+                "Sp.D": 246,
+                "Spe": 201,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Lumon": {
+            "id": 65,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 69,
+                "Atk": 71,
+                "Def": 78,
+                "Sp.A": 82,
+                "Sp.D": 112,
+                "Spe": 101,
+                "SP": 34
+            },
+            "Traits": [
+                "Amplified",
+                "Conductor",
+                "Bright Light"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Swarm Diversion",
+                "Quad Volt",
+                "Electrify",
+                "Energy Drain",
+                "Taser"
+            ]
+        },
+        "Lampyre": {
+            "id": 66,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 108,
+                "Atk": 90,
+                "Def": 111,
+                "Sp.A": 103,
+                "Sp.D": 133,
+                "Spe": 160,
+                "SP": 34
+            },
+            "Traits": [
+                "Amplified",
+                "Conductor",
+                "Bright Light"
+            ],
+            "Skills": [
+                "Scratch",
+                "Cute Pose",
+                "Swarm Diversion",
+                "Quad Volt",
+                "Electrify",
+                "Energy Drain",
+                "Taser"
+            ]
+        },
+        "Lumasect": {
+            "id": 67,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 162,
+                "Atk": 108,
+                "Def": 166,
+                "Sp.A": 134,
+                "Sp.D": 191,
+                "Spe": 224,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Patterbit": {
+            "id": 68,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 98,
+                "Atk": 88,
+                "Def": 108,
+                "Sp.A": 143,
+                "Sp.D": 122,
+                "Spe": 79,
+                "SP": 34
+            },
+            "Traits": [
+                "Conductor",
+                "Robber",
+                "Overclocker",
+                "Nano Skin"
+            ],
+            "Skills": [
+                "Slam",
+                "Feelers",
+                "Propellor Punch",
+                "Factory Reset",
+                "Face Slap",
+                "Precision Punch",
+                "Upshift",
+                "Flying Kick",
+                "EMP",
+                "Transcending",
+                "Overdrive",
+                "Stat Copy",
+                "All In",
+                "Beat Up",
+                "Dirty Snow",
+                "Distract",
+                "Drain",
+                "EMP",
+                "Glass Cannon",
+                "Trait Scent",
+                "Scary Vision",
+                "Smackdown",
+                "Splatter",
+                "Stone Fist",
+                "Super Drain",
+                "Tactical Slam",
+                "Zen Cure",
+                "Slush"
+            ]
+        },
+        "Pitterbyte": {
+            "id": 69,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 142,
+                "Atk": 139,
+                "Def": 152,
+                "Sp.A": 175,
+                "Sp.D": 163,
+                "Spe": 102,
+                "SP": 34
+            },
+            "Traits": [
+                "Conductor",
+                "Robber",
+                "Overclocker",
+                "Nano Skin"
+            ],
+            "Skills": [
+                "Slam",
+                "Feelers",
+                "Propellor Punch",
+                "Factory Reset",
+                "Face Slap",
+                "Precision Punch",
+                "Upshift",
+                "Flying Kick",
+                "EMP",
+                "Transcending",
+                "Overdrive",
+                "Stat Copy",
+                "All In",
+                "Beat Up",
+                "Dirty Snow",
+                "Distract",
+                "Drain",
+                "EMP",
+                "Glass Cannon",
+                "Trait Scent",
+                "Scary Vision",
+                "Smackdown",
+                "Splatter",
+                "Stone Fist",
+                "Super Drain",
+                "Tactical Slam",
+                "Zen Cure",
+                "Slush"
+            ]
+        },
+        "Cyberite": {
+            "id": 70,
+            "Type": "Normal",
+            "Stats": {
+                "HP": 171,
+                "Atk": 161,
+                "Def": 180,
+                "Sp.A": 214,
+                "Sp.D": 196,
+                "Spe": 121,
+                "SP": 34
+            },
+            "Traits": [
+                "Conductor",
+                "Robber",
+                "Overclocker",
+                "Nano Skin"
+            ],
+            "Skills": [
+                "Slam",
+                "Feelers",
+                "Propellor Punch",
+                "Factory Reset",
+                "Face Slap",
+                "Precision Punch",
+                "Upshift",
+                "Flying Kick",
+                "EMP",
+                "Transcending",
+                "Overdrive",
+                "Stat Copy",
+                "All In",
+                "Ball of Darkness",
+                "Beat Up",
+                "Dirty Snow",
+                "Disable Heal",
+                "Distract",
+                "Drain",
+                "EMP",
+                "Feint Spurts",
+                "Glass Cannon",
+                "Inner Peace",
+                "Precision Eye",
+                "Quicksand",
+                "Scary Vision",
+                "Shared Fate",
+                "Smackdown",
+                "Splatter",
+                "Stone Fist",
+                "Super Drain",
+                "Tactical Slam",
+                "Time Warp",
+                "Trait Scent",
+                "Zen Cure",
+                "Slush"
+            ]
+        },
+        "Decibite": {
+            "id": 71,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 65,
+                "Atk": 142,
+                "Def": 208,
+                "Sp.A": 81,
+                "Sp.D": 72,
+                "Spe": 67,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Centilla": {
+            "id": 72,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 97,
+                "Atk": 180,
+                "Def": 276,
+                "Sp.A": 99,
+                "Sp.D": 98,
+                "Spe": 82,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Millidont": {
+            "id": 73,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 128,
+                "Atk": 194,
+                "Def": 340,
+                "Sp.A": 120,
+                "Sp.D": 148,
+                "Spe": 98,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Taddle": {
+            "id": 74,
+            "Type": "Water",
+            "Stats": {
+                "HP": 78,
+                "Atk": 96,
+                "Def": 78,
+                "Sp.A": 83,
+                "Sp.D": 78,
+                "Spe": 181,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Fibio": {
+            "id": 75,
+            "Type": "Water",
+            "Stats": {
+                "HP": 138,
+                "Atk": 158,
+                "Def": 94,
+                "Sp.A": 127,
+                "Sp.D": 88,
+                "Spe": 181,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Chonktoad": {
+            "id": 76,
+            "Type": "Water",
+            "Stats": {
+                "HP": 178,
+                "Atk": 188,
+                "Def": 194,
+                "Sp.A": 155,
+                "Sp.D": 182,
+                "Spe": 142,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Tinshel": {
+            "id": 77,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 92,
+                "Atk": 88,
+                "Def": 161,
+                "Sp.A": 81,
+                "Sp.D": 109,
+                "Spe": 87,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Dunpod": {
+            "id": 78,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 144,
+                "Atk": 141,
+                "Def": 223,
+                "Sp.A": 93,
+                "Sp.D": 121,
+                "Spe": 104,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Sandril": {
+            "id": 79,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 185,
+                "Atk": 168,
+                "Def": 268,
+                "Sp.A": 108,
+                "Sp.D": 133,
+                "Spe": 109,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Blizzburd": {
+            "id": 80,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 102,
+                "Atk": 122,
+                "Def": 93,
+                "Sp.A": 127,
+                "Sp.D": 122,
+                "Spe": 84,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Blizzian": {
+            "id": 81,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 183,
+                "Atk": 194,
+                "Def": 179,
+                "Sp.A": 182,
+                "Sp.D": 176,
+                "Spe": 118,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Purrgy": {
+            "id": 82,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 88,
+                "Atk": 102,
+                "Def": 78,
+                "Sp.A": 118,
+                "Sp.D": 84,
+                "Spe": 100,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Ghinx": {
+            "id": 83,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 117,
+                "Atk": 131,
+                "Def": 116,
+                "Sp.A": 157,
+                "Sp.D": 128,
+                "Spe": 129,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Purrghast": {
+            "id": 84,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 158,
+                "Atk": 185,
+                "Def": 138,
+                "Sp.A": 204,
+                "Sp.D": 169,
+                "Spe": 182,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Gauslime": {
+            "id": 85,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 49,
+                "Atk": 141,
+                "Def": 142,
+                "Sp.A": 121,
+                "Sp.D": 106,
+                "Spe": 78,
+                "SP": 34
+            },
+            "Traits": [
+                "Stick Layer",
+                "Stinky",
+                "Gravity Pull",
+                "Magnetic"
+            ],
+            "Skills": [
+                "Power Slap",
+                "Toughen Up",
+                "Disable",
+                "Electric Pound",
+                "Last Stand",
+                "Taser"
+            ]
+        },
+        "Magnamire": {
+            "id": 86,
+            "Type": "Electric",
+            "Stats": {
+                "HP": 133,
+                "Atk": 215,
+                "Def": 209,
+                "Sp.A": 163,
+                "Sp.D": 172,
+                "Spe": 117,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Quagoo": {
+            "id": 87,
+            "Type": "Water",
+            "Stats": {
+                "HP": 81,
+                "Atk": 88,
+                "Def": 141,
+                "Sp.A": 141,
+                "Sp.D": 108,
+                "Spe": 121,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Swampa": {
+            "id": 88,
+            "Type": "Water",
+            "Stats": {
+                "HP": 143,
+                "Atk": 147,
+                "Def": 204,
+                "Sp.A": 212,
+                "Sp.D": 167,
+                "Spe": 183,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Squidly": {
+            "id": 89,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 48,
+                "Atk": 39,
+                "Def": 31,
+                "Sp.A": 212,
+                "Sp.D": 111,
+                "Spe": 181,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Octotle": {
+            "id": 90,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 88,
+                "Atk": 68,
+                "Def": 123,
+                "Sp.A": 251,
+                "Sp.D": 276,
+                "Spe": 214,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Ruptius": {
+            "id": 91,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 88,
+                "Atk": 66,
+                "Def": 111,
+                "Sp.A": 132,
+                "Sp.D": 128,
+                "Spe": 68,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Vulbrute": {
+            "id": 92,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 166,
+                "Atk": 142,
+                "Def": 254,
+                "Sp.A": 245,
+                "Sp.D": 195,
+                "Spe": 84,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Mooby": {
+            "id": 93,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 68,
+                "Atk": 72,
+                "Def": 68,
+                "Sp.A": 64,
+                "Sp.D": 68,
+                "Spe": 68,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Molbash": {
+            "id": 94,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 92,
+                "Atk": 188,
+                "Def": 172,
+                "Sp.A": 79,
+                "Sp.D": 181,
+                "Spe": 102,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Malavite": {
+            "id": 95,
+            "Type": "Sand",
+            "Stats": {
+                "HP": 160,
+                "Atk": 242,
+                "Def": 188,
+                "Sp.A": 97,
+                "Sp.D": 240,
+                "Spe": 124,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Flowish": {
+            "id": 96,
+            "Type": "Water",
+            "Stats": {
+                "HP": 74,
+                "Atk": 118,
+                "Def": 74,
+                "Sp.A": 68,
+                "Sp.D": 91,
+                "Spe": 138,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Daricara": {
+            "id": 97,
+            "Type": "Water",
+            "Stats": {
+                "HP": 192,
+                "Atk": 221,
+                "Def": 163,
+                "Sp.A": 159,
+                "Sp.D": 197,
+                "Spe": 161,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Mino": {
+            "id": 98,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 71,
+                "Atk": 122,
+                "Def": 61,
+                "Sp.A": 98,
+                "Sp.D": 98,
+                "Spe": 140,
+                "SP": 34
+            },
+            "Traits": [
+                "Comeback",
+                "Motivated"
+            ],
+            "Skills": [
+                "Tail Spin",
+                "Cute Pose",
+                "Rage",
+                "Peircing Horns",
+                "Agility Training",
+                "Ignite",
+                "Body Blast"
+            ]
+        },
+        "Blazitaur": {
+            "id": 99,
+            "Type": "Fire",
+            "Stats": {
+                "HP": 132,
+                "Atk": 204,
+                "Def": 138,
+                "Sp.A": 157,
+                "Sp.D": 159,
+                "Spe": 212,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Frova": {
+            "id": 100,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 58,
+                "Atk": 48,
+                "Def": 46,
+                "Sp.A": 91,
+                "Sp.D": 71,
+                "Spe": 84,
+                "SP": 34
+            },
+            "Traits": [
+                "Caffeinated",
+                "Clean Retreat"
+            ],
+            "Skills": [
+                "Scratch",
+                "Hypno Wave",
+                "Drain",
+                "Frost Web",
+                "Toughen Up",
+                "Clearing Wind",
+                "Ice Wall",
+                "Wind Blast"
+            ]
+        },
+        "Froshell": {
+            "id": 101,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 86,
+                "Atk": 65,
+                "Def": 104,
+                "Sp.A": 115,
+                "Sp.D": 152,
+                "Spe": 92,
+                "SP": 34
+            },
+            "Traits": [
+                "Caffeinated",
+                "Clean Retreat"
+            ],
+            "Skills": [
+                "Scratch",
+                "Hypno Wave",
+                "Drain",
+                "Frost Web",
+                "Toughen Up",
+                "Clearing Wind",
+                "Ice Wall",
+                "Wind Blast"
+            ]
+        },
+        "Glamoth": {
+            "id": 102,
+            "Type": "Ice",
+            "Stats": {
+                "HP": 150,
+                "Atk": 139,
+                "Def": 128,
+                "Sp.A": 253,
+                "Sp.D": 226,
+                "Spe": 161,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Otogy": {
+            "id": 103,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 148,
+                "Atk": 118,
+                "Def": 68,
+                "Sp.A": 138,
+                "Sp.D": 68,
+                "Spe": 49,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Orotchy": {
+            "id": 104,
+            "Type": "Ghost",
+            "Stats": {
+                "HP": 237,
+                "Atk": 229,
+                "Def": 131,
+                "Sp.A": 176,
+                "Sp.D": 108,
+                "Spe": 99,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Shimshell": {
+            "id": 105,
+            "Type": "Water",
+            "Stats": {
+                "HP": 58,
+                "Atk": 132,
+                "Def": 202,
+                "Sp.A": 88,
+                "Sp.D": 49,
+                "Spe": 78,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        },
+        "Atlantern": {
+            "id": 106,
+            "Type": "Water",
+            "Stats": {
+                "HP": 117,
+                "Atk": 198,
+                "Def": 344,
+                "Sp.A": 204,
+                "Sp.D": 102,
+                "Spe": 137,
+                "SP": 34
+            },
+            "Traits": [
+                ""
+            ],
+            "Skills": [
+                ""
+            ]
+        }
+    }
+}
