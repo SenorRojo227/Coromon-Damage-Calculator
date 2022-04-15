@@ -114,15 +114,6 @@
             "Contact": false,
             "Description": "The user lays a field of burning hot coals, creating a Fire entry hazard that inflicts burn on opposing Coromon being sent into battle."
         },
-        "Toxic Skull": {
-            "Type": "Sand",
-            "Category": "Physical",
-            "Power": 20,
-            "Accuracy": 90,
-            "Cost": 5,
-            "Contact": false,
-            "Description": "The user throws a skull covered in toxic molds at the target, dealing some damage and causing poison."
-        },
         "Blizzard": {
             "Type": "Ice",
             "Category": "Special",
@@ -265,7 +256,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Steal [currency.gold] from the opposing trainer, up to 3 times."
         },
         "Concentrate": {
             "Type": "Normal",
@@ -274,7 +265,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "The user increases its concentration, raising its [stat.criticalHitChance] by 1 stage."
         },
         "Confusion": {
             "Type": "Normal",
@@ -283,7 +274,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Confuses the opposing team, making them [condition.hazy]."
         },
         "Constrict": {
             "Type": "Normal",
@@ -292,7 +283,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Wrap around the target, trapping the target and lowering its [stat.speed] for 5 rounds."
         },
         "Constricting Flames": {
             "Type": "Fire",
@@ -301,7 +292,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Liquid hot magma surrounds the target, inflicting [condition.burn] and preventing escape for 5 rounds."
         },
         "Corrupt": {
             "Type": "Dark Magic",
@@ -310,7 +301,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Corrupts the target, lowering its [stat.attack] and [stat.specialAttack] by 3 stages."
         },
         "Corrupted Storm": {
             "Type": "Dark Magic",
@@ -319,61 +310,70 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Catches all targets in a storm of corruption."
         },
         "Crackle Horn": {
             "Type": "Electric",
             "Category": "Special",
             "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+            "Accuracy": 30,
+            "Cost": 9,
             "Contact": false,
-            "Description": ""
+            "Description": "Attempts to gore the target with a highly electrified horn, instantly fainting the target if it hits."
+        },
+        "Crumble": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 80,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": true,
+            "Description": "Petrify the target from the inside-out. Deals damage and makes the target fragile, lowering their [stat.defense] by 1 stage."
         },
         "Crunch": {
             "Type": "Foul",
             "Category": "Physical",
-            "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+            "Power": 90,
+            "Accuracy": 95,
+            "Cost": 6,
             "Contact": true,
-            "Description": ""
+            "Description": "Crush the target with powerful jaws. Has a 25% chance to make the target bleed."
         },
         "Crushing Waterfall": {
             "Type": "Water",
             "Category": "Special",
-            "Power": 0,
+            "Power": 200,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 8,
             "Contact": false,
-            "Description": ""
+            "Description": "The user charges up, and unleashes a crushing flood of water upon the target. Lowers the target's [stat.specialDefense] by 1 stage."
         },
         "Crystal Barrage": {
             "Type": "Water",
             "Category": "Physical",
-            "Power": 0,
+            "Power": 90,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 7,
             "Contact": false,
-            "Description": ""
+            "Description": "Attack the target with a furious barrage of pointy crystals. Has a 50% chance to make the target bleed."
         },
         "Crystal Beam": {
             "Type": "Ice",
             "Category": "Special",
-            "Power": 0,
+            "Power": 95,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 7,
             "Contact": false,
-            "Description": ""
+            "Description": "The user summons an ice crystal which fires a freezing beam at the target. Has a 10% chance to freeze the target."
         },
         "Crystal Shot": {
             "Type": "Water",
             "Category": "Physical",
-            "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+            "Power": 35,
+            "Accuracy": 95,
+            "Cost": 4,
             "Contact": false,
-            "Description": ""
+            "Description": "Shoot 1 to 3 crystal projectiles at the target, with a 25% increased [stat.criticalHitChance]."
         },
         "Crystal Surprise": {
             "Type": "Water",
@@ -382,7 +382,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Surround the opponent with sharp spikes to prevent them from escaping."
         },
         "Cute Pose": {
             "Type": "Normal",
@@ -391,7 +391,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "The user strikes a cute pose, lowering the [stat.defense] of the opposing team."
         },
         "Death Grip": {
             "Type": "Foul",
@@ -400,7 +400,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Holds the target in a death grip, instantly fainting the target if it hits."
         },
         "Deep Cut": {
             "Type": "Cut",
@@ -409,7 +409,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": true,
-            "Description": ""
+            "Description": "Furiously scratch the target, making the target bleed. Has a 50% chance to increase the user's [stat.attack] by 1 stage."
         },
         "Desert Hurricane": {
             "Type": "Sand",
@@ -418,7 +418,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": true,
-            "Description": ""
+            "Description": "A field of sand tornadoes rips through all foes, dealing big damage."
         },
         "Desert Winds": {
             "Type": "Sand",
@@ -427,7 +427,16 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Summon a powerful sandstorm, increasing the effectiveness of [type.sand] Coromon."
+        },
+        "Detonate": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 130,
+            "Accuracy": 95,
+            "Cost": 10,
+            "Contact": false,
+            "Description": "The user overheats and bursts into flames, inflicting massive damage to the opposing team. Lowers the user's [stat.specialAttack] by 1 stage."
         },
         "Dirty Snow": {
             "Type": "Ice",
@@ -436,7 +445,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Throws dirty snow at the target, dealing damage and making the target [condition.hazy]."
         },
         "Disable Heal": {
             "Type": "Magic",
@@ -445,7 +454,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Prevents the target from recovering [hp] for 5 rounds."
         },
         "Disable": {
             "Type": "Magic",
@@ -454,7 +463,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Disable the target's last used move for 5 rounds."
         },
         "Disable Trait": {
             "Type": "Magic",
@@ -463,7 +472,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Disable the target's [trait.singular] for 5 rounds."
         },
         "Disruption": {
             "Type": "Dark Magic",
@@ -472,7 +481,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Creates a disruption, dealing huge damage to the target and lowering a random stat by 2 stages."
         },
         "Distort": {
             "Type": "Dark Magic",
@@ -481,7 +490,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Creates a distortion, lowering the target's [stat.defense] and [stat.specialDefense] by 2 stages."
         },
         "Distract": {
             "Type": "Normal",
@@ -490,7 +499,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "The user moves so fast that it creates illusions of itself. Raises the user's [stat.evasion]."
         },
         "Double Slash": {
             "Type": "Cut",
@@ -499,7 +508,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": true,
-            "Description": ""
+            "Description": "Slash at the target. In normal circumstances this attack will always hit."
         },
         "Double Sting": {
             "Type": "Normal",
@@ -508,7 +517,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": true,
-            "Description": ""
+            "Description": "Two quick successive stings strike the target, each dealing damage. This attack always goes first."
         },
         "Drain": {
             "Type": "Magic",
@@ -517,7 +526,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Deal damage and drain [hp] for half of the damage done."
         },
         "Dust Storm": {
             "Type": "Sand",
@@ -526,7 +535,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Damages all foes with a frenzied dust storm."
         },
         "Electric Pound": {
             "Type": "Electric",
@@ -535,7 +544,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": true,
-            "Description": ""
+            "Description": "Smash the target on its head for 1 to 3 times. Every hit has a 6% chance to knock down the target."
         },
         "Electrify": {
             "Type": "Electric",
@@ -544,7 +553,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "The user charges itself, increasing damage of its next [type.electric] attack 1.5 times and doubling the [stat.criticalHitChance]. This can electrify a Coromon twice."
         },
         "EMP": {
             "Type": "Normal",
@@ -553,7 +562,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Powerful electrical interference causes all opponents to revert their stat changes, and deplete their [sp] by 15%."
         },
         "Empathy": {
             "Type": "Normal",
@@ -562,7 +571,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Set the target's [hp] to your current [hp]. This move always goes last."
         },
         "Energy Drain": {
             "Type": "Magic",
@@ -571,7 +580,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Drain the opponent's [hp] and convert it to [sp]."
         },
         "Enveloping Darkness": {
             "Type": "Dark Magic",
@@ -580,7 +589,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "Envelop all targets in darkness, lowering their [stat.evasion] by 6 stages."
         },
         "Epiphany": {
             "Type": "Normal",
@@ -589,7 +598,7 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
-            "Description": ""
+            "Description": "The user has an epiphany, raising its [stat.attack] and [stat.defense]."
         },
         "Face Slap": {
             "Type": "Normal",
@@ -598,223 +607,1573 @@
             "Accuracy": 100,
             "Cost": 0,
             "Contact": true,
+            "Description": "Give the target a high-five, in the face. Has a 50% chance to make the target [condition.hazy]."
+        },
+        "Factory Reset": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 5,
+            "Contact": false,
+            "Description": "Reset to default, reverting all of the user's stat changes."
+        },
+        "Fade Attack": {
+            "Type": "Foul",
+            "Category": "",
+            "Power": 50,
+            "Accuracy": 90,
+            "Cost": 3,
+            "Contact": true,
+            "Description": "Sneak up on the target, dealing damage. This attack always goes first."
+        },
+        "Fast Strike": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 40,
+            "Accuracy": 100,
+            "Cost": 3,
+            "Contact": true,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Feather Fury": {
+            "Type": "Cut",
+            "Category": "Physical",
+            "Power": 75,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Feelers": {
+            "Type": "Status",
+            "Category": "Normal",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Feint Bursts": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 70,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Feint Spurts": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 65,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Fiery Breath": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 90,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Final Gift": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Fire Up": {
+            "Type": "Fire",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Firestorm": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 100,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Flaming Tackle": {
+            "Type": "Fire",
+            "Category": "Physical",
+            "Power": 60,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": true,
+            "Description": ""
+        },
+        "Flying Kick": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 95,
+            "Accuracy": 95,
+            "Cost": 7,
+            "Contact": true,
+            "Description": ""
+        },
+        "Frantic Mask": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Frigid Barrier": {
+            "Type": "Ice",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Frost Chomp": {
+            "Type": "Ice",
+            "Category": "Physical",
+            "Power": 40,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": true,
+            "Description": ""
+        },
+        "Frost Feathers": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 70,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Frost Spikes": {
+            "Type": "Ice",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Frost Web": {
+            "Type": "Ice",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Frozen Spikes": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 70,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Fury Fist": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 20,
+            "Accuracy": 90,
+            "Cost": 3,
+            "Contact": true,
+            "Description": ""
+        },
+        "Fury Pincer": {
+            "Type": "Water",
+            "Category": "Physical",
+            "Power": 25,
+            "Accuracy": 100,
+            "Cost": 3,
+            "Contact": true,
+            "Description": ""
+        },
+        "Geyser": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 90,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Ghastly Nap": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Glacier": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 75,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Glacier Drop": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 100,
+            "Accuracy": 90,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Glass Cannon": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Head Crab": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 90,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": true,
+            "Description": ""
+        },
+        "Headbash": {
+            "Type": "Heavy",
+            "Category": "Physical",
+            "Power": 130,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": true,
+            "Description": ""
+        },
+        "Headcrash": {
+            "Type": "Heavy",
+            "Category": "Physical",
+            "Power": 145,
+            "Accuracy": 90,
+            "Cost": 8,
+            "Contact": true,
+            "Description": ""
+        },
+        "Health Link": {
+            "Type": "Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Heat Beam": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 70,
+            "Accuracy": null,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Heated Horns": {
+            "Type": "Fire",
+            "Category": "Physical",
+            "Power": 35,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Heatwave": {
+            "Type": "Fire",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Hocus Pocus": {
+            "Type": "Magic",
+            "Category": "Special",
+            "Power": 130,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Horror Mask": {
+            "Type": "Ghost",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Howl": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Hydro Punch": {
+            "Type": "Water",
+            "Category": "Physical",
+            "Power": 110,
+            "Accuracy": 90,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "hypno Wave": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 70,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Hypnotize": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Ice Wall": {
+            "Type": "Ice",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Iceberg Sweep": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 110,
+            "Accuracy": 100,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Icy Flurry": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 50,
+            "Accuracy": 90,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Ignite": {
+            "Type": "Fire",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Ignore Pain": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Immitate": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Inner Peace": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Inspect Scent": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Intensifice": {
+            "Type": "Ice",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Inversal": {
+            "Type": "Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Kitty Claws": {
+            "Type": "Ghost",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 95,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Lacerate": {
+            "Type": "Cut",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Last Stand": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Lava Boulder": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 100,
+            "Accuracy": 85,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Lightning Strike": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 65,
+            "Accuracy": 95,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Loose Cannon": {
+            "Type": "Fire",
+            "Category": "Special",
+            "Power": 105,
+            "Accuracy": 70,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Magma Punch": {
+            "Type": "Fire",
+            "Category": "Physical",
+            "Power": 80,
+            "Accuracy": 95,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Meteor Shower": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 135,
+            "Accuracy": 70,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Mighty Roar": {
+            "Type": "Normal",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Mist": {
+            "Type": "Air",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Monsoon": {
+            "Type": "Water",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Moon Disc": {
+            "Type": "Ghost",
+            "Category": "Special",
+            "Power": 26,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Moonlight": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Mud Ball": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 50,
+            "Accuracy": 95,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Multi Bolt": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 30,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Mutilation Beam": {
+            "Type": "Dark Magic",
+            "Category": "Special",
+            "Power": 70,
+            "Accuracy": 100,
+            "Cost": 12,
+            "Contact": false,
+            "Description": ""
+        },
+        "Ooze Armor": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Overdrive": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Parched Jaws": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 105,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Peck": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 60,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Permafrost": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 70,
+            "Accuracy": 95,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Phantom Spike": {
+            "Type": "Ghost",
+            "Category": "Physical",
+            "Power": 55,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Piercing Horns": {
+            "Type": "Fire",
+            "Category": "Physical",
+            "Power": 60,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Pinion Slice": {
+            "Type": "Ice",
+            "Category": "Physical",
+            "Power": 110,
+            "Accuracy": 95,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Pocket Sand": {
+            "Type": "Sand",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Poison Chomp": {
+            "Type": "Poison",
+            "Category": "Physical",
+            "Power": 85,
+            "Accuracy": 95,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Poison Sting": {
+            "Type": "Poison",
+            "Category": "Physical",
+            "Power": 20,
+            "Accuracy": 100,
+            "Cost": 1,
+            "Contact": false,
+            "Description": ""
+        },
+        "Polter Crush": {
+            "Type": "Ghost",
+            "Category": "Special",
+            "Power": 160,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Power Nap": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Power Slap": {
+            "Type": "Electric",
+            "Category": "Physical",
+            "Power": 30,
+            "Accuracy": 95,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Power Talons": {
+            "Type": "Electric",
+            "Category": "Physical",
+            "Power": 90,
+            "Accuracy": 95,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Precision Eye": {
+            "Type": "Electric",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Precision Punch": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 75,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Premonition": {
+            "Type": "Ghost",
+            "Category": "Special",
+            "Power": 125,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Propellor Punch": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 50,
+            "Accuracy": 90,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Pummel Out": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 75,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Pyre Peck": {
+            "Type": "Fire",
+            "Category": "Physical",
+            "Power": 65,
+            "Accuracy": 90,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Quad Volt": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 55,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Quick Charge": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 2,
+            "Contact": false,
+            "Description": ""
+        },
+        "Quicksand": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 85,
+            "Accuracy": 100,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Rage": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 0,
+            "Contact": false,
+            "Description": ""
+        },
+        "Reconstruct": {
+            "Type": "Sand",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Replenish": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Revenge": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Revenge Jaws": {
+            "Type": "Foul",
+            "Category": "Physical",
+            "Power": 60,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Rock Wall": {
+            "Type": "Sand",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sacrifice": {
+            "Type": "Ghost",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Sand Columns": {
+            "Type": "Sand",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sand Devils": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 100,
+            "Accuracy": 95,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sand Piston": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 50,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sandball": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 40,
+            "Accuracy": 100,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sandman": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 75,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sandspout": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 65,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sandstorm Smack": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 100,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Scary Vision": {
+            "Type": "Foul",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Scratch": {
+            "Type": "Cut",
+            "Category": "Physical",
+            "Power": 40,
+            "Accuracy": 100,
+            "Cost": 2,
+            "Contact": false,
+            "Description": ""
+        },
+        "Scream": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 85,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Seismic Wave": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 10,
+            "Accuracy": 95,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Shadewalker": {
+            "Type": "Ghost",
+            "Category": "Physical",
+            "Power": 40,
+            "Accuracy": 100,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Shadow Fury": {
+            "Type": "Dark Magic",
+            "Category": "Physical",
+            "Power": 55,
+            "Accuracy": 95,
+            "Cost": 12,
+            "Contact": false,
+            "Description": ""
+        },
+        "Shadow Rend": {
+            "Type": "Dark Magic",
+            "Category": "Physical",
+            "Power": 130,
+            "Accuracy": 95,
+            "Cost": 12,
+            "Contact": false,
+            "Description": ""
+        },
+        "Shared Fate": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 9,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sharp Snowball": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 80,
+            "Accuracy": 90,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "shattering Claw": {
+            "Type": "Ice",
+            "Category": "Physical",
+            "Power": 60,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Shell Drill": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 115,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Slam": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 40,
+            "Accuracy": 100,
+            "Cost": 2,
+            "Contact": false,
+            "Description": ""
+        },
+        "Slush": {
+            "Type": "Ice",
+            "Category": "Special",
+            "Power": 30,
+            "Accuracy": 100,
+            "Cost": 2,
+            "Contact": false,
+            "Description": ""
+        },
+        "Smackdown": {
+            "Type": "Heavy",
+            "Category": "Physical",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Smokescreen": {
+            "Type": "Fire",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Snowball": {
+            "Type": "Ice",
+            "Category": "Physical",
+            "Power": 65,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Snowburst": {
+            "Type": "Ice",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
+            "Cost": 2,
+            "Contact": false,
+            "Description": ""
+        },
+        "Snowfall": {
+            "Type": "Ice",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Soul Crush": {
+            "Type": "Ghost",
+            "Category": "Physical",
+            "Power": 80,
+            "Accuracy": 95,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Soul Swap": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Spark Disc": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 50,
+            "Accuracy": 100,
+            "Cost": 9,
+            "Contact": false,
+            "Description": ""
+        },
+        "Spark Wall": {
+            "Type": "Electric",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Spectral Tide": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Splash": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 0,
+            "Accuracy": 95,
+            "Cost": 6,
+            "Contact": false,
+            "Description": "Splash the target, dealing damage equal to the target's level."
+        },
+        "Splatter": {
+            "Type": "Water",
+            "Category": "Physical",
+            "Power": 45,
+            "Accuracy": 95,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Stalgamites": {
+            "Type": "Sand",
+            "Category": "Special",
+            "Power": 90,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Stampede": {
+            "Type": "Fire",
+            "Category": "Physical",
+            "Power": 70,
+            "Accuracy": 90,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Stat Copycat": {
+            "Type": "Magic",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Static Fur": {
+            "Type": "Electric",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Stay Frosty": {
+            "Type": "Ice",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sticky Saliva": {
+            "Type": "Normal",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sting": {
+            "Type": "Electric",
+            "Category": "Physical",
+            "Power": 60,
+            "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Stone Fist": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 65,
+            "Accuracy": 100,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Streamline": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Suffocate": {
+            "Type": "Sand",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Sumo Stance": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Super Drain": {
+            "Type": "Magic",
+            "Category": "Special",
+            "Power": 80,
+            "Accuracy": 100,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Super Energy Drain": {
+            "Type": "Magic",
+            "Category": "Special",
+            "Power": 80,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Super Punch": {
+            "Type": "Electric",
+            "Category": "Physical",
+            "Power": 160,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Supercharge": {
+            "Type": "Electric",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Surge Punch": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 65,
+            "Accuracy": null,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Swarm Diversion": {
+            "Type": "Electric",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Swarm Shocker": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 95,
+            "Accuracy": 100,
+            "Cost": 7,
+            "Contact": false,
+            "Description": ""
+        },
+        "Tactical Slam": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 45,
+            "Accuracy": 100,
+            "Cost": 2,
+            "Contact": false,
+            "Description": ""
+        },
+        "Tail Spin": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 25,
+            "Accuracy": 90,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Tail Splash": {
+            "Type": "Water",
+            "Category": "Physical",
+            "Power": 55,
+            "Accuracy": 100,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Tail Sweep": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 80,
+            "Accuracy": 100,
+            "Cost": 8,
+            "Contact": false,
+            "Description": ""
+        },
+        "Taser": {
+            "Type": "Electric",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 3,
+            "Contact": false,
+            "Description": ""
+        },
+        "Tempest": {
+            "Type": "Air",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": 100,
+            "Cost": 5,
+            "Contact": false,
+            "Description": ""
+        },
+        "Thunder Salvo": {
+            "Type": "Electric",
+            "Category": "Special",
+            "Power": 95,
+            "Accuracy": 90,
+            "Cost": 9,
+            "Contact": false,
+            "Description": ""
+        },
+        "Time Warp": {
+            "Type": "Ghost",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
+            "Cost": 6,
+            "Contact": false,
+            "Description": ""
+        },
+        "Toughen Up": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Toxic Cloud": {
+            "Type": "Poison",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
+            "Cost": 4,
+            "Contact": false,
+            "Description": ""
+        },
+        "Toxic Skull": {
+            "Type": "Sand",
+            "Category": "Physical",
+            "Power": 20,
+            "Accuracy": 90,
+            "Cost": 5,
+            "Contact": false,
+            "Description": "The user throws a skull covered in toxic molds at the target, dealing some damage and causing poison."
+        },
+        "Trait Scent": {
+            "Type": "Normal",
+            "Category": "Status",
+            "Power": 0,
+            "Accuracy": null,
             "Cost": 0,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Trait Swap": {
+            "Type": "Magic",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 5,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
+        "Transcending": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 90,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 9,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
+        "Tricky Bone": {
+            "Type": "Normal",
+            "Category": "Special",
+            "Power": 60,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 4,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
+        "Tricky Claws": {
+            "Type": "Foul",
+            "Category": "Physical",
+            "Power": 40,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 4,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
+        "Turn Tail": {
+            "Type": "Normal",
+            "Category": "Physical",
+            "Power": 65,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 4,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Upshift": {
+            "Type": "Normal",
+            "Category": "Status",
             "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+            "Accuracy": null,
+            "Cost": 3,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
+        "Venomous Bees": {
+            "Type": "Poison",
+            "Category": "Special",
+            "Power": 30,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 2,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Volt Lick": {
+            "Type": "Electric",
+            "Category": "Status",
             "Power": 0,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 2,
             "Contact": false,
             "Description": ""
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+        "Voodoo": {
+            "Type": "Magic",
+            "Category": "Special",
+            "Power": 70,
+            "Accuracy": 90,
+            "Cost": 5,
             "Contact": false,
-            "Description": ""
+            "Description": "Inflict damage on a random target, including opponents not in battle. This attack always goes last."
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Water Clone": {
+            "Type": "Water",
+            "Category": "Status",
             "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+            "Accuracy": null,
+            "Cost": 5,
             "Contact": false,
-            "Description": ""
+            "Description": "Creates a clone afterimage of the user, increasing the user's [stat.evasion] by 2 stages."
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+        "Whirlpool": {
+            "Type": "Water",
+            "Category": "Special",
+            "Power": 85,
+            "Accuracy": 90,
+            "Cost": 6,
             "Contact": false,
-            "Description": ""
+            "Description": "Summon a whirlpool which deals damage and has a 15% chance to knock down the target."
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Whoosh": {
+            "Type": "Air",
+            "Category": "Special",
             "Power": 0,
             "Accuracy": 100,
-            "Cost": 0,
+            "Cost": 6,
             "Contact": false,
-            "Description": ""
+            "Description": "The user launches a speedy whoosh of wind. The power increases with the [stat.speed] of the user and decreases with the [stat.speed] of the target."
         },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+        "Wind Blast": {
+            "Type": "Air",
+            "Category": "Special",
+            "Power": 80,
+            "Accuracy": 95,
+            "Cost": 5,
             "Contact": false,
-            "Description": ""
+            "Description": "Using its wings the user sends a powerful blast of wind towards the target, dealing damage."
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Withdraw": {
+            "Type": "Normal",
+            "Category": "Status",
             "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+            "Accuracy": null,
+            "Cost": 5,
             "Contact": false,
-            "Description": ""
+            "Description": "The user withdraws into its shell, increasing [stat.defense] and [stat.specialDefense] by 1 stage."
         },
-        "": {
-            "Type": "",
-            "Category": "",
+        "Zen Cure": {
+            "Type": "Normal",
+            "Category": "Status",
             "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
+            "Accuracy": null,
+            "Cost": 5,
             "Contact": false,
-            "Description": ""
-        },
-        "": {
-            "Type": "",
-            "Category": "",
-            "Power": 0,
-            "Accuracy": 100,
-            "Cost": 0,
-            "Contact": false,
-            "Description": ""
+            "Description": "Restores 15% of [hp] and removes a status condition to restore another 15% of [hp], if present."
         }
     }
 }

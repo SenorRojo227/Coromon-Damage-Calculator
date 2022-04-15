@@ -12,6 +12,8 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     let feelers = 1;
     let boost1 = 0;
     let boost2 = 0;
+    let boostLevel1 = 0;
+    let boostLevel2 = 0;
     let weatherBonus = 1;
 
     //Check Inputs
@@ -27,29 +29,29 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
       feelers = 1;
     }
 
-    if (selectedSkill.atkType == "Physical") {
-        A = Math.floor(atkMon.stats[2] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[2];
-        D = Math.floor(defMon.stats[3] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[3];
-        boost1 = atkMon.statBoost[0];
-        boost2 = defMon.statBoost[1];
-    } else if (selectedSkill.atkType == "Special") {
-        A = Math.floor(atkMon.stats[4] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[4];
-        D = Math.floor(defMon.stats[5] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[5];
-        boost1 = atkMon.statBoost[2];
-        boost2 = defMon.statBoost[3];
+    if (selectedSkill.Category == "Physical") {
+        A = Math.floor(atkMon.Stats["Atk"] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[2];
+        D = Math.floor(defMon.Stats["Sp.A"] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[3];
+        boostLevel1 = atkMon.statBoost[0];
+        boostLevel2 = defMon.statBoost[1];
+    } else if (selectedSkill.Category == "Special") {
+        A = Math.floor(atkMon.Stats["Sp.A"] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[4];
+        D = Math.floor(defMon.Stats["Sp.D"] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[5];
+        boostLevel1 = atkMon.statBoost[2];
+        boostLevel2 = defMon.statBoost[3];
     } else {
         return [0, 0, 0, 0]
     }
 
-    defHP = Math.floor(defMon.stats[0] * defMon.sets[0].level / 99) + 10 + parseInt(defMon.sets[0].level) + parseInt(defMon.sets[0].potential[0]);
+    defHP = Math.floor(defMon.Stats["HP"] * defMon.sets[0].level / 99) + 10 + parseInt(defMon.sets[0].level) + parseInt(defMon.sets[0].potential[0]);
 
-    if (atkMon.type == selectedSkill.type) {
+    if (atkMon.Type == selectedSkill.Type) {
       stab = 1.25;
     } else {
       stab = 1;
     }
     
-    effectiveness = getEffectiveness(selectedSkill.type, defMon.type);
+    effectiveness = getEffectiveness(selectedSkill.Type, defMon.Type);
     
     if (atkMon.sets[0].trait == "Clumsy Power") {
       trait1 = 1.25;
@@ -63,10 +65,10 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
       trait2 = 0.6;
     }
 
-    if (boost1 > 0) {
-      boost1 = 1 + boost1 * 0.5;
-    } else if (boost1 < 0) {
-      switch(boost1) {
+    if (boostLevel1 > 0) {
+      boost1 = 1 + boostLevel1 * 0.5;
+    } else if (boostLevel1 < 0) {
+      switch(boostLevel1) {
         case -1:
           boost1 = 0.66;
           break;
@@ -90,10 +92,10 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
       boost1 = 1;
     }
 
-    if (boost2 > 0) {
-      boost2 = 1 + boost2 * 0.5;
-    } else if (boost2 < 0) {
-      switch(boost2) {
+    if (boostLevel2 > 0) {
+      boost2 = 1 + boostLevel2 * 0.5;
+    } else if (boostLevel2 < 0) {
+      switch(boostLevel2) {
         case -1:
           boost2 = 0.66;
           break;
@@ -118,13 +120,7 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     }
 
     //Check Weather
-    if (weather == "Rain" && selectedSkill.type == "Water") {
-        weatherBonus = 1.5;
-    }
-    if (weather == "Sandstorm" && selectedSkill.type == "Sand") {
-        weatherBonus = 1.5;
-    }
-    if (weather == "Snow" && selectedSkill.type == "Ice") {
+    if (weather == "Rain" && selectedSkill.Type == "Water") {
         weatherBonus = 1.5;
     }
 
@@ -135,8 +131,8 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
         var highDamage = lowDamage;
     } else {
         var multipliers = stab * trait1 * trait2 * weatherBonus * crit * feelers * effectiveness * boost1 / boost2;
-        var lowDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.power * A / D) / 50) + 2) * multipliers * 0.85 );
-        var highDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.power * A / D) / 50) + 2) * multipliers );
+        var lowDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.Power * A / D) / 50) + 2) * multipliers * 0.85 );
+        var highDamage = Math.floor( ((((((2*atkMon.sets[0].level)/5) + 2) * selectedSkill.Power * A / D) / 50) + 2) * multipliers );
     }
     var lowPerc = Math.round((lowDamage / defHP) * 100);
     var highPerc = Math.round((highDamage / defHP) * 100);
@@ -147,18 +143,51 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
 
 function getStatement(atkMon, defMon, selectedSkill) {
     let statement = "";
-    if (selectedSkill.atkType == "Physical") {
+
+    if (selectedSkill.Category == "Physical") {
+
+        if (atkMon.statBoost[0] > 0) {
+            statement += "+" + atkMon.statBoost[0] + " ";
+        } else if (atkMon.statBoost[0] < 0) {
+            statement += atkMon.statBoost[0] + " ";
+        }
+
         statement += atkMon.sets[0].potential[2] + " Atk ";
-    } else if (selectedSkill.atkType == "Special") {
+
+    } else if (selectedSkill.Category == "Special") {
+
+        if (atkMon.statBoost[2] > 0) {
+            statement += "+" + atkMon.statBoost[2] + " ";
+        } else if (atkMon.statBoost[2] < 0) {
+            statement += atkMon.statBoost[2] + " ";
+        }
+
         statement += atkMon.sets[0].potential[4] + " SpA ";
+
     }
 
     statement += atkMon.name + " " + selectedSkill.name + " vs. ";
 
-    if (selectedSkill.atkType == "Physical") {
+    if (selectedSkill.Category == "Physical") {
+
+        if (defMon.statBoost[1] > 0) {
+            statement += "+" + defMon.statBoost[1] + " ";
+        } else if (defMon.statBoost[1] < 0) {
+            statement += defMon.statBoost[1] + " ";
+        }
+
         statement += defMon.sets[0].potential[3] + " Def ";
-    } else if (selectedSkill.atkType == "Special") {
+
+    } else if (selectedSkill.Category == "Special") {
+
+        if (defMon.statBoost[3] > 0) {
+            statement += "+" + defMon.statBoost[3] + " ";
+        } else if (defMon.statBoost[3] < 0) {
+            statement += defMon.statBoost[3] + " ";
+        }
+
         statement += defMon.sets[0].potential[5] + " SpD ";
+
     }
 
     statement += defMon.name + ": " + getDamage(atkMon, defMon, selectedSkill)[0] + "-"

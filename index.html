@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width">
     <title>Coromon Damage Calculator</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <script src="src/coromon.js"></script>
-    <script src="src/skills.js"></script>
-    <script src="src/other.js"></script>
-    <script src="src/items.json"></script>
     <script src="src/calc.js" defer></script>
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Coromon Damage Calculator</h1>
-      <p><a href="https://trello.com/b/0jCzFCWd/damage-calculator">V0.9.1</a> by SrRojo</p>
+      <p><a href="https://trello.com/b/0jCzFCWd/damage-calculator">V1.0.0</a> by SrRojo</p>
     </header>
     <div id="wrap">
       <div class="results">
         <span id="resultHeader1">Cubzero's skills (Select one for more info)</span>
         <div>
-          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL1" checked="checked" onchange="calculate()">
+          <input type="radio" name="skillResult" class="hiddenRadio" id="skillRadioL1" checked=true onchange="calculate()">
           <label id="skillLabelL1" class="skillLabel" for="skillRadioL1">(No Skill)</label>
           <span id="resultDamageL1">0% - 0%</span>
         </div>
@@ -84,7 +80,7 @@
             <option>Ghost</option>
           </select>
           <label>Level:</label>
-          <input value="25" id="lvl1" onchange="updateSet(1)">
+          <input value="50" id="lvl1" onchange="updateSet(1)">
 
           <table>
             <tr>
@@ -147,17 +143,15 @@
           
           <label>Trait:</label>
           <select class="traitSelector" id="trait1" onchange="updateSet(1)">
-            <option>(none)</option>
+            <option>(No Trait)</option>
           </select>
           <label>Item:</label>
           <select class="itemSelector" id="item1" onchange="updateSet(1)">
-            <option>(none)</option>
+            <option>(No Item)</option>
           </select>
 
           <div class="skills">
-            <select id="skillInputL1" onchange="updateSet(1)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputL1" onchange="updateSet(1)"></select>
             <input type="number" value="0" id = "skillDmgL1" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL1" onchange="updateSet(1)">
               <option>Normal</option>
@@ -183,9 +177,7 @@
             <label for="critL1" id="critLabelL1" class="critLabel">Crit</label>
           </div>
           <div class="skills">
-            <select id="skillInputL2" onchange="updateSet(1)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputL2" onchange="updateSet(1)"></select>
             <input type="number" value="0" id = "skillDmgL2" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL2" onchange="updateSet(1)">
               <option>Normal</option>
@@ -211,9 +203,7 @@
             <label for="critL2" id="critLabelL2" class="critLabel">Crit</label>
           </div>
           <div class="skills">
-            <select id="skillInputL3" onchange="updateSet(1)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputL3" onchange="updateSet(1)"></select>
             <input type="number" value="0" id = "skillDmgL3" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL3" onchange="updateSet(1)">
               <option>Normal</option>
@@ -239,9 +229,7 @@
             <label for="critL3" id="critLabelL3" class="critLabel">Crit</label>
           </div>
           <div class="skills">
-            <select id="skillInputL4" onchange="updateSet(1)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputL4" onchange="updateSet(1)"></select>
             <input type="number" value="0" id = "skillDmgL4" onchange="updateSet(1)">
             <select value="Normal" id = "skillTypeL4" onchange="updateSet(1)">
               <option>Normal</option>
@@ -282,7 +270,7 @@
             <option>Ghost</option>
           </select>
           <label>Level:</label>
-          <input value="25" id="lvl2" onchange="updateSet(2)">
+          <input value="50" id="lvl2" onchange="updateSet(2)">
 
           <table>
             <tr>
@@ -345,17 +333,15 @@
           
           <label>Trait:</label>
           <select class="traitSelector" id="trait2" onchange="updateSet(2)">
-            <option>(none)</option>
+            <option>(No Trait)</option>
           </select>
           <label>Item:</label>
           <select class="itemSelector" id="item2" onchange="updateSet(2)">
-            <option>(none)</option>
+            <option>(No Item)</option>
           </select>
 
           <div class="skills">
-            <select id="skillInputR1" onchange="updateSet(2)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputR1" onchange="updateSet(2)"></select>
             <input type="number" value="0" id = "skillDmgR1" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR1" onchange="updateSet(2)">
               <option>Normal</option>
@@ -381,9 +367,7 @@
             <label for="critR1" id="critLabelR1" class="critLabel">Crit</label>
           </div>
           <div class="skills">
-            <select id="skillInputR2" onchange="updateSet(2)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputR2" onchange="updateSet(2)"></select>
             <input type="number" value="0" id = "skillDmgR2" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR2" onchange="updateSet(2)">
               <option>Normal</option>
@@ -409,9 +393,7 @@
             <label for="critR2" id="critLabelR2" class="critLabel">Crit</label>
           </div>
           <div class="skills">
-            <select id="skillInputR3" onchange="updateSet(2)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputR3" onchange="updateSet(2)"></select>
             <input type="number" value="0" id = "skillDmgR3" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR3" onchange="updateSet(2)">
               <option>Normal</option>
@@ -437,9 +419,7 @@
             <label for="critR3" id="critLabelR3" class="critLabel">Crit</label>
           </div>
           <div class="skills">
-            <select id="skillInputR4" onchange="updateSet(2)">
-              <option>(No Skill)</option>
-            </select>
+            <select id="skillInputR4" onchange="updateSet(2)"></select>
             <input type="number" value="0" id = "skillDmgR4" onchange="updateSet(2)">
             <select value="Normal" id = "skillTypeR4" onchange="updateSet(2)">
               <option>Normal</option>
