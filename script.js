@@ -12,9 +12,9 @@ const items = itemsJSON.S1["Held Items"];
 let coromonList = Object.keys(coromon);
 let skillList = Object.keys(skills);
 
-let chosenMons = [coromon.Cubzero.statBoost = [0, 0, 0, 0, 0], coromon.Cubzero.statBoost = [0, 0, 0, 0, 0]];
-let chosenSkills = [[skills["(No Skill)"].crit = false, skills["(No Skill)"].crit = false, skills["(No Skill)"].crit = false, skills["(No Skill)"].crit = false],
-                    [skills["(No Skill)"].crit = false, skills["(No Skill)"].crit = false, skills["(No Skill)"].crit = false, skills["(No Skill)"].crit = false]];
+let chosenMons = [Object.assign({}, coromon.Cubzero.statBoost = [0, 0, 0, 0, 0]), Object.assign({}, coromon.Cubzero.statBoost = [0, 0, 0, 0, 0])];
+let chosenSkills = [[Object.assign({}, skills["(No Skill)"].crit = false), Object.assign({}, skills["(No Skill)"].crit = false), Object.assign({}, skills["(No Skill)"].crit = false), Object.assign({}, skills["(No Skill)"].crit = false)],
+                    [Object.assign({}, skills["(No Skill)"].crit = false), Object.assign({}, skills["(No Skill)"].crit = false), Object.assign({}, skills["(No Skill)"].crit = false), Object.assign({}, skills["(No Skill)"].crit = false)]];
 
 window.onload = function() {
     initCoromon();
@@ -90,7 +90,7 @@ function resetSet(id) {
 
     //Coromon Search
     let selectedCoromon = document.querySelector("#name" + id + " option:checked").parentElement.label;
-    chosenMons[id - 1] = coromon[selectedCoromon];
+    chosenMons[id - 1] = Object.assign({}, coromon[selectedCoromon]);
     chosenMons[id - 1].name = selectedCoromon;
     chosenMons[id - 1].statBoost = [0, 0, 0, 0, 0];
     chosenMons[id - 1].sets = [];
@@ -108,7 +108,7 @@ function resetSet(id) {
 
     //Skill Search
     for (let i = 0; i < 4; i++) {
-        chosenSkills[id - 1][i] = skills[chosenMons[id - 1].sets[0].skills[i]];
+        chosenSkills[id - 1][i] = Object.assign({}, skills[chosenMons[id - 1].sets[0].skills[i]]);
         chosenSkills[id - 1][i].name = chosenMons[id - 1].sets[0].skills[i];
     }
 
