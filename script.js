@@ -199,13 +199,13 @@ function updateSet(id) {
     chosenMons[id - 1].sets[0].level = document.getElementById("lvl" + id).value;
 
     //Update Stats
-    chosenMons[id - 1].Stats[0] = document.getElementById("hp" + id).value;
-    chosenMons[id - 1].Stats[1] = document.getElementById("sp" + id).value;
-    chosenMons[id - 1].Stats[2] = document.getElementById("atk" + id).value;
-    chosenMons[id - 1].Stats[3] = document.getElementById("def" + id).value;
-    chosenMons[id - 1].Stats[4] = document.getElementById("spAtk" + id).value;
-    chosenMons[id - 1].Stats[5] = document.getElementById("spDef" + id).value;
-    chosenMons[id - 1].Stats[6] = document.getElementById("spe" + id).value;
+    chosenMons[id - 1].Stats["HP"] = document.getElementById("hp" + id).value;
+    chosenMons[id - 1].Stats["SP"] = document.getElementById("sp" + id).value;
+    chosenMons[id - 1].Stats["Atk"] = document.getElementById("atk" + id).value;
+    chosenMons[id - 1].Stats["Def"] = document.getElementById("def" + id).value;
+    chosenMons[id - 1].Stats["Sp.A"] = document.getElementById("spAtk" + id).value;
+    chosenMons[id - 1].Stats["Sp.D"] = document.getElementById("spDef" + id).value;
+    chosenMons[id - 1].Stats["Spe"] = document.getElementById("spe" + id).value;
     for (let i = 1; i <= 5; i++) {
         chosenMons[id - 1].statBoost[i - 1] = parseInt(document.getElementById("statBoost" + side + i).value);
     }
