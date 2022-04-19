@@ -55,6 +55,8 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
     
     if (atkMon.sets[0].trait == "Clumsy Power") {
       trait1 = 1.25;
+    } else if (atkMon.sets[0].trait == "Zealous") {
+      trait1 = 1.2;
     } else if (atkMon.sets[0].trait == "Amplified" && effectiveness == 2) {
       trait1 = 1.25;
     } else {
