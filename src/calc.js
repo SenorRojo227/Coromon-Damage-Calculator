@@ -31,7 +31,7 @@ function getDamage(atkMon, defMon, selectedSkill, weather = "none") {
 
     if (selectedSkill.Category == "Physical") {
         A = Math.floor(atkMon.Stats["Atk"] * atkMon.sets[0].level / 99) + 5 + atkMon.sets[0].potential[2];
-        D = Math.floor(defMon.Stats["Sp.A"] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[3];
+        D = Math.floor(defMon.Stats["Def"] * defMon.sets[0].level / 99) + 5 + defMon.sets[0].potential[3];
         boostLevel1 = atkMon.statBoost[0];
         boostLevel2 = defMon.statBoost[1];
     } else if (selectedSkill.Category == "Special") {
