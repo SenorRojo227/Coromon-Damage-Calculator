@@ -6,12 +6,12 @@
             "Type": "Ice",
             "BST": {
                 "HP": 90,
+                "SP": 34,
                 "Atk": 130,
                 "Def": 110,
                 "Sp.A": 100,
                 "Sp.D": 120,
-                "Spd": 90,
-                "SP": 34
+                "Spd": 90
             },
             "Traits": [
                 "Sharp Claws",
@@ -32,12 +32,12 @@
             "Type": "Ice",
             "BST": {
                 "HP": 120,
+                "SP": 34,
                 "Atk": 170,
                 "Def": 140,
                 "Sp.A": 130,
                 "Sp.D": 150,
-                "Spd": 120,
-                "SP": 34
+                "Spd": 120
             },
             "Traits": [
                 "Sharp Claws",
@@ -58,12 +58,12 @@
             "Type": "Fire",
             "BST": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 100,
                 "Def": 90,
                 "Sp.A": 120,
                 "Sp.D": 100,
-                "Spd": 130,
-                "SP": 34
+                "Spd": 130
             },
             "Traits": [
                 "Vegetarian",
@@ -83,12 +83,12 @@
             "Type": "Fire",
             "BST": {
                 "HP": 120,
+                "SP": 34,
                 "Atk": 120,
                 "Def": 120,
                 "Sp.A": 160,
                 "Sp.D": 130,
-                "Spd": 160,
-                "SP": 34
+                "Spd": 160
             },
             "Traits": [
                 "Vegetarian",
@@ -108,12 +108,12 @@
             "Type": "Water",
             "BST": {
                 "HP": 90,
+                "SP": 34,
                 "Atk": 90,
                 "Def": 130,
                 "Sp.A": 100,
                 "Sp.D": 130,
-                "Spd": 90,
-                "SP": 34
+                "Spd": 90
             },
             "Traits": [
                 "Supersensory",
@@ -133,12 +133,12 @@
             "Type": "Water",
             "BST": {
                 "HP": 118,
+                "SP": 34,
                 "Atk": 126,
                 "Def": 160,
                 "Sp.A": 130,
                 "Sp.D": 160,
-                "Spd": 116,
-                "SP": 34
+                "Spd": 116
             },
             "Traits": [
                 "Supersensory",
@@ -158,12 +158,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 70,
                 "Def": 60,
                 "Sp.A": 40,
                 "Sp.D": 40,
-                "Spd": 100,
-                "SP": 34
+                "Spd": 100
             },
             "Traits": [
                 "Strategist",
@@ -185,12 +185,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 100,
+                "SP": 34,
                 "Atk": 160,
                 "Def": 70,
                 "Sp.A": 60,
                 "Sp.D": 100,
-                "Spd": 140,
-                "SP": 34
+                "Spd": 140
             },
             "Traits": [
                 "Strategist",
@@ -212,12 +212,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 90,
                 "Def": 80,
                 "Sp.A": 70,
                 "Sp.D": 70,
-                "Spd": 110,
-                "SP": 34
+                "Spd": 110
             },
             "Traits": [
                 "Escapist",
@@ -238,12 +238,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 115,
+                "SP": 34,
                 "Atk": 115,
                 "Def": 105,
                 "Sp.A": 95,
                 "Sp.D": 95,
-                "Spd": 140,
-                "SP": 34
+                "Spd": 140
             },
             "Traits": [
                 "Escapist",
@@ -264,12 +264,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 130,
                 "Def": 100,
                 "Sp.A": 90,
                 "Sp.D": 120,
-                "Spd": 120,
-                "SP": 34
+                "Spd": 120
             },
             "Traits": [
                 "Good Aim",
@@ -289,12 +289,12 @@
             "Type": "Electric",
             "BST": {
                 "HP": 90,
+                "SP": 34,
                 "Atk": 120,
                 "Def": 60,
                 "Sp.A": 160,
                 "Sp.D": 100,
-                "Spd": 130,
-                "SP": 34
+                "Spd": 130
             },
             "Traits": [
                 "Menacing",
@@ -315,12 +315,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 160,
                 "Def": 200,
                 "Sp.A": 60,
                 "Sp.D": 60,
-                "Spd": 60,
-                "SP": 34
+                "Spd": 60
             },
             "Traits": [
                 "Hoarder",
@@ -340,12 +340,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 110,
+                "SP": 34,
                 "Atk": 190,
                 "Def": 230,
                 "Sp.A": 90,
                 "Sp.D": 90,
-                "Spd": 80,
-                "SP": 34
+                "Spd": 80
             },
             "Traits": [
                 "Hoarder",
@@ -365,12 +365,12 @@
             "Type": "Sand",
             "BST": {
                 "HP": 100,
+                "SP": 34,
                 "Atk": 150,
                 "Def": 70,
                 "Sp.A": 140,
                 "Sp.D": 60,
-                "Spd": 80,
-                "SP": 34
+                "Spd": 80
             },
             "Traits": [
                 "Escapist",
@@ -391,12 +391,12 @@
             "Type": "Sand",
             "BST": {
                 "HP": 124,
+                "SP": 34,
                 "Atk": 172,
                 "Def": 94,
                 "Sp.A": 164,
                 "Sp.D": 84,
-                "Spd": 106,
-                "SP": 34
+                "Spd": 106
             },
             "Traits": [
                 "Escapist",
@@ -417,12 +417,12 @@
             "Type": "Electric",
             "BST": {
                 "HP": 110,
+                "SP": 34,
                 "Atk": 80,
                 "Def": 80,
                 "Sp.A": 130,
                 "Sp.D": 90,
-                "Spd": 70,
-                "SP": 34
+                "Spd": 70
             },
             "Traits": [
                 "Good Aim",
@@ -442,12 +442,12 @@
             "Type": "Electric",
             "BST": {
                 "HP": 140,
+                "SP": 34,
                 "Atk": 110,
                 "Def": 110,
                 "Sp.A": 160,
                 "Sp.D": 120,
-                "Spd": 90,
-                "SP": 34
+                "Spd": 90
             },
             "Traits": [
                 "Good Aim",
@@ -467,12 +467,12 @@
             "Type": "Ghost",
             "BST": {
                 "HP": 60,
+                "SP": 34,
                 "Atk": 70,
                 "Def": 60,
                 "Sp.A": 200,
                 "Sp.D": 70,
-                "Spd": 160,
-                "SP": 34
+                "Spd": 160
             },
             "Traits": [
                 "Gravity Pull",
@@ -493,12 +493,12 @@
             "Type": "Ghost",
             "BST": {
                 "HP": 90,
+                "SP": 34,
                 "Atk": 100,
                 "Def": 90,
                 "Sp.A": 230,
                 "Sp.D": 110,
-                "Spd": 190,
-                "SP": 34
+                "Spd": 190
             },
             "Traits": [
                 "Gravity Pull",
@@ -519,12 +519,12 @@
             "Type": "Electric",
             "BST": {
                 "HP": 70,
+                "SP": 34,
                 "Atk": 70,
                 "Def": 80,
                 "Sp.A": 80,
                 "Sp.D": 110,
-                "Spd": 100,
-                "SP": 34
+                "Spd": 100
             },
             "Traits": [
                 "Amplified",
@@ -546,12 +546,12 @@
             "Type": "Electric",
             "BST": {
                 "HP": 110,
+                "SP": 34,
                 "Atk": 90,
                 "Def": 100,
                 "Sp.A": 100,
                 "Sp.D": 130,
-                "Spd": 160,
-                "SP": 34
+                "Spd": 160
             },
             "Traits": [
                 "Amplified",
@@ -573,12 +573,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 130,
+                "SP": 34,
                 "Atk": 120,
                 "Def": 140,
                 "Sp.A": 170,
                 "Sp.D": 150,
-                "Spd": 80,
-                "SP": 34
+                "Spd": 80
             },
             "Traits": [
                 "Overclocker",
@@ -598,12 +598,12 @@
             "Type": "Normal",
             "BST": {
                 "HP": 170,
+                "SP": 34,
                 "Atk": 160,
                 "Def": 180,
                 "Sp.A": 210,
                 "Sp.D": 190,
-                "Spd": 120,
-                "SP": 34
+                "Spd": 120
             },
             "Traits": [
                 "Overclocker",
@@ -623,12 +623,12 @@
             "Type": "Electric",
             "BST": {
                 "HP": 50,
+                "SP": 34,
                 "Atk": 140,
                 "Def": 140,
                 "Sp.A": 120,
                 "Sp.D": 110,
-                "Spd": 90,
-                "SP": 34
+                "Spd": 90
             },
             "Traits": [
                 "Stick Layer",
@@ -650,12 +650,12 @@
             "Type": "Fire",
             "BST": {
                 "HP": 70,
+                "SP": 34,
                 "Atk": 120,
                 "Def": 60,
                 "Sp.A": 100,
                 "Sp.D": 100,
-                "Spd": 140,
-                "SP": 34
+                "Spd": 140
             },
             "Traits": [
                 "Comeback",
@@ -676,12 +676,12 @@
             "Type": "Ice",
             "BST": {
                 "HP": 60,
+                "SP": 34,
                 "Atk": 50,
                 "Def": 50,
                 "Sp.A": 90,
                 "Sp.D": 70,
-                "Spd": 80,
-                "SP": 34
+                "Spd": 80
             },
             "Traits": [
                 "Caffeinated",
@@ -703,12 +703,12 @@
             "Type": "Ice",
             "BST": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 70,
                 "Def": 90,
                 "Sp.A": 130,
                 "Sp.D": 120,
-                "Spd": 100,
-                "SP": 34
+                "Spd": 100
             },
             "Traits": [
                 "Caffeinated",
@@ -734,12 +734,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 90,
+                "SP": 34,
                 "Atk": 131,
                 "Def": 109,
                 "Sp.A": 98,
                 "Sp.D": 119,
-                "Spe": 88,
-                "SP": 34
+                "Spe": 88
             },
             "Traits": [
                 "Stoic",
@@ -784,12 +784,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 121,
+                "SP": 34,
                 "Atk": 172,
                 "Def": 140,
                 "Sp.A": 129,
                 "Sp.D": 148,
-                "Spe": 119,
-                "SP": 34
+                "Spe": 119
             },
             "Traits": [
                 "Stoic",
@@ -838,12 +838,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 162,
+                "SP": 34,
                 "Atk": 203,
                 "Def": 181,
                 "Sp.A": 170,
                 "Sp.D": 179,
-                "Spe": 158,
-                "SP": 34
+                "Spe": 158
             },
             "Traits": [
                 "Stoic",
@@ -892,12 +892,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 99,
                 "Def": 90,
                 "Sp.A": 121,
                 "Sp.D": 102,
-                "Spe": 132,
-                "SP": 34
+                "Spe": 132
             },
             "Traits": [
                 "Vegetarian",
@@ -925,12 +925,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 121,
+                "SP": 34,
                 "Atk": 122,
                 "Def": 119,
                 "Sp.A": 162,
                 "Sp.D": 128,
-                "Spe": 161,
-                "SP": 34
+                "Spe": 161
             },
             "Traits": [
                 "Vegetarian",
@@ -958,12 +958,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 159,
+                "SP": 34,
                 "Atk": 180,
                 "Def": 145,
                 "Sp.A": 236,
                 "Sp.D": 161,
-                "Spe": 199,
-                "SP": 34
+                "Spe": 199
             },
             "Traits": [
                 "Vegetarian",
@@ -991,12 +991,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 89,
+                "SP": 34,
                 "Atk": 89,
                 "Def": 131,
                 "Sp.A": 98,
                 "Sp.D": 132,
-                "Spe": 91,
-                "SP": 34
+                "Spe": 91
             },
             "Traits": [
                 "Vigilant",
@@ -1024,12 +1024,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 118,
+                "SP": 34,
                 "Atk": 126,
                 "Def": 162,
                 "Sp.A": 130,
                 "Sp.D": 160,
-                "Spe": 116,
-                "SP": 34
+                "Spe": 116
             },
             "Traits": [
                 "Vigilant",
@@ -1057,12 +1057,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 158,
+                "SP": 34,
                 "Atk": 166,
                 "Def": 204,
                 "Sp.A": 168,
                 "Sp.D": 214,
-                "Spe": 156,
-                "SP": 34
+                "Spe": 156
             },
             "Traits": [
                 "Vigilant",
@@ -1090,12 +1090,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 81,
+                "SP": 34,
                 "Atk": 67,
                 "Def": 58,
                 "Sp.A": 36,
                 "Sp.D": 36,
-                "Spe": 98,
-                "SP": 34
+                "Spe": 98
             },
             "Traits": [
                 "Strategist",
@@ -1117,12 +1117,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 102,
+                "SP": 34,
                 "Atk": 161,
                 "Def": 71,
                 "Sp.A": 62,
                 "Sp.D": 98,
-                "Spe": 141,
-                "SP": 34
+                "Spe": 141
             },
             "Traits": [
                 "Strategist",
@@ -1144,12 +1144,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 143,
+                "SP": 34,
                 "Atk": 247,
                 "Def": 91,
                 "Sp.A": 89,
                 "Sp.D": 174,
-                "Spe": 185,
-                "SP": 34
+                "Spe": 185
             },
             "Traits": [
                 "Strategist",
@@ -1171,12 +1171,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 78,
+                "SP": 34,
                 "Atk": 91,
                 "Def": 79,
                 "Sp.A": 56,
                 "Sp.D": 71,
-                "Spe": 110,
-                "SP": 34
+                "Spe": 110
             },
             "Traits": [
                 "Pep Talk",
@@ -1199,12 +1199,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 124,
+                "SP": 34,
                 "Atk": 128,
                 "Def": 112,
                 "Sp.A": 79,
                 "Sp.D": 98,
-                "Spe": 152,
-                "SP": 34
+                "Spe": 152
             },
             "Traits": [
                 "Pep Talk",
@@ -1227,12 +1227,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 172,
+                "SP": 34,
                 "Atk": 162,
                 "Def": 148,
                 "Sp.A": 161,
                 "Sp.D": 142,
-                "Spe": 208,
-                "SP": 34
+                "Spe": 208
             },
             "Traits": [
                 "Pep Talk",
@@ -1255,12 +1255,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 81,
+                "SP": 34,
                 "Atk": 132,
                 "Def": 88,
                 "Sp.A": 90,
                 "Sp.D": 124,
-                "Spe": 124,
-                "SP": 34
+                "Spe": 124
             },
             "Traits": [
                 "Reconstitution",
@@ -1282,12 +1282,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 142,
+                "SP": 34,
                 "Atk": 213,
                 "Def": 153,
                 "Sp.A": 139,
                 "Sp.D": 188,
-                "Spe": 188,
-                "SP": 34
+                "Spe": 188
             },
             "Traits": [
                 "Reconstitution",
@@ -1309,12 +1309,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 92,
+                "SP": 34,
                 "Atk": 119,
                 "Def": 59,
                 "Sp.A": 161,
                 "Sp.D": 97,
-                "Spe": 132,
-                "SP": 34
+                "Spe": 132
             },
             "Traits": [
                 "Menacing",
@@ -1335,12 +1335,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 167,
+                "SP": 34,
                 "Atk": 218,
                 "Def": 107,
                 "Sp.A": 230,
                 "Sp.D": 148,
-                "Spe": 197,
-                "SP": 34
+                "Spe": 197
             },
             "Traits": [
                 "Menacing",
@@ -1361,12 +1361,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 68,
+                "SP": 34,
                 "Atk": 161,
                 "Def": 203,
                 "Sp.A": 59,
                 "Sp.D": 51,
-                "Spe": 59,
-                "SP": 34
+                "Spe": 59
             },
             "Traits": [
                 "Hoarder",
@@ -1386,12 +1386,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 126,
+                "SP": 34,
                 "Atk": 197,
                 "Def": 234,
                 "Sp.A": 88,
                 "Sp.D": 67,
-                "Spe": 82,
-                "SP": 34
+                "Spe": 82
             },
             "Traits": [
                 "Hoarder",
@@ -1411,12 +1411,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 168,
+                "SP": 34,
                 "Atk": 246,
                 "Def": 266,
                 "Sp.A": 112,
                 "Sp.D": 129,
-                "Spe": 88,
-                "SP": 34
+                "Spe": 88
             },
             "Traits": [
                 "Hoarder",
@@ -1436,12 +1436,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 121,
+                "SP": 34,
                 "Atk": 143,
                 "Def": 121,
                 "Sp.A": 108,
                 "Sp.D": 102,
-                "Spe": 127,
-                "SP": 34
+                "Spe": 127
             },
             "Traits": [
                 "Thick Skin",
@@ -1468,12 +1468,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 162,
+                "SP": 34,
                 "Atk": 206,
                 "Def": 162,
                 "Sp.A": 183,
                 "Sp.D": 138,
-                "Spe": 162,
-                "SP": 34
+                "Spe": 162
             },
             "Traits": [
                 "Thick Skin",
@@ -1500,12 +1500,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 80,
+                "SP": 34,
                 "Atk": 68,
                 "Def": 144,
                 "Sp.A": 102,
                 "Sp.D": 105,
-                "Spe": 132,
-                "SP": 34
+                "Spe": 132
             },
             "Traits": [
                 ""
@@ -1519,12 +1519,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 134,
+                "SP": 34,
                 "Atk": 141,
                 "Def": 172,
                 "Sp.A": 226,
                 "Sp.D": 168,
-                "Spe": 174,
-                "SP": 34
+                "Spe": 174
             },
             "Traits": [
                 ""
@@ -1538,12 +1538,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 129,
+                "SP": 34,
                 "Atk": 129,
                 "Def": 81,
                 "Sp.A": 92,
                 "Sp.D": 84,
-                "Spe": 88,
-                "SP": 34
+                "Spe": 88
             },
             "Traits": [
                 ""
@@ -1557,12 +1557,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 177,
+                "SP": 34,
                 "Atk": 188,
                 "Def": 108,
                 "Sp.A": 139,
                 "Sp.D": 110,
-                "Spe": 112,
-                "SP": 34
+                "Spe": 112
             },
             "Traits": [
                 ""
@@ -1576,12 +1576,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 216,
+                "SP": 34,
                 "Atk": 232,
                 "Def": 122,
                 "Sp.A": 194,
                 "Sp.D": 124,
-                "Spe": 132,
-                "SP": 34
+                "Spe": 132
             },
             "Traits": [
                 ""
@@ -1595,12 +1595,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 62,
+                "SP": 34,
                 "Atk": 191,
                 "Def": 159,
                 "Sp.A": 52,
                 "Sp.D": 48,
-                "Spe": 102,
-                "SP": 34
+                "Spe": 102
             },
             "Traits": [
                 ""
@@ -1614,12 +1614,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 143,
+                "SP": 34,
                 "Atk": 278,
                 "Def": 245,
                 "Sp.A": 128,
                 "Sp.D": 104,
-                "Spe": 148,
-                "SP": 34
+                "Spe": 148
             },
             "Traits": [
                 ""
@@ -1633,12 +1633,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 99,
+                "SP": 34,
                 "Atk": 151,
                 "Def": 68,
                 "Sp.A": 142,
                 "Sp.D": 61,
-                "Spe": 80,
-                "SP": 34
+                "Spe": 80
             },
             "Traits": [
                 "Escapist",
@@ -1659,12 +1659,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 128,
+                "SP": 34,
                 "Atk": 172,
                 "Def": 94,
                 "Sp.A": 164,
                 "Sp.D": 84,
-                "Spe": 106,
-                "SP": 34
+                "Spe": 106
             },
             "Traits": [
                 "Escapist",
@@ -1685,12 +1685,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 158,
+                "SP": 34,
                 "Atk": 230,
                 "Def": 111,
                 "Sp.A": 221,
                 "Sp.D": 118,
-                "Spe": 142,
-                "SP": 34
+                "Spe": 142
             },
             "Traits": [
                 ""
@@ -1704,12 +1704,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 108,
+                "SP": 34,
                 "Atk": 78,
                 "Def": 79,
                 "Sp.A": 132,
                 "Sp.D": 91,
-                "Spe": 67,
-                "SP": 34
+                "Spe": 67
             },
             "Traits": [
                 "Good Aim",
@@ -1729,12 +1729,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 142,
+                "SP": 34,
                 "Atk": 110,
                 "Def": 108,
                 "Sp.A": 161,
                 "Sp.D": 122,
-                "Spe": 90,
-                "SP": 34
+                "Spe": 90
             },
             "Traits": [
                 "Good Aim",
@@ -1754,12 +1754,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 181,
+                "SP": 34,
                 "Atk": 172,
                 "Def": 170,
                 "Sp.A": 216,
                 "Sp.D": 178,
-                "Spe": 102,
-                "SP": 34
+                "Spe": 102
             },
             "Traits": [
                 ""
@@ -1773,12 +1773,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 58,
+                "SP": 34,
                 "Atk": 72,
                 "Def": 60,
                 "Sp.A": 181,
                 "Sp.D": 72,
-                "Spe": 160,
-                "SP": 34
+                "Spe": 160
             },
             "Traits": [
                 "Gravity Pull",
@@ -1799,12 +1799,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 89,
+                "SP": 34,
                 "Atk": 134,
                 "Def": 92,
                 "Sp.A": 213,
                 "Sp.D": 107,
-                "Spe": 191,
-                "SP": 34
+                "Spe": 191
             },
             "Traits": [
                 "Gravity Pull",
@@ -1825,12 +1825,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 120,
+                "SP": 34,
                 "Atk": 183,
                 "Def": 121,
                 "Sp.A": 224,
                 "Sp.D": 152,
-                "Spe": 223,
-                "SP": 34
+                "Spe": 223
             },
             "Traits": [
                 ""
@@ -1844,12 +1844,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 141,
+                "SP": 34,
                 "Atk": 79,
                 "Def": 96,
                 "Sp.A": 108,
                 "Sp.D": 98,
-                "Spe": 46,
-                "SP": 34
+                "Spe": 46
             },
             "Traits": [
                 ""
@@ -1863,12 +1863,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 180,
+                "SP": 34,
                 "Atk": 121,
                 "Def": 137,
                 "Sp.A": 149,
                 "Sp.D": 141,
-                "Spe": 84,
-                "SP": 34
+                "Spe": 84
             },
             "Traits": [
                 ""
@@ -1882,12 +1882,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 219,
+                "SP": 34,
                 "Atk": 162,
                 "Def": 169,
                 "Sp.A": 186,
                 "Sp.D": 181,
-                "Spe": 118,
-                "SP": 34
+                "Spe": 118
             },
             "Traits": [
                 ""
@@ -1901,12 +1901,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 91,
+                "SP": 34,
                 "Atk": 118,
                 "Def": 78,
                 "Sp.A": 132,
                 "Sp.D": 98,
-                "Spe": 93,
-                "SP": 34
+                "Spe": 93
             },
             "Traits": [
                 ""
@@ -1920,12 +1920,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 91,
+                "SP": 34,
                 "Atk": 118,
                 "Def": 78,
                 "Sp.A": 132,
                 "Sp.D": 98,
-                "Spe": 93,
-                "SP": 34
+                "Spe": 93
             },
             "Traits": [
                 ""
@@ -1939,12 +1939,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 152,
+                "SP": 34,
                 "Atk": 225,
                 "Def": 129,
                 "Sp.A": 217,
                 "Sp.D": 132,
-                "Spe": 154,
-                "SP": 34
+                "Spe": 154
             },
             "Traits": [
                 ""
@@ -1958,12 +1958,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 54,
+                "SP": 34,
                 "Atk": 71,
                 "Def": 138,
                 "Sp.A": 195,
                 "Sp.D": 118,
-                "Spe": 89,
-                "SP": 34
+                "Spe": 89
             },
             "Traits": [
                 ""
@@ -1977,12 +1977,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 105,
+                "SP": 34,
                 "Atk": 120,
                 "Def": 188,
                 "Sp.A": 256,
                 "Sp.D": 195,
-                "Spe": 144,
-                "SP": 34
+                "Spe": 144
             },
             "Traits": [
                 ""
@@ -1996,12 +1996,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 158,
+                "SP": 34,
                 "Atk": 171,
                 "Def": 192,
                 "Sp.A": 56,
                 "Sp.D": 72,
-                "Spe": 58,
-                "SP": 34
+                "Spe": 58
             },
             "Traits": [
                 ""
@@ -2015,12 +2015,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 197,
+                "SP": 34,
                 "Atk": 288,
                 "Def": 266,
                 "Sp.A": 98,
                 "Sp.D": 111,
-                "Spe": 78,
-                "SP": 34
+                "Spe": 78
             },
             "Traits": [
                 ""
@@ -2034,12 +2034,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 71,
+                "SP": 34,
                 "Atk": 83,
                 "Def": 98,
                 "Sp.A": 136,
                 "Sp.D": 80,
-                "Spe": 120,
-                "SP": 34
+                "Spe": 120
             },
             "Traits": [
                 ""
@@ -2053,12 +2053,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 122,
+                "SP": 34,
                 "Atk": 138,
                 "Def": 114,
                 "Sp.A": 176,
                 "Sp.D": 128,
-                "Spe": 148,
-                "SP": 34
+                "Spe": 148
             },
             "Traits": [
                 ""
@@ -2072,12 +2072,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 174,
+                "SP": 34,
                 "Atk": 226,
                 "Def": 159,
                 "Sp.A": 182,
                 "Sp.D": 131,
-                "Spe": 164,
-                "SP": 34
+                "Spe": 164
             },
             "Traits": [
                 ""
@@ -2091,12 +2091,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 143,
+                "SP": 34,
                 "Atk": 158,
                 "Def": 94,
                 "Sp.A": 63,
                 "Sp.D": 65,
-                "Spe": 68,
-                "SP": 34
+                "Spe": 68
             },
             "Traits": [
                 ""
@@ -2110,12 +2110,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 152,
+                "SP": 34,
                 "Atk": 202,
                 "Def": 141,
                 "Sp.A": 107,
                 "Sp.D": 121,
-                "Spe": 90,
-                "SP": 34
+                "Spe": 90
             },
             "Traits": [
                 ""
@@ -2129,12 +2129,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 161,
+                "SP": 34,
                 "Atk": 260,
                 "Def": 166,
                 "Sp.A": 151,
                 "Sp.D": 178,
-                "Spe": 114,
-                "SP": 34
+                "Spe": 114
             },
             "Traits": [
                 ""
@@ -2148,12 +2148,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 110,
+                "SP": 34,
                 "Atk": 88,
                 "Def": 92,
                 "Sp.A": 78,
                 "Sp.D": 76,
-                "Spe": 84,
-                "SP": 34
+                "Spe": 84
             },
             "Traits": [
                 ""
@@ -2167,12 +2167,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 188,
+                "SP": 34,
                 "Atk": 184,
                 "Def": 174,
                 "Sp.A": 129,
                 "Sp.D": 141,
-                "Spe": 122,
-                "SP": 34
+                "Spe": 122
             },
             "Traits": [
                 ""
@@ -2186,12 +2186,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 90,
+                "SP": 34,
                 "Atk": 109,
                 "Def": 117,
                 "Sp.A": 145,
                 "Sp.D": 126,
-                "Spe": 98,
-                "SP": 34
+                "Spe": 98
             },
             "Traits": [
                 ""
@@ -2205,12 +2205,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 141,
+                "SP": 34,
                 "Atk": 161,
                 "Def": 171,
                 "Sp.A": 201,
                 "Sp.D": 212,
-                "Spe": 147,
-                "SP": 34
+                "Spe": 147
             },
             "Traits": [
                 ""
@@ -2224,12 +2224,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 138,
+                "SP": 34,
                 "Atk": 92,
                 "Def": 97,
                 "Sp.A": 122,
                 "Sp.D": 129,
-                "Spe": 70,
-                "SP": 34
+                "Spe": 70
             },
             "Traits": [
                 ""
@@ -2243,12 +2243,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 191,
+                "SP": 34,
                 "Atk": 143,
                 "Def": 152,
                 "Sp.A": 211,
                 "Sp.D": 182,
-                "Spe": 121,
-                "SP": 34
+                "Spe": 121
             },
             "Traits": [
                 ""
@@ -2262,12 +2262,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 76,
+                "SP": 34,
                 "Atk": 78,
                 "Def": 67,
                 "Sp.A": 101,
                 "Sp.D": 198,
-                "Spe": 142,
-                "SP": 34
+                "Spe": 142
             },
             "Traits": [
                 ""
@@ -2281,12 +2281,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 159,
+                "SP": 34,
                 "Atk": 139,
                 "Def": 130,
                 "Sp.A": 161,
                 "Sp.D": 246,
-                "Spe": 201,
-                "SP": 34
+                "Spe": 201
             },
             "Traits": [
                 ""
@@ -2300,12 +2300,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 69,
+                "SP": 34,
                 "Atk": 71,
                 "Def": 78,
                 "Sp.A": 82,
                 "Sp.D": 112,
-                "Spe": 101,
-                "SP": 34
+                "Spe": 101
             },
             "Traits": [
                 "Amplified",
@@ -2327,12 +2327,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 108,
+                "SP": 34,
                 "Atk": 90,
                 "Def": 111,
                 "Sp.A": 103,
                 "Sp.D": 133,
-                "Spe": 160,
-                "SP": 34
+                "Spe": 160
             },
             "Traits": [
                 "Amplified",
@@ -2354,12 +2354,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 162,
+                "SP": 34,
                 "Atk": 108,
                 "Def": 166,
                 "Sp.A": 134,
                 "Sp.D": 191,
-                "Spe": 224,
-                "SP": 34
+                "Spe": 224
             },
             "Traits": [
                 ""
@@ -2373,12 +2373,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 98,
+                "SP": 34,
                 "Atk": 88,
                 "Def": 108,
                 "Sp.A": 143,
                 "Sp.D": 122,
-                "Spe": 79,
-                "SP": 34
+                "Spe": 79
             },
             "Traits": [
                 "Conductor",
@@ -2422,12 +2422,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 142,
+                "SP": 34,
                 "Atk": 139,
                 "Def": 152,
                 "Sp.A": 175,
                 "Sp.D": 163,
-                "Spe": 102,
-                "SP": 34
+                "Spe": 102
             },
             "Traits": [
                 "Conductor",
@@ -2471,12 +2471,12 @@
             "Type": "Normal",
             "Stats": {
                 "HP": 171,
+                "SP": 34,
                 "Atk": 161,
                 "Def": 180,
                 "Sp.A": 214,
                 "Sp.D": 196,
-                "Spe": 121,
-                "SP": 34
+                "Spe": 121
             },
             "Traits": [
                 "Conductor",
@@ -2528,12 +2528,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 65,
+                "SP": 34,
                 "Atk": 142,
                 "Def": 208,
                 "Sp.A": 81,
                 "Sp.D": 72,
-                "Spe": 67,
-                "SP": 34
+                "Spe": 67
             },
             "Traits": [
                 ""
@@ -2547,12 +2547,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 97,
+                "SP": 34,
                 "Atk": 180,
                 "Def": 276,
                 "Sp.A": 99,
                 "Sp.D": 98,
-                "Spe": 82,
-                "SP": 34
+                "Spe": 82
             },
             "Traits": [
                 ""
@@ -2566,12 +2566,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 128,
+                "SP": 34,
                 "Atk": 194,
                 "Def": 340,
                 "Sp.A": 120,
                 "Sp.D": 148,
-                "Spe": 98,
-                "SP": 34
+                "Spe": 98
             },
             "Traits": [
                 ""
@@ -2585,12 +2585,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 78,
+                "SP": 34,
                 "Atk": 96,
                 "Def": 78,
                 "Sp.A": 83,
                 "Sp.D": 78,
-                "Spe": 181,
-                "SP": 34
+                "Spe": 181
             },
             "Traits": [
                 ""
@@ -2604,12 +2604,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 138,
+                "SP": 34,
                 "Atk": 158,
                 "Def": 94,
                 "Sp.A": 127,
                 "Sp.D": 88,
-                "Spe": 181,
-                "SP": 34
+                "Spe": 181
             },
             "Traits": [
                 ""
@@ -2623,12 +2623,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 178,
+                "SP": 34,
                 "Atk": 188,
                 "Def": 194,
                 "Sp.A": 155,
                 "Sp.D": 182,
-                "Spe": 142,
-                "SP": 34
+                "Spe": 142
             },
             "Traits": [
                 ""
@@ -2642,12 +2642,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 92,
+                "SP": 34,
                 "Atk": 88,
                 "Def": 161,
                 "Sp.A": 81,
                 "Sp.D": 109,
-                "Spe": 87,
-                "SP": 34
+                "Spe": 87
             },
             "Traits": [
                 ""
@@ -2661,12 +2661,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 144,
+                "SP": 34,
                 "Atk": 141,
                 "Def": 223,
                 "Sp.A": 93,
                 "Sp.D": 121,
-                "Spe": 104,
-                "SP": 34
+                "Spe": 104
             },
             "Traits": [
                 ""
@@ -2680,12 +2680,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 185,
+                "SP": 34,
                 "Atk": 168,
                 "Def": 268,
                 "Sp.A": 108,
                 "Sp.D": 133,
-                "Spe": 109,
-                "SP": 34
+                "Spe": 109
             },
             "Traits": [
                 ""
@@ -2699,12 +2699,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 102,
+                "SP": 34,
                 "Atk": 122,
                 "Def": 93,
                 "Sp.A": 127,
                 "Sp.D": 122,
-                "Spe": 84,
-                "SP": 34
+                "Spe": 84
             },
             "Traits": [
                 ""
@@ -2718,12 +2718,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 183,
+                "SP": 34,
                 "Atk": 194,
                 "Def": 179,
                 "Sp.A": 182,
                 "Sp.D": 176,
-                "Spe": 118,
-                "SP": 34
+                "Spe": 118
             },
             "Traits": [
                 ""
@@ -2737,12 +2737,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 88,
+                "SP": 34,
                 "Atk": 102,
                 "Def": 78,
                 "Sp.A": 118,
                 "Sp.D": 84,
-                "Spe": 100,
-                "SP": 34
+                "Spe": 100
             },
             "Traits": [
                 ""
@@ -2756,12 +2756,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 117,
+                "SP": 34,
                 "Atk": 131,
                 "Def": 116,
                 "Sp.A": 157,
                 "Sp.D": 128,
-                "Spe": 129,
-                "SP": 34
+                "Spe": 129
             },
             "Traits": [
                 ""
@@ -2775,12 +2775,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 158,
+                "SP": 34,
                 "Atk": 185,
                 "Def": 138,
                 "Sp.A": 204,
                 "Sp.D": 169,
-                "Spe": 182,
-                "SP": 34
+                "Spe": 182
             },
             "Traits": [
                 ""
@@ -2794,12 +2794,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 49,
+                "SP": 34,
                 "Atk": 141,
                 "Def": 142,
                 "Sp.A": 121,
                 "Sp.D": 106,
-                "Spe": 78,
-                "SP": 34
+                "Spe": 78
             },
             "Traits": [
                 "Stick Layer",
@@ -2821,12 +2821,12 @@
             "Type": "Electric",
             "Stats": {
                 "HP": 133,
+                "SP": 34,
                 "Atk": 215,
                 "Def": 209,
                 "Sp.A": 163,
                 "Sp.D": 172,
-                "Spe": 117,
-                "SP": 34
+                "Spe": 117
             },
             "Traits": [
                 ""
@@ -2840,12 +2840,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 81,
+                "SP": 34,
                 "Atk": 88,
                 "Def": 141,
                 "Sp.A": 141,
                 "Sp.D": 108,
-                "Spe": 121,
-                "SP": 34
+                "Spe": 121
             },
             "Traits": [
                 ""
@@ -2859,12 +2859,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 143,
+                "SP": 34,
                 "Atk": 147,
                 "Def": 204,
                 "Sp.A": 212,
                 "Sp.D": 167,
-                "Spe": 183,
-                "SP": 34
+                "Spe": 183
             },
             "Traits": [
                 ""
@@ -2878,12 +2878,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 48,
+                "SP": 34,
                 "Atk": 39,
                 "Def": 31,
                 "Sp.A": 212,
                 "Sp.D": 111,
-                "Spe": 181,
-                "SP": 34
+                "Spe": 181
             },
             "Traits": [
                 ""
@@ -2897,12 +2897,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 88,
+                "SP": 34,
                 "Atk": 68,
                 "Def": 123,
                 "Sp.A": 251,
                 "Sp.D": 276,
-                "Spe": 214,
-                "SP": 34
+                "Spe": 214
             },
             "Traits": [
                 ""
@@ -2916,12 +2916,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 88,
+                "SP": 34,
                 "Atk": 66,
                 "Def": 111,
                 "Sp.A": 132,
                 "Sp.D": 128,
-                "Spe": 68,
-                "SP": 34
+                "Spe": 68
             },
             "Traits": [
                 ""
@@ -2935,12 +2935,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 166,
+                "SP": 34,
                 "Atk": 142,
                 "Def": 254,
                 "Sp.A": 245,
                 "Sp.D": 195,
-                "Spe": 84,
-                "SP": 34
+                "Spe": 84
             },
             "Traits": [
                 ""
@@ -2954,12 +2954,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 68,
+                "SP": 34,
                 "Atk": 72,
                 "Def": 68,
                 "Sp.A": 64,
                 "Sp.D": 68,
-                "Spe": 68,
-                "SP": 34
+                "Spe": 68
             },
             "Traits": [
                 ""
@@ -2973,12 +2973,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 92,
+                "SP": 34,
                 "Atk": 188,
                 "Def": 172,
                 "Sp.A": 79,
                 "Sp.D": 181,
-                "Spe": 102,
-                "SP": 34
+                "Spe": 102
             },
             "Traits": [
                 ""
@@ -2992,12 +2992,12 @@
             "Type": "Sand",
             "Stats": {
                 "HP": 160,
+                "SP": 34,
                 "Atk": 242,
                 "Def": 188,
                 "Sp.A": 97,
                 "Sp.D": 240,
-                "Spe": 124,
-                "SP": 34
+                "Spe": 124
             },
             "Traits": [
                 ""
@@ -3011,12 +3011,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 74,
+                "SP": 34,
                 "Atk": 118,
                 "Def": 74,
                 "Sp.A": 68,
                 "Sp.D": 91,
-                "Spe": 138,
-                "SP": 34
+                "Spe": 138
             },
             "Traits": [
                 ""
@@ -3030,12 +3030,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 192,
+                "SP": 34,
                 "Atk": 221,
                 "Def": 163,
                 "Sp.A": 159,
                 "Sp.D": 197,
-                "Spe": 161,
-                "SP": 34
+                "Spe": 161
             },
             "Traits": [
                 ""
@@ -3049,12 +3049,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 71,
+                "SP": 34,
                 "Atk": 122,
                 "Def": 61,
                 "Sp.A": 98,
                 "Sp.D": 98,
-                "Spe": 140,
-                "SP": 34
+                "Spe": 140
             },
             "Traits": [
                 "Comeback",
@@ -3075,12 +3075,12 @@
             "Type": "Fire",
             "Stats": {
                 "HP": 132,
+                "SP": 34,
                 "Atk": 204,
                 "Def": 138,
                 "Sp.A": 157,
                 "Sp.D": 159,
-                "Spe": 212,
-                "SP": 34
+                "Spe": 212
             },
             "Traits": [
                 ""
@@ -3094,12 +3094,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 58,
+                "SP": 34,
                 "Atk": 48,
                 "Def": 46,
                 "Sp.A": 91,
                 "Sp.D": 71,
-                "Spe": 84,
-                "SP": 34
+                "Spe": 84
             },
             "Traits": [
                 "Caffeinated",
@@ -3121,12 +3121,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 86,
+                "SP": 34,
                 "Atk": 65,
                 "Def": 104,
                 "Sp.A": 115,
                 "Sp.D": 152,
-                "Spe": 92,
-                "SP": 34
+                "Spe": 92
             },
             "Traits": [
                 "Caffeinated",
@@ -3148,12 +3148,12 @@
             "Type": "Ice",
             "Stats": {
                 "HP": 150,
+                "SP": 34,
                 "Atk": 139,
                 "Def": 128,
                 "Sp.A": 253,
                 "Sp.D": 226,
-                "Spe": 161,
-                "SP": 34
+                "Spe": 161
             },
             "Traits": [
                 ""
@@ -3167,12 +3167,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 148,
+                "SP": 34,
                 "Atk": 118,
                 "Def": 68,
                 "Sp.A": 138,
                 "Sp.D": 68,
-                "Spe": 49,
-                "SP": 34
+                "Spe": 49
             },
             "Traits": [
                 ""
@@ -3186,12 +3186,12 @@
             "Type": "Ghost",
             "Stats": {
                 "HP": 237,
+                "SP": 34,
                 "Atk": 229,
                 "Def": 131,
                 "Sp.A": 176,
                 "Sp.D": 108,
-                "Spe": 99,
-                "SP": 34
+                "Spe": 99
             },
             "Traits": [
                 ""
@@ -3205,12 +3205,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 58,
+                "SP": 34,
                 "Atk": 132,
                 "Def": 202,
                 "Sp.A": 88,
                 "Sp.D": 49,
-                "Spe": 78,
-                "SP": 34
+                "Spe": 78
             },
             "Traits": [
                 ""
@@ -3224,12 +3224,12 @@
             "Type": "Water",
             "Stats": {
                 "HP": 117,
+                "SP": 34,
                 "Atk": 198,
                 "Def": 344,
                 "Sp.A": 204,
                 "Sp.D": 102,
-                "Spe": 137,
-                "SP": 34
+                "Spe": 137
             },
             "Traits": [
                 ""
